@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+*.db
+node_modules/
+.DS_Store
+data/push_log.json
+data/watch_state.json
+__pycache__/
+# export grezzi di Clay (contengono persone) e file di lavoro del controllo settimanale
+data/clay/
+data/weekly/

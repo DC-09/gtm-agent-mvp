@@ -1,0 +1,215 @@
+{
+  "id": "iusfulHandoffSale",
+  "active": false,
+  "name": "HANDOFF_SALES",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "c3f0c6d2-1b1e-4c55-9d0a-000000000001",
+      "name": "Avvio manuale",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        -100
+      ]
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "iusful/handoff",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "id": "c3f0c6d2-1b1e-4c55-9d0a-000000000002",
+      "name": "Avvio da webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        100
+      ],
+      "webhookId": "7d4b6c0a-9e3f-4a4c-b15d-3c4d5e6f7081"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.notion.com/v1/databases/47bd791712bb4d30acce6f2af257a433/query",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "notionApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Notion-Version",
+              "value": "2022-06-28"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ filter: { and: [ { property: 'Tier', select: { equals: 'A' } }, { or: [ { property: 'Verifica', select: { equals: 'Superata' } }, { property: 'Verifica', select: { equals: 'Rivista a mano' } } ] }, { property: 'Stato', select: { equals: 'Qualificato' } } ] } }) }}",
+        "options": {}
+      },
+      "id": "c3f0c6d2-1b1e-4c55-9d0a-000000000003",
+      "name": "Cerca Tier A verificati",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        260,
+        0
+      ],
+      "credentials": {
+        "notionApi": {
+          "id": "qKnWs8XNRRwGFV75",
+          "name": "Notion account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "results",
+        "options": {}
+      },
+      "id": "c3f0c6d2-1b1e-4c55-9d0a-000000000004",
+      "name": "Una azienda alla volta",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        520,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "={{ 'https://api.notion.com/v1/pages/' + $json.id }}",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "notionApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Notion-Version",
+              "value": "2022-06-28"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ properties: { 'Stato': { select: { name: 'Pronto per sales' } } } }) }}",
+        "options": {}
+      },
+      "id": "c3f0c6d2-1b1e-4c55-9d0a-000000000005",
+      "name": "Passa a Pronto per sales",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        780,
+        0
+      ],
+      "credentials": {
+        "notionApi": {
+          "id": "qKnWs8XNRRwGFV75",
+          "name": "Notion account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.notion.com/v1/pages",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "notionApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Notion-Version",
+              "value": "2022-06-28"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ parent: { database_id: 'f95fe1d7744640c3aadeabc8aca2ce45' }, properties: { 'Cosa': { title: [{ text: { content: 'Passato al sales (Tier A, verifica ' + (($json.properties['Verifica'] || {}).select || {}).name + ')' } }] }, 'Azienda': { relation: [{ id: $json.id }] }, 'Tipo': { select: { name: 'Passaggio al sales' } }, 'Chi': { select: { name: 'n8n' } }, 'Data': { date: { start: $now.toISODate() } } } }) }}",
+        "options": {}
+      },
+      "id": "c3f0c6d2-1b1e-4c55-9d0a-000000000006",
+      "name": "Registra passaggio al sales",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1040,
+        0
+      ],
+      "credentials": {
+        "notionApi": {
+          "id": "qKnWs8XNRRwGFV75",
+          "name": "Notion account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Avvio manuale": {
+      "main": [
+        [
+          {
+            "node": "Cerca Tier A verificati",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Avvio da webhook": {
+      "main": [
+        [
+          {
+            "node": "Cerca Tier A verificati",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Cerca Tier A verificati": {
+      "main": [
+        [
+          {
+            "node": "Una azienda alla volta",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Una azienda alla volta": {
+      "main": [
+        [
+          {
+            "node": "Passa a Pronto per sales",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Passa a Pronto per sales": {
+      "main": [
+        [
+          {
+            "node": "Registra passaggio al sales",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {}
+}

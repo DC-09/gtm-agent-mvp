@@ -1,0 +1,11 @@
+{
+  "_nota": "Pagine sorvegliate ogni settimana da scripts/watch_signals.py: annunci di lavoro e comunicati, non pagine di prodotto. Chiave: id del lead in data/leads.json.",
+  "drako": ["https://www.drako.it/drako_catalog/info/lavora-con-noi", "https://www.drako.it/drako_catalog/info/press-media"],
+  "otticadalpasso": ["https://www.otticadalpasso.it/lavora-con-noi/"],
+  "ausilium": ["https://www.ausilium.it/lavora-con-noi"],
+  "etualy": ["https://www.etualy.com/pages/lavora-con-noi"],
+  "esplodia": ["https://www.gruppotera.com/lavora-con-noi", "https://www.esplodia.com/blogs/notizie"],
+  "cucciolotta": ["https://www.cucciolotta.com/news/"],
+  "acqualagnatartufi": ["https://www.acqualagnatartufi.com/stampa/"],
+  "officinedigitaliitaliane": ["https://officinedigitaliitaliane.it/lavora-con-noi/", "https://officinedigitaliitaliane.it/news/"]
+}

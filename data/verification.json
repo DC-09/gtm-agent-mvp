@@ -1,0 +1,484 @@
+{
+  "dmora": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "segnale piu_paesi",
+        "url": "https://www.trend-online.com/2026/05/26/arredamento-online-lexport-passa-dai-marketplace/",
+        "ok": true,
+        "detail": "citazione trovata"
+      },
+      {
+        "what": "buyer",
+        "url": "https://www.dmora.it/about",
+        "ok": true,
+        "detail": "nome trovato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:29"
+  },
+  "cuorelavico": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "segnale piu_paesi",
+        "url": "https://www.businessonline.it/news/le-pmi-italiane-vendono-4-miliardi-su-amazon-chi-sono-quali-prodotti-offrono-e-le-storie-pi-emblematiche_n85972.html",
+        "ok": true,
+        "detail": "citazione trovata"
+      },
+      {
+        "what": "buyer",
+        "url": "https://cuorelavico.it/chi-siamo/",
+        "ok": true,
+        "detail": "nome trovato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:29"
+  },
+  "unaloe": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "segnale piu_paesi",
+        "url": "https://www.businessonline.it/news/le-pmi-italiane-vendono-4-miliardi-su-amazon-chi-sono-quali-prodotti-offrono-e-le-storie-pi-emblematiche_n85972.html",
+        "ok": true,
+        "detail": "citazione trovata"
+      },
+      {
+        "what": "buyer",
+        "url": "https://www.unaloe.it/il-territorio/",
+        "ok": true,
+        "detail": "nome trovato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:29"
+  },
+  "emiliafoodlove": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "segnale piu_paesi",
+        "url": "https://startupitalia.eu/startup/emiliane-food-love-andrea-magnone-usa/",
+        "ok": true,
+        "detail": "citazione trovata"
+      },
+      {
+        "what": "buyer",
+        "url": "https://startupitalia.eu/startup/emiliane-food-love-andrea-magnone-usa/",
+        "ok": true,
+        "detail": "nome trovato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:29"
+  },
+  "sdcalabria": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "segnale piu_paesi",
+        "url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/",
+        "ok": true,
+        "detail": "citazione trovata"
+      },
+      {
+        "what": "buyer",
+        "url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/",
+        "ok": true,
+        "detail": "nome trovato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:30"
+  },
+  "esplodia": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "segnale piu_paesi",
+        "url": "https://arenadigitale.it/2026/07/22/nuova-storia-di-un-venditore-italiano-su-temu/",
+        "ok": true,
+        "detail": "citazione trovata"
+      },
+      {
+        "what": "segnale assunzioni",
+        "url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/",
+        "ok": true,
+        "detail": "citazione trovata"
+      },
+      {
+        "what": "buyer",
+        "url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/",
+        "ok": true,
+        "detail": "nome trovato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:30"
+  },
+  "cucciolotta": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "segnale piu_paesi",
+        "url": "https://www.cuneo24.it/2026/07/le-pmi-piemontesi-nella-top-10-italiana-di-amazon-piu-170-milioni-di-euro-di-vendite-351339/",
+        "ok": true,
+        "detail": "citazione trovata"
+      },
+      {
+        "what": "buyer",
+        "url": "https://www.cuneo24.it/2026/07/le-pmi-piemontesi-nella-top-10-italiana-di-amazon-piu-170-milioni-di-euro-di-vendite-351339/",
+        "ok": true,
+        "detail": "nome trovato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:30"
+  },
+  "kalucreations": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "segnale piu_paesi",
+        "url": "https://www.borderline24.com/2026/07/24/la-puglia-del-digitale-corre-su-amazon-quarto-posto-in-italia-con-250-milioni-di-vendite-superato-il-veneto/",
+        "ok": true,
+        "detail": "citazione trovata"
+      },
+      {
+        "what": "buyer",
+        "url": "https://www.marmeriarussoluca.it/it/kalu-creations",
+        "ok": true,
+        "detail": "nome trovato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:33"
+  },
+  "caffebarbaro": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "buyer",
+        "url": "https://caffebarbaro.com/pages/about-us",
+        "ok": true,
+        "detail": "nome trovato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:33"
+  },
+  "all4cycling": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "segnale fundraising_soci",
+        "url": "https://www.malpensa24.it/varse-sportler-all4cycling-nardello-acquisizione/",
+        "ok": true,
+        "detail": "citazione trovata"
+      },
+      {
+        "what": "buyer",
+        "url": "https://www.malpensa24.it/varse-sportler-all4cycling-nardello-acquisizione/",
+        "ok": true,
+        "detail": "nome trovato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:34"
+  },
+  "acqualagnatartufi": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "buyer",
+        "url": "https://www.acqualagnatartufi.com/chi-siamo/",
+        "ok": true,
+        "detail": "nome trovato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:37"
+  },
+  "yeseatis": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "buyer",
+        "url": "https://www.linkedin.com/in/micheleberti/",
+        "ok": true,
+        "detail": "profilo LinkedIn trovato da Clay, non leggibile in automatico: accettato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:38"
+  },
+  "buyleatheronline": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "buyer",
+        "url": "https://www.mapelec.it/en/about-us-leather-wholesale/",
+        "ok": true,
+        "detail": "nome trovato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:38"
+  },
+  "produceshop": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "segnale piu_paesi",
+        "url": "https://www.teleborsa.it/News/2026/07/16/produceshop-rinasce-dal-fallimento-10-milioni-di-fatturato-in-8-mesi-e-gia-in-utile-con-l-ai-1.html",
+        "ok": true,
+        "detail": "citazione trovata"
+      },
+      {
+        "what": "segnale fundraising_soci",
+        "url": "https://www.teleborsa.it/News/2026/07/16/produceshop-rinasce-dal-fallimento-10-milioni-di-fatturato-in-8-mesi-e-gia-in-utile-con-l-ai-1.html",
+        "ok": true,
+        "detail": "citazione trovata"
+      },
+      {
+        "what": "buyer",
+        "url": "https://www.teleborsa.it/News/2026/07/16/produceshop-rinasce-dal-fallimento-10-milioni-di-fatturato-in-8-mesi-e-gia-in-utile-con-l-ai-1.html",
+        "ok": true,
+        "detail": "nome trovato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:39"
+  },
+  "sciara": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "segnale piu_paesi",
+        "url": "https://www.ansa.it/sicilia/notizie/2026/07/22/vendite-su-amazon-pmi-della-sicilia-nella-top-5-delle-regioni-piu_97a0fcbe-fa02-48b4-915e-351fe662d9eb.html",
+        "ok": true,
+        "detail": "citazione trovata"
+      },
+      {
+        "what": "buyer",
+        "url": "https://www.freshplaza.it/article/9193955/a-bronte-il-pistacchio-trasformato-in-tutte-le-sue-forme/",
+        "ok": true,
+        "detail": "nome trovato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:39"
+  },
+  "drako": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "segnale assunzioni",
+        "url": "https://www.drako.it/drako_catalog/info/lavora-con-noi",
+        "ok": true,
+        "detail": "citazione trovata"
+      },
+      {
+        "what": "buyer",
+        "url": "https://www.drako.it/drako_catalog/info/chi-siamo",
+        "ok": true,
+        "detail": "nome trovato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:40"
+  },
+  "perledarte": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "segnale piu_paesi",
+        "url": "https://www.businessonline.it/news/le-pmi-italiane-vendono-4-miliardi-su-amazon-chi-sono-quali-prodotti-offrono-e-le-storie-pi-emblematiche_n85972.html",
+        "ok": true,
+        "detail": "citazione trovata"
+      },
+      {
+        "what": "buyer",
+        "url": "http://www.casa21.it/index.php/sermons/chiarte/",
+        "ok": true,
+        "detail": "nome trovato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:40"
+  },
+  "samplelover": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "buyer",
+        "url": "https://www.linkedin.com/in/rossana-ammaturo-885a1890/",
+        "ok": true,
+        "detail": "profilo LinkedIn trovato da Clay, non leggibile in automatico: accettato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:40"
+  },
+  "ilgiardinodeilibri": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "buyer",
+        "url": "https://www.ilgiardinodeilibri.it/chi_siamo.php",
+        "ok": true,
+        "detail": "nome trovato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:41"
+  },
+  "otticadalpasso": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "segnale assunzioni",
+        "url": "https://www.linkedin.com/jobs/view/ottico-diplomato-o-addetto-alla-vendite-esperto-at-ottica-dalpasso-4465032303",
+        "ok": true,
+        "detail": "citazione trovata"
+      },
+      {
+        "what": "buyer",
+        "url": "https://www.linkedin.com/in/sara-catellani-dalpasso-765249219/",
+        "ok": true,
+        "detail": "profilo LinkedIn trovato da Clay, non leggibile in automatico: accettato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:42"
+  },
+  "guicciardini": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "segnale apertura_acquisizione",
+        "url": "https://www.ilpiacenza.it/salute/nuovo-polo-per-la-sanita-privata-d-eccellenza-apre-il-poliambulatorio-guicciardini.html",
+        "ok": true,
+        "detail": "citazione trovata"
+      },
+      {
+        "what": "buyer",
+        "url": "https://www.ilpiacenza.it/salute/nuovo-polo-per-la-sanita-privata-d-eccellenza-apre-il-poliambulatorio-guicciardini.html",
+        "ok": true,
+        "detail": "nome trovato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:42"
+  },
+  "vistra": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "segnale piu_paesi",
+        "url": "https://www.linkedin.com/jobs/view/supervisore-hse-at-vistra-srl-4471748109",
+        "ok": true,
+        "detail": "citazione trovata"
+      },
+      {
+        "what": "buyer",
+        "url": "https://www.linkedin.com/in/andrea-martini-4b059436/",
+        "ok": true,
+        "detail": "profilo LinkedIn trovato da Clay, non leggibile in automatico: accettato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:44"
+  },
+  "youmedical": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "segnale assunzioni",
+        "url": "https://www.linkedin.com/jobs/view/you-medical-consulente-commerciale-medicina-estetica-m-f-%E2%80%93-merate-eseregno-at-you-medical-4472308353",
+        "ok": true,
+        "detail": "citazione trovata"
+      },
+      {
+        "what": "segnale freelance_agenzie",
+        "url": "https://www.linkedin.com/jobs/view/odontoiatra-implantogo-at-you-medical-4467882034",
+        "ok": true,
+        "detail": "citazione trovata"
+      },
+      {
+        "what": "buyer",
+        "url": "https://www.linkedin.com/company/you-medical",
+        "ok": true,
+        "detail": "nome trovato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:46"
+  },
+  "secretkey": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "segnale assunzioni",
+        "url": "https://www.secretkey.it/job/",
+        "ok": true,
+        "detail": "citazione trovata"
+      },
+      {
+        "what": "buyer",
+        "url": "https://www.secretkey.it/blog/author/enrico-ferretti/",
+        "ok": true,
+        "detail": "nome trovato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:46"
+  },
+  "bottega52": {
+    "status": "superata",
+    "reasons": [],
+    "notes": [],
+    "checks": [
+      {
+        "what": "segnale assunzioni",
+        "url": "https://bottega52.it/azienda/lavora-con-noi?hsLang=it",
+        "ok": true,
+        "detail": "citazione trovata"
+      },
+      {
+        "what": "buyer",
+        "url": "https://www.cbinsights.com/company/bottega52",
+        "ok": true,
+        "detail": "nome trovato"
+      }
+    ],
+    "checked_at": "2026-10-04T18:10:47"
+  }
+}

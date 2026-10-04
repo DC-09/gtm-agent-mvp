@@ -1,0 +1,1095 @@
+[
+  {
+    "id": "esplodia",
+    "company_name": "Gruppo Tera srl (Esplodia)",
+    "domain": "esplodia.com",
+    "website": "https://esplodia.com",
+    "city": "Caivano",
+    "business_model": "E-commerce e marketplace",
+    "employees": "25",
+    "tier": "A",
+    "score_total": 93,
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 25,
+      "buying_signals": 19,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 93
+    },
+    "primary_signal": {
+      "fact": "Gestisce ordini in Italia, Spagna, Francia, Germania, Paesi Bassi e Polonia.",
+      "url": "https://arenadigitale.it/2026/07/22/nuova-storia-di-un-venditore-italiano-su-temu/",
+      "date": "2026-07-22"
+    },
+    "evidence_url": "https://arenadigitale.it/2026/07/22/nuova-storia-di-un-venditore-italiano-su-temu/",
+    "legal_pains": [
+      "Condizioni di vendita e recesso per consumatori in sei paesi europei",
+      "Contratti di lavoro per le nuove assunzioni legate al nuovo magazzino",
+      "Informative privacy per clienti di più paesi e obblighi verso i marketplace"
+    ],
+    "buyer": {
+      "name": "Fabrizio Provitera",
+      "title": "Contitolare",
+      "source_url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/",
+      "role_match": "primario"
+    },
+    "outreach_angle": "Esplodia vende in sei paesi europei, ha appena inserito quattro persone e sta costruendo un nuovo magazzino. Crescere così porta insieme condizioni di vendita estere, contratti di lavoro e privacy: Iusful li segue con un avvocato dedicato e un costo mensile noto.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [],
+    "evaluation_date": "2026-10-04",
+    "notes": "Fonte del candidato: articoli su Temu. Aiuti pubblici ricevuti (garanzie e finanziamenti agevolati), nessun fondo VC trovato. Un'anteprima di ricerca indica 24,8 milioni di fatturato 2025: non è una fonte."
+  },
+  {
+    "id": "produceshop",
+    "company_name": "Pasmara srl (ProduceShop)",
+    "domain": "produceshop.com",
+    "website": "https://produceshop.com",
+    "city": "Milano",
+    "business_model": "E-commerce e marketplace",
+    "employees": "10",
+    "tier": "A",
+    "score_total": 89,
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 19,
+      "buyer_availability": 10,
+      "evidence_quality": 8,
+      "total": 89
+    },
+    "primary_signal": {
+      "fact": "Attiva in Italia, Francia, Spagna, Germania e Austria.",
+      "url": "https://www.teleborsa.it/News/2026/07/16/produceshop-rinasce-dal-fallimento-10-milioni-di-fatturato-in-8-mesi-e-gia-in-utile-con-l-ai-1.html",
+      "date": "2026-07-16"
+    },
+    "evidence_url": "https://www.teleborsa.it/News/2026/07/16/produceshop-rinasce-dal-fallimento-10-milioni-di-fatturato-in-8-mesi-e-gia-in-utile-con-l-ai-1.html",
+    "legal_pains": [
+      "Patti con i nuovi soci che hanno investito circa 3 milioni",
+      "Condizioni di vendita e resi per clienti in cinque paesi",
+      "Uso dei dati dei clienti nella piattaforma con intelligenza artificiale"
+    ],
+    "buyer": {
+      "name": "Karim El Saket",
+      "title": "Fondatore e CEO",
+      "source_url": "https://www.teleborsa.it/News/2026/07/16/produceshop-rinasce-dal-fallimento-10-milioni-di-fatturato-in-8-mesi-e-gia-in-utile-con-l-ai-1.html",
+      "role_match": "primario"
+    },
+    "outreach_angle": "ProduceShop è ripartita a novembre 2025 dopo il fallimento della vecchia società, vende in cinque paesi e ha nuovi soci. Il rilancio è passato da tribunali e avvocati; ora contratti, soci e dati sono temi continui: Iusful li segue con un avvocato dedicato.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [],
+    "evaluation_date": "2026-10-04",
+    "notes": "Candidato da Clay; Clay indicava Ivan Cianci (COO), si sceglie il fondatore e CEO citato dalla fonte. Non è VC: capitali propri e privati; El Saket dice di non cercare round. Il fatturato è dei primi otto mesi, non annuale."
+  },
+  {
+    "id": "youmedical",
+    "company_name": "You Medical",
+    "domain": "youmedical.it",
+    "website": "https://youmedical.it",
+    "city": "Seregno",
+    "business_model": "Sanità e formazione",
+    "employees": "11-50",
+    "tier": "A",
+    "score_total": 88,
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 25,
+      "buying_signals": 14,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 88
+    },
+    "primary_signal": {
+      "fact": "Annunci aperti per consulente commerciale, igienista dentale e direttore sanitario.",
+      "url": "https://www.linkedin.com/jobs/view/you-medical-consulente-commerciale-medicina-estetica-m-f-%E2%80%93-merate-eseregno-at-you-medical-4472308353",
+      "date": "2026-09-30"
+    },
+    "evidence_url": "https://www.linkedin.com/jobs/view/you-medical-consulente-commerciale-medicina-estetica-m-f-%E2%80%93-merate-eseregno-at-you-medical-4472308353",
+    "legal_pains": [
+      "Registro dei trattamenti e consensi per dati sanitari in cinque centri",
+      "Contratti con medici e odontoiatri a partita IVA",
+      "Assunzioni e contratti di lavoro su più sedi"
+    ],
+    "buyer": {
+      "name": "Giovanni Bona",
+      "title": "Titolare",
+      "source_url": "https://www.linkedin.com/company/you-medical",
+      "role_match": "primario"
+    },
+    "outreach_angle": "You Medical ha cinque centri tra Lombardia e Piemonte e sta assumendo e cercando medici a partita IVA. Dati sanitari, contratti con i professionisti e assunzioni su più sedi sono temi continui: Iusful li segue con un avvocato dedicato.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [],
+    "evaluation_date": "2026-10-04",
+    "notes": "Segmento sanità (gruppo 5, 4 ottobre 2026), trovato con Clay (ricerca per settore e annunci aperti). P.IVA 07610090966."
+  },
+  {
+    "id": "emiliafoodlove",
+    "company_name": "4 FOOD SRL (Emilia Food Love)",
+    "domain": "emiliafood.love",
+    "website": "https://emiliafood.love",
+    "city": "Quattro Castella",
+    "business_model": "E-commerce e marketplace",
+    "employees": "4",
+    "tier": "A",
+    "score_total": 84,
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 12,
+      "buyer_availability": 10,
+      "evidence_quality": 10,
+      "total": 84
+    },
+    "primary_signal": {
+      "fact": "25.000 ordini negli USA con circa 30.000 clienti l'anno scorso; prossimi mercati Regno Unito e Giappone.",
+      "url": "https://startupitalia.eu/startup/emiliane-food-love-andrea-magnone-usa/",
+      "date": "2026-02-12"
+    },
+    "evidence_url": "https://startupitalia.eu/startup/emiliane-food-love-andrea-magnone-usa/",
+    "legal_pains": [
+      "Condizioni di vendita e responsabilità per spedizioni alimentari negli Stati Uniti",
+      "Trasferimento dei dati dei clienti verso gli Stati Uniti"
+    ],
+    "buyer": {
+      "name": "Andrea Magnone",
+      "title": "CEO",
+      "source_url": "https://startupitalia.eu/startup/emiliane-food-love-andrea-magnone-usa/",
+      "role_match": "primario"
+    },
+    "outreach_angle": "Emilia Food Love spedisce prodotti emiliani a decine di migliaia di clienti negli Stati Uniti e guarda a Regno Unito e Giappone. Ogni nuovo paese porta condizioni di vendita e privacy da adattare: Iusful le segue con un avvocato dedicato e un costo mensile noto.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [],
+    "evaluation_date": "2026-10-03",
+    "notes": "Aumento di capitale nel 2026 visto solo in un'anteprima di ricerca (non è una fonte) e nessun round VC trovato: non è un dubbio da rivedere. Le altre fonti sono confermate."
+  },
+  {
+    "id": "sciara",
+    "company_name": "Sciara srl (Sciara - La Terra del Pistacchio)",
+    "domain": "sciarapistacchio.com",
+    "website": "https://sciarapistacchio.com",
+    "city": "Bronte",
+    "business_model": "E-commerce e marketplace",
+    "employees": "10",
+    "tier": "A",
+    "score_total": 83,
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 12,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 83
+    },
+    "primary_signal": {
+      "fact": "Su Amazon raggiunge gli italiani all'estero e clienti stranieri, fino agli Stati Uniti.",
+      "url": "https://www.ansa.it/sicilia/notizie/2026/07/22/vendite-su-amazon-pmi-della-sicilia-nella-top-5-delle-regioni-piu_97a0fcbe-fa02-48b4-915e-351fe662d9eb.html",
+      "date": "2026-07-22"
+    },
+    "evidence_url": "https://www.ansa.it/sicilia/notizie/2026/07/22/vendite-su-amazon-pmi-della-sicilia-nella-top-5-delle-regioni-piu_97a0fcbe-fa02-48b4-915e-351fe662d9eb.html",
+    "legal_pains": [
+      "Etichette e regole alimentari per la vendita negli Stati Uniti e in Europa",
+      "Condizioni di vendita online per clienti di più paesi",
+      "Accordi con rivenditori in Italia e all'estero"
+    ],
+    "buyer": {
+      "name": "Denny Cascino",
+      "title": "Fondatore",
+      "source_url": "https://www.freshplaza.it/article/9193955/a-bronte-il-pistacchio-trasformato-in-tutte-le-sue-forme/",
+      "role_match": "primario"
+    },
+    "outreach_angle": "Sciara vende il pistacchio di Bronte online e su Amazon, fino agli Stati Uniti, con un team di 10 persone. Etichette, regole alimentari e condizioni di vendita cambiano da paese a paese: Iusful le segue con un avvocato dedicato e un costo mensile noto.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [],
+    "evaluation_date": "2026-10-04",
+    "notes": "Candidato dal report Amazon sulle PMI (ANSA, 22/07/2026). Nell'articolo parla Corrado Emmolo, responsabile Amazon; si sceglie il fondatore. Nessun round VC trovato."
+  },
+  {
+    "id": "dmora",
+    "company_name": "Crido Consulting S.r.l. (Dmora)",
+    "domain": "dmora.it",
+    "website": "https://dmora.it",
+    "city": "Chiavenna",
+    "business_model": "E-commerce e marketplace",
+    "employees": "19",
+    "tier": "A",
+    "score_total": 81,
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 12,
+      "buyer_availability": 7,
+      "evidence_quality": 10,
+      "total": 81
+    },
+    "primary_signal": {
+      "fact": "Presente in 12 paesi europei; ingresso negli Stati Uniti previsto nel 2026.",
+      "url": "https://www.trend-online.com/2026/05/26/arredamento-online-lexport-passa-dai-marketplace/",
+      "date": "2026-05-26"
+    },
+    "evidence_url": "https://www.trend-online.com/2026/05/26/arredamento-online-lexport-passa-dai-marketplace/",
+    "legal_pains": [
+      "Condizioni generali di vendita e recesso per consumatori in 12 paesi",
+      "Informative e consensi per clienti di più paesi europei",
+      "Termini con oltre 30 marketplace e obblighi DSA"
+    ],
+    "buyer": {
+      "name": "Elena Gadola",
+      "title": "Head of Finance",
+      "source_url": "https://www.dmora.it/about",
+      "role_match": "alternativa"
+    },
+    "outreach_angle": "Dmora vende arredamento in 12 paesi europei e su oltre 30 marketplace, e guarda agli Stati Uniti. Ogni nuovo mercato porta condizioni di vendita, privacy e regole dei marketplace da tenere aggiornate: Iusful le segue con un avvocato dedicato e un costo mensile noto.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [],
+    "evaluation_date": "2026-10-03",
+    "notes": "Nessun investitore esterno indicato sul sito; nessun round VC trovato. Il CEO non è indicato: i fondatori sono Claudia Russo (Founder) e Riccardo Dolci (Co-founder)."
+  },
+  {
+    "id": "sdcalabria",
+    "company_name": "SD Calabria (Spesa digitale di Quaranta Antonino)",
+    "domain": "sdcalabria.it",
+    "website": "https://sdcalabria.it",
+    "city": null,
+    "business_model": "E-commerce e marketplace",
+    "employees": "1",
+    "tier": "A",
+    "score_total": 81,
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 12,
+      "buyer_availability": 10,
+      "evidence_quality": 7,
+      "total": 81
+    },
+    "primary_signal": {
+      "fact": "Tramite Temu vende a clienti in Spagna, Germania, Paesi Bassi, Polonia, Austria, Irlanda, Danimarca e Repubblica Ceca.",
+      "url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/",
+      "date": "2026-08-31"
+    },
+    "evidence_url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/",
+    "legal_pains": [
+      "Condizioni di vendita per consumatori in otto paesi europei",
+      "Termini del marketplace e obblighi verso i clienti esteri"
+    ],
+    "buyer": {
+      "name": "Antonino Quaranta",
+      "title": "Titolare",
+      "source_url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/",
+      "role_match": "primario"
+    },
+    "outreach_angle": "Grazie a Temu SD Calabria ora vende i prodotti calabresi in otto paesi europei. Vendere all'estero porta condizioni di vendita e regole dei marketplace da adattare: Iusful le segue con un avvocato dedicato e un costo mensile noto.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [],
+    "evaluation_date": "2026-10-03",
+    "notes": "Ditta individuale con 1 dipendente. Nessun round VC trovato."
+  },
+  {
+    "id": "vistra",
+    "company_name": "Vistra srl",
+    "domain": "vistraqhse.it",
+    "website": "https://vistraqhse.it",
+    "city": "Tavagnacco",
+    "business_model": "B2B",
+    "employees": "11-50",
+    "tier": "B",
+    "score_total": 79,
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 18,
+      "buying_signals": 12,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 79
+    },
+    "primary_signal": {
+      "fact": "Annuncio aperto per un supervisore HSE su un progetto in Spagna.",
+      "url": "https://www.linkedin.com/jobs/view/supervisore-hse-at-vistra-srl-4471748109",
+      "date": "2026-09-29"
+    },
+    "evidence_url": "https://www.linkedin.com/jobs/view/supervisore-hse-at-vistra-srl-4471748109",
+    "legal_pains": [
+      "Contratti e limiti di responsabilità per servizi di sicurezza su cantieri esteri",
+      "Nomine a responsabile del trattamento per i dati dei clienti",
+      "Distacco o assunzione di personale per progetti all'estero"
+    ],
+    "buyer": {
+      "name": "Andrea Martini",
+      "title": "Amministratore delegato",
+      "source_url": "https://www.linkedin.com/in/andrea-martini-4b059436/",
+      "role_match": "primario"
+    },
+    "outreach_angle": "Vistra lavora per clienti in 101 paesi e sta cercando personale per un progetto in Spagna. Contratti con clienti esteri e responsabilità sui cantieri sono temi continui: Iusful li segue con un avvocato dedicato.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [],
+    "evaluation_date": "2026-10-04",
+    "notes": "Segmento servizi B2B (4 ottobre 2026), trovato con Clay. P.IVA 02159000302. Da non confondere con Vistra Corp., società americana dell'energia."
+  },
+  {
+    "id": "cuorelavico",
+    "company_name": "Cuore Lavico srl",
+    "domain": "cuorelavico.it",
+    "website": "https://cuorelavico.it",
+    "city": "Biancavilla",
+    "business_model": "E-commerce e marketplace",
+    "employees": "2",
+    "tier": "B",
+    "score_total": 78,
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 12,
+      "buyer_availability": 4,
+      "evidence_quality": 10,
+      "total": 78
+    },
+    "primary_signal": {
+      "fact": "Il 90% delle vendite viene dall'online; ha raggiunto mercati come Germania e Svezia.",
+      "url": "https://www.businessonline.it/news/le-pmi-italiane-vendono-4-miliardi-su-amazon-chi-sono-quali-prodotti-offrono-e-le-storie-pi-emblematiche_n85972.html",
+      "date": "2026-07-24"
+    },
+    "evidence_url": "https://www.businessonline.it/news/le-pmi-italiane-vendono-4-miliardi-su-amazon-chi-sono-quali-prodotti-offrono-e-le-storie-pi-emblematiche_n85972.html",
+    "legal_pains": [
+      "Condizioni di vendita e garanzie per clienti in Germania, Svezia e altri paesi",
+      "Informative e consensi del negozio online multilingue"
+    ],
+    "buyer": {
+      "name": "Francesco Cunsolo",
+      "title": null,
+      "source_url": "https://cuorelavico.it/chi-siamo/",
+      "role_match": "nome senza ruolo"
+    },
+    "outreach_angle": "Cuore Lavico vende quasi tutto online e ha portato la pietra lavica dell'Etna in Germania e Svezia. Vendere all'estero significa condizioni di vendita e privacy valide in più paesi: Iusful le segue con un avvocato dedicato, a un costo mensile noto.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [],
+    "evaluation_date": "2026-10-03",
+    "notes": "Nessun round VC trovato. Sul sito annuncia una nuova sede produttiva con nuovi macchinari (pagina senza data, non è un segnale della mappa)."
+  },
+  {
+    "id": "otticadalpasso",
+    "company_name": "Dalpasso srl (Ottica Dalpasso)",
+    "domain": "otticadalpasso.it",
+    "website": "https://otticadalpasso.it",
+    "city": "Reggio Emilia",
+    "business_model": "E-commerce e marketplace",
+    "employees": "11-50",
+    "tier": "B",
+    "score_total": 78,
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 7,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 78
+    },
+    "primary_signal": {
+      "fact": "Quattro annunci aperti su LinkedIn per ottici e addetti alla vendita a Modena e Parma, a tempo indeterminato.",
+      "url": "https://www.linkedin.com/jobs/view/ottico-diplomato-o-addetto-alla-vendite-esperto-at-ottica-dalpasso-4465032303",
+      "date": "2026-09-09"
+    },
+    "evidence_url": "https://www.linkedin.com/jobs/view/ottico-diplomato-o-addetto-alla-vendite-esperto-at-ottica-dalpasso-4465032303",
+    "legal_pains": [
+      "Contratti di locazione e fornitura per i centri in cinque città",
+      "Contratti e inquadramento per le nuove assunzioni a Modena e Parma",
+      "Condizioni di vendita e privacy del negozio online"
+    ],
+    "buyer": {
+      "name": "Sara Catellani Dalpasso",
+      "title": "Co-titolare e coordinatrice dei centri ottici",
+      "source_url": "https://www.linkedin.com/in/sara-catellani-dalpasso-765249219/",
+      "role_match": "primario"
+    },
+    "outreach_angle": "Ottica Dalpasso sta assumendo in più centri ottici. Contratti di lavoro e regole del negozio online sono temi ricorrenti per una catena in crescita: Iusful li segue con un avvocato dedicato.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [],
+    "evaluation_date": "2026-10-04",
+    "notes": "Candidato da Clay. Annunci trovati da Clay (Open Jobs) il 04/10/2026 e verificati sulla pagina LinkedIn. Clay conta 31 persone collegate alla pagina, coerente con la fascia 11-50. Il 4 ottobre 2026 Clay ha trovato 'Dalpasso Protesi Oculari' come azienda separata: è la stessa Dalpasso S.r.l. (P.IVA 01432940359), quindi niente nuovo lead. Il dominio non basta come chiave: serve la partita IVA."
+  },
+  {
+    "id": "cucciolotta",
+    "company_name": "IT Design srl (Cucciolotta)",
+    "domain": "cucciolotta.com",
+    "website": "https://cucciolotta.com",
+    "city": "Giaveno",
+    "business_model": "E-commerce e marketplace",
+    "employees": "13",
+    "tier": "B",
+    "score_total": 77,
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 12,
+      "buyer_availability": 4,
+      "evidence_quality": 9,
+      "total": 77
+    },
+    "primary_signal": {
+      "fact": "L'export è cresciuto del 12% in Francia, Belgio, Germania, Paesi Bassi, Danimarca e Repubblica Ceca.",
+      "url": "https://www.cuneo24.it/2026/07/le-pmi-piemontesi-nella-top-10-italiana-di-amazon-piu-170-milioni-di-euro-di-vendite-351339/",
+      "date": "2026-07-23"
+    },
+    "evidence_url": "https://www.cuneo24.it/2026/07/le-pmi-piemontesi-nella-top-10-italiana-di-amazon-piu-170-milioni-di-euro-di-vendite-351339/",
+    "legal_pains": [
+      "Condizioni di vendita e garanzie per clienti in sei paesi europei",
+      "Tutela dei prodotti brevettati e del marchio sui marketplace esteri"
+    ],
+    "buyer": {
+      "name": "Francesco Polito",
+      "title": "Responsabile vendite Italia",
+      "source_url": "https://www.cuneo24.it/2026/07/le-pmi-piemontesi-nella-top-10-italiana-di-amazon-piu-170-milioni-di-euro-di-vendite-351339/",
+      "role_match": "nome senza ruolo"
+    },
+    "outreach_angle": "Cucciolotta ha fatto crescere del 12% l'export dei suoi pollai e cucce in HPL in sei paesi europei. Vendere all'estero prodotti brevettati porta condizioni di vendita e tutela del marchio da gestire paese per paese: Iusful li segue con un avvocato dedicato.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [],
+    "evaluation_date": "2026-10-04",
+    "notes": "Nessun round VC trovato; ANSA (2024) la chiama startup ma senza investitori. Da trovare il CEO o l'amministratore: con il ruolo giusto sale al Tier A."
+  },
+  {
+    "id": "unaloe",
+    "company_name": "UNALOE (Ferrara Giovanni)",
+    "domain": "unaloe.it",
+    "website": "https://unaloe.it",
+    "city": "OroMare (Campania)",
+    "business_model": "E-commerce e marketplace",
+    "employees": "1",
+    "tier": "B",
+    "score_total": 77,
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 12,
+      "buyer_availability": 4,
+      "evidence_quality": 9,
+      "total": 77
+    },
+    "primary_signal": {
+      "fact": "Esporta quasi l'80% del fatturato in Canada, Stati Uniti, Australia e in tutta Europa.",
+      "url": "https://www.businessonline.it/news/le-pmi-italiane-vendono-4-miliardi-su-amazon-chi-sono-quali-prodotti-offrono-e-le-storie-pi-emblematiche_n85972.html",
+      "date": "2026-07-24"
+    },
+    "evidence_url": "https://www.businessonline.it/news/le-pmi-italiane-vendono-4-miliardi-su-amazon-chi-sono-quali-prodotti-offrono-e-le-storie-pi-emblematiche_n85972.html",
+    "legal_pains": [
+      "Condizioni di vendita, garanzie e recesso per clienti extra UE",
+      "Trasferimenti di dati dei clienti verso paesi extra UE"
+    ],
+    "buyer": {
+      "name": "Giovanni Ferrara",
+      "title": null,
+      "source_url": "https://www.unaloe.it/il-territorio/",
+      "role_match": "nome senza ruolo"
+    },
+    "outreach_angle": "UNALOE esporta quasi l'80% del fatturato tra Europa, Stati Uniti, Canada e Australia, dal proprio negozio online. Vendere in così tanti paesi vuol dire condizioni di vendita e privacy da adattare: Iusful offre un avvocato dedicato con un costo mensile noto.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [],
+    "evaluation_date": "2026-10-03",
+    "notes": "Ditta individuale con 1 dipendente. Nessun round VC trovato."
+  },
+  {
+    "id": "drako",
+    "company_name": "Drako Legacy srl (Drako.it)",
+    "domain": "drako.it",
+    "website": "https://drako.it",
+    "city": "Milano",
+    "business_model": "E-commerce e marketplace",
+    "employees": "2-10",
+    "tier": "B",
+    "score_total": 73,
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 17,
+      "buying_signals": 7,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 73
+    },
+    "primary_signal": {
+      "fact": "Annuncio aperto per un commerciale / addetto vendite a Milano o Mantova.",
+      "url": "https://www.drako.it/drako_catalog/info/lavora-con-noi",
+      "date": "2026-10-04"
+    },
+    "evidence_url": "https://www.drako.it/drako_catalog/info/lavora-con-noi",
+    "legal_pains": [
+      "Contratto e inquadramento del nuovo commerciale",
+      "Garanzie, recesso e resi nella vendita online di elettronica",
+      "Privacy e dati dei clienti del negozio online"
+    ],
+    "buyer": {
+      "name": "Alexander Marfia",
+      "title": "Fondatore e CEO",
+      "source_url": "https://www.drako.it/drako_catalog/info/chi-siamo",
+      "role_match": "primario"
+    },
+    "outreach_angle": "Drako vende hardware online dal 2001 e sta cercando un commerciale per Milano o Mantova. Un nuovo assunto porta contratto e inquadramento, mentre la vendita online richiede garanzie e resi chiari: Iusful segue entrambi con un avvocato dedicato.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [],
+    "evaluation_date": "2026-10-04",
+    "notes": "Candidato da Clay (Find Companies). Nessun round VC trovato."
+  },
+  {
+    "id": "acqualagnatartufi",
+    "company_name": "Acqualagna Tartufi srl",
+    "domain": "acqualagnatartufi.com",
+    "website": "https://acqualagnatartufi.com",
+    "city": "Acqualagna",
+    "business_model": "E-commerce e marketplace",
+    "employees": "11-50",
+    "tier": "B",
+    "score_total": 71,
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 0,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 71
+    },
+    "primary_signal": {
+      "fact": "Negozio online Tartufi e Sapori e sito in sei lingue.",
+      "url": "https://www.acqualagnatartufi.com/",
+      "date": null
+    },
+    "evidence_url": "https://www.acqualagnatartufi.com/",
+    "legal_pains": [
+      "Contratti con importatori e distributori esteri",
+      "Condizioni di vendita del negozio online per clienti di più paesi"
+    ],
+    "buyer": {
+      "name": "Emanuela Bartolucci",
+      "title": "Amministratore Unico",
+      "source_url": "https://www.acqualagnatartufi.com/chi-siamo/",
+      "role_match": "primario"
+    },
+    "outreach_angle": "Acqualagna Tartufi vende tartufi in gran parte d'Europa, in Asia, in America Latina e in Medio Oriente, anche online. Contratti con importatori e condizioni di vendita valide in più paesi sono temi ricorrenti: Iusful li segue con un avvocato dedicato.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [],
+    "evaluation_date": "2026-10-04",
+    "notes": "Candidato da Clay. Buyer da Clay confermato dal sito aziendale. Nessun round VC trovato."
+  },
+  {
+    "id": "ilgiardinodeilibri",
+    "company_name": "Il Giardino dei Libri srl",
+    "domain": "ilgiardinodeilibri.it",
+    "website": "https://ilgiardinodeilibri.it",
+    "city": "Bellaria-Igea Marina",
+    "business_model": "E-commerce e marketplace",
+    "employees": "40",
+    "tier": "B",
+    "score_total": 71,
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 0,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 71
+    },
+    "primary_signal": {
+      "fact": "E-commerce dal 1998, circa 1.000 ordini spediti ogni giorno.",
+      "url": "https://www.ilgiardinodeilibri.it/chi_siamo.php",
+      "date": null
+    },
+    "evidence_url": "https://www.ilgiardinodeilibri.it/chi_siamo.php",
+    "legal_pains": [
+      "Condizioni di vendita e recesso per clienti italiani ed esteri",
+      "Gestione dei dati di oltre 230.000 iscritti alla newsletter"
+    ],
+    "buyer": {
+      "name": "Luca Gori",
+      "title": "Guida l'azienda con Rosa Tumolo",
+      "source_url": "https://www.ilgiardinodeilibri.it/chi_siamo.php",
+      "role_match": "primario"
+    },
+    "outreach_angle": "Il Giardino dei Libri spedisce circa 1.000 ordini al giorno, anche all'estero, e ha più di 230.000 iscritti alla newsletter. Condizioni di vendita e dati dei clienti vanno tenuti in ordine di continuo: Iusful lo fa con un avvocato dedicato.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [],
+    "evaluation_date": "2026-10-04",
+    "notes": "Candidato da Clay; Clay non ha trovato persone, i nomi sono sul sito. Candidata al Netcomm Award 2023. Nessun round VC trovato."
+  },
+  {
+    "id": "all4cycling",
+    "company_name": "Lunar Sport srl (All4cycling)",
+    "domain": "all4cycling.com",
+    "website": "https://all4cycling.com",
+    "city": "Gazzada Schianno",
+    "business_model": "E-commerce e marketplace",
+    "employees": "11-50",
+    "tier": "B",
+    "score_total": 71,
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 0,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 71
+    },
+    "primary_signal": {
+      "fact": "Negozio online di ciclismo con più di 300 marchi.",
+      "url": "https://www.all4cycling.com/",
+      "date": null
+    },
+    "evidence_url": "https://www.all4cycling.com/",
+    "legal_pains": [
+      "Patti tra soci con Sportler, socio di maggioranza",
+      "Condizioni di vendita per clienti in più paesi europei"
+    ],
+    "buyer": {
+      "name": "Luca Nardello",
+      "title": "Founder & CEO",
+      "source_url": "https://www.malpensa24.it/varse-sportler-all4cycling-nardello-acquisizione/",
+      "role_match": "primario"
+    },
+    "outreach_angle": "All4cycling vende ciclismo online in quattro lingue e dal 2021 ha Sportler come socio di maggioranza. Rapporti tra soci e vendite estere sono temi che si ripresentano: Iusful li segue con un avvocato dedicato e un costo mensile noto.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [],
+    "evaluation_date": "2026-10-04",
+    "notes": "Candidato da Clay. Non è un fondo VC: Nardello dichiarava di cercare un partner strategico, non un investitore finanziario. Dubbio rivisto a mano il 04/10/2026: è controllata all'80% da Sportler spa, gruppo italiano; le controllate di gruppi italiani non sono escluse (docs/decisions.md)."
+  },
+  {
+    "id": "buyleatheronline",
+    "company_name": "Mapel & C. srl (BuyLeatherOnline)",
+    "domain": "buyleatheronline.com",
+    "website": "https://buyleatheronline.com",
+    "city": "Ponte a Egola",
+    "business_model": "E-commerce e marketplace",
+    "employees": "11-50",
+    "tier": "B",
+    "score_total": 71,
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 0,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 71
+    },
+    "primary_signal": {
+      "fact": "Negozio online di pelli in quattro lingue con spedizioni in tutto il mondo.",
+      "url": "https://www.buyleatheronline.com/",
+      "date": null
+    },
+    "evidence_url": "https://www.buyleatheronline.com/",
+    "legal_pains": [
+      "Condizioni di vendita e garanzie per clienti in più continenti",
+      "Regole del negozio online per clienti privati e aziende di più paesi"
+    ],
+    "buyer": {
+      "name": "Carlo Ciardi",
+      "title": "CEO",
+      "source_url": "https://www.mapelec.it/en/about-us-leather-wholesale/",
+      "role_match": "primario"
+    },
+    "outreach_angle": "BuyLeatherOnline vende pelli italiane online in quattro lingue, con clienti in Europa, Africa e Asia. Vendere a privati e aziende di tanti paesi porta condizioni di vendita e garanzie da adattare: Iusful le segue con un avvocato dedicato.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [],
+    "evaluation_date": "2026-10-04",
+    "notes": "Candidato da Clay; Clay non ha trovato persone, il CEO è sul sito Mapel. Da non confondere con Mapel Group, acquisita da Rino Mastrotto."
+  },
+  {
+    "id": "yeseatis",
+    "company_name": "Mikand Way srl (YesEatIs)",
+    "domain": "yeseatis.com",
+    "website": "https://yeseatis.com",
+    "city": "Varedo",
+    "business_model": "E-commerce e marketplace",
+    "employees": "2-10",
+    "tier": "B",
+    "score_total": 71,
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 0,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 71
+    },
+    "primary_signal": {
+      "fact": "E-commerce proprio in sei lingue e vendita sui marketplace internazionali.",
+      "url": "https://www.yeseatis.com/",
+      "date": null
+    },
+    "evidence_url": "https://www.yeseatis.com/",
+    "legal_pains": [
+      "Condizioni di vendita alimentari per consumatori di più paesi",
+      "Informative privacy e consensi del sito multilingue"
+    ],
+    "buyer": {
+      "name": "Michele Berti",
+      "title": "Owner and Founder",
+      "source_url": "https://www.linkedin.com/in/micheleberti/",
+      "role_match": "primario"
+    },
+    "outreach_angle": "YesEatIs vende enogastronomia italiana in sei lingue ed esporta più di 30.000 prodotti nel mondo. Vendere cibo online a consumatori di tanti paesi porta condizioni di vendita e privacy da tenere allineate: Iusful le segue con un avvocato dedicato.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [],
+    "evaluation_date": "2026-10-04",
+    "notes": "Candidato da Clay. Mikand Way offre anche consulenza su Amazon ad altre aziende: attività secondaria, non un'agenzia. Nessun round VC trovato."
+  },
+  {
+    "id": "caffebarbaro",
+    "company_name": "Nutis srl (Caffè Barbaro)",
+    "domain": "caffebarbaro.it",
+    "website": "https://caffebarbaro.it",
+    "city": "Scafati",
+    "business_model": "E-commerce e marketplace",
+    "employees": "11-50",
+    "tier": "B",
+    "score_total": 71,
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 0,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 71
+    },
+    "primary_signal": {
+      "fact": "Vende online sul proprio sito e su Temu.",
+      "url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/",
+      "date": null
+    },
+    "evidence_url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/",
+    "legal_pains": [
+      "Contratti con distributori e clienti esteri",
+      "Condizioni di vendita e privacy del negozio online"
+    ],
+    "buyer": {
+      "name": "Giovanni Iovine",
+      "title": "CEO",
+      "source_url": "https://caffebarbaro.com/pages/about-us",
+      "role_match": "primario"
+    },
+    "outreach_angle": "Caffè Barbaro porta l'espresso napoletano dal 1956 in mercati che vanno dalla Cina agli Stati Uniti, e ora vende anche online. Contratti con distributori esteri e regole del negozio online sono temi ricorrenti: Iusful li segue con un avvocato dedicato e un costo mensile noto.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [],
+    "evaluation_date": "2026-10-04",
+    "notes": "Il riassunto automatico dell'articolo attribuiva a Caffè Barbaro 'oltre 90 mercati': nel testo la frase riguarda Temu. Corretto prima dello score."
+  },
+  {
+    "id": "samplelover",
+    "company_name": "Sample Lover",
+    "domain": "samplelover.it",
+    "website": "https://samplelover.it",
+    "city": "Milano",
+    "business_model": "E-commerce e marketplace",
+    "employees": "2-10",
+    "tier": "B",
+    "score_total": 71,
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 0,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 71
+    },
+    "primary_signal": {
+      "fact": "Vende online campionari di marchi terzi con vendite a tempo.",
+      "url": "https://samplelover.it/",
+      "date": null
+    },
+    "evidence_url": "https://samplelover.it/",
+    "legal_pains": [
+      "Contratti di conto vendita con i marchi che affidano i campionari",
+      "Uso dei marchi altrui nelle vendite online",
+      "Condizioni di vendita per clienti di più paesi"
+    ],
+    "buyer": {
+      "name": "Rossana Ammaturo",
+      "title": "Founder",
+      "source_url": "https://www.linkedin.com/in/rossana-ammaturo-885a1890/",
+      "role_match": "primario"
+    },
+    "outreach_angle": "Sample Lover vende online i campionari di tanti marchi, in tre lingue. Ogni marchio porta un contratto e l'uso del suo nome, e i clienti esteri regole di vendita diverse: Iusful li segue con un avvocato dedicato e un costo mensile noto.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [],
+    "evaluation_date": "2026-10-04",
+    "notes": "Candidato da Clay. Nel 2022 Pambianco scriveva che guardava a investitori esterni; nessun round trovato, quindi non è un indizio di esclusione."
+  },
+  {
+    "id": "secretkey",
+    "company_name": "Secret Key Web Agency",
+    "domain": "secretkey.it",
+    "website": "https://secretkey.it",
+    "city": "Roma",
+    "business_model": "Servizi digitali",
+    "employees": "11-50",
+    "tier": "B",
+    "score_total": 70,
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 13,
+      "buying_signals": 7,
+      "buyer_availability": 10,
+      "evidence_quality": 10,
+      "total": 70
+    },
+    "primary_signal": {
+      "fact": "Pagina lavora con noi con posizioni aperte per UI/UX designer e graphic designer.",
+      "url": "https://www.secretkey.it/job/",
+      "date": "2026-10-04"
+    },
+    "evidence_url": "https://www.secretkey.it/job/",
+    "legal_pains": [
+      "Contratti di servizio e limiti di responsabilità con i clienti",
+      "Nomine a responsabile del trattamento per i dati dei clienti nelle campagne",
+      "Contratti per i nuovi designer e specialisti"
+    ],
+    "buyer": {
+      "name": "Enrico Ferretti",
+      "title": "CEO e Founder",
+      "source_url": "https://www.secretkey.it/blog/author/enrico-ferretti/",
+      "role_match": "primario"
+    },
+    "outreach_angle": "Secret Key gestisce campagne e siti per clienti di molti settori e sta assumendo. Contratti di servizio, dati dei clienti e nuove assunzioni sono temi continui: Iusful li segue con un avvocato dedicato.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [],
+    "evaluation_date": "2026-10-04",
+    "notes": "Segmento servizi B2B (gruppo 5), trovato con Clay; annunci trovati sulla pagina lavora con noi (strada 2). P.IVA 12207031001."
+  },
+  {
+    "id": "bottega52",
+    "company_name": "Bottega52",
+    "domain": "bottega52.it",
+    "website": "https://bottega52.it",
+    "city": "Milano",
+    "business_model": "Servizi digitali",
+    "employees": "11-50",
+    "tier": "B",
+    "score_total": 69,
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 13,
+      "buying_signals": 7,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 69
+    },
+    "primary_signal": {
+      "fact": "Cerca sviluppatori junior e senior, un cloud architect e un technical account manager.",
+      "url": "https://bottega52.it/azienda/lavora-con-noi?hsLang=it",
+      "date": "2026-10-04"
+    },
+    "evidence_url": "https://bottega52.it/azienda/lavora-con-noi?hsLang=it",
+    "legal_pains": [
+      "SLA e limiti di responsabilità per la gestione 24/7 dei sistemi dei clienti",
+      "Nomine a responsabile del trattamento per i dati gestiti nel cloud",
+      "Contratti per sviluppatori e cloud architect"
+    ],
+    "buyer": {
+      "name": "Riccardo Cattaneo",
+      "title": "CEO",
+      "source_url": "https://www.cbinsights.com/company/bottega52",
+      "role_match": "primario"
+    },
+    "outreach_angle": "Bottega52 gestisce 24/7 le piattaforme cloud dei clienti e sta assumendo sviluppatori. SLA, dati dei clienti e contratti di lavoro sono temi continui: Iusful li segue con un avvocato dedicato.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [],
+    "evaluation_date": "2026-10-04",
+    "notes": "Segmento servizi B2B (gruppo 5), trovato con Clay; annunci sulla pagina lavora con noi (strada 2). Sede legale a Lodi, operativa a Milano. CB Insights indica come unico investitore PoliHub (incubatore del Politecnico di Milano): non è un fondo VC, nessun round VC trovato."
+  },
+  {
+    "id": "guicciardini",
+    "company_name": "Poliambulatorio Guicciardini srl",
+    "domain": "guicciardini.pc.it",
+    "website": "https://guicciardini.pc.it",
+    "city": "Piacenza",
+    "business_model": "Sanità e formazione",
+    "employees": "non verificati",
+    "tier": "B",
+    "score_total": 68,
+    "score": {
+      "company_fit": 20,
+      "legal_complexity": 22,
+      "buying_signals": 7,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 68
+    },
+    "primary_signal": {
+      "fact": "Inaugurato a fine luglio 2026 un nuovo polo con 24 ambulatori e blocco operatorio.",
+      "url": "https://www.ilpiacenza.it/salute/nuovo-polo-per-la-sanita-privata-d-eccellenza-apre-il-poliambulatorio-guicciardini.html",
+      "date": "2026-07-29"
+    },
+    "evidence_url": "https://www.ilpiacenza.it/salute/nuovo-polo-per-la-sanita-privata-d-eccellenza-apre-il-poliambulatorio-guicciardini.html",
+    "legal_pains": [
+      "Registro dei trattamenti, informative e DPIA per dati sanitari e genetici",
+      "Contratti con i medici liberi professionisti e con i fornitori",
+      "Sicurezza dei sistemi per referti e prenotazioni online"
+    ],
+    "buyer": {
+      "name": "Nawal Loubadi",
+      "title": "Direttore Operativo",
+      "source_url": "https://www.ilpiacenza.it/salute/nuovo-polo-per-la-sanita-privata-d-eccellenza-apre-il-poliambulatorio-guicciardini.html",
+      "role_match": "primario"
+    },
+    "outreach_angle": "Il Poliambulatorio Guicciardini ha aperto a luglio 2026 un polo con 24 ambulatori e day surgery. Dati sanitari, contratti con i medici e fornitori sono temi continui: Iusful li segue con un avvocato dedicato.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [
+      "dipendenti_non_verificati"
+    ],
+    "evaluation_date": "2026-10-04",
+    "notes": "Segmento sanità e formazione (4 ottobre 2026). P.IVA 01907140337. Tier B per i dipendenti non verificati: va controllato il numero prima del contatto."
+  },
+  {
+    "id": "kalucreations",
+    "company_name": "Marmeria Russo Luca & C. sas (Kalu Creations)",
+    "domain": "marmeriarussoluca.it",
+    "website": "https://marmeriarussoluca.it",
+    "city": "Vernole",
+    "business_model": "E-commerce e marketplace",
+    "employees": "non verificati",
+    "tier": "B",
+    "score_total": 67,
+    "score": {
+      "company_fit": 20,
+      "legal_complexity": 22,
+      "buying_signals": 12,
+      "buyer_availability": 4,
+      "evidence_quality": 9,
+      "total": 67
+    },
+    "primary_signal": {
+      "fact": "Oggetti in marmo apprezzati in tutta Europa; citata come caso di internazionalizzazione delle PMI pugliesi.",
+      "url": "https://www.borderline24.com/2026/07/24/la-puglia-del-digitale-corre-su-amazon-quarto-posto-in-italia-con-250-milioni-di-vendite-superato-il-veneto/",
+      "date": "2026-07-24"
+    },
+    "evidence_url": "https://www.borderline24.com/2026/07/24/la-puglia-del-digitale-corre-su-amazon-quarto-posto-in-italia-con-250-milioni-di-vendite-superato-il-veneto/",
+    "legal_pains": [
+      "Condizioni di vendita per clienti in più paesi europei",
+      "Tutela del marchio Kalu Creations sui marketplace"
+    ],
+    "buyer": {
+      "name": "Luca Russo",
+      "title": null,
+      "source_url": "https://www.marmeriarussoluca.it/it/kalu-creations",
+      "role_match": "nome senza ruolo"
+    },
+    "outreach_angle": "Kalu Creations porta il marmo pugliese sulle tavole di tutta Europa tramite la vetrina Made in Italy di Amazon. Vendere all'estero con un proprio marchio richiede condizioni di vendita e tutela del marchio pensate per più paesi: Iusful le segue con un avvocato dedicato.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [
+      "dipendenti_non_verificati"
+    ],
+    "evaluation_date": "2026-10-04",
+    "notes": "Fonte del candidato: comunicato regionale Amazon. Da verificare i dipendenti (visura) e il ruolo di Luca Russo."
+  },
+  {
+    "id": "perledarte",
+    "company_name": "Perle d'Arte di Tumiotto Chiara & C. snc",
+    "domain": "perledarte.it",
+    "website": "https://perledarte.it",
+    "city": "Monastier di Treviso",
+    "business_model": "E-commerce e marketplace",
+    "employees": "non verificati",
+    "tier": "B",
+    "score_total": 65,
+    "score": {
+      "company_fit": 20,
+      "legal_complexity": 22,
+      "buying_signals": 12,
+      "buyer_availability": 4,
+      "evidence_quality": 7,
+      "total": 65
+    },
+    "primary_signal": {
+      "fact": "Vende soprattutto sul mercato internazionale: USA, Germania e Gran Bretagna.",
+      "url": "https://www.businessonline.it/news/le-pmi-italiane-vendono-4-miliardi-su-amazon-chi-sono-quali-prodotti-offrono-e-le-storie-pi-emblematiche_n85972.html",
+      "date": "2026-07-24"
+    },
+    "evidence_url": "https://www.businessonline.it/news/le-pmi-italiane-vendono-4-miliardi-su-amazon-chi-sono-quali-prodotti-offrono-e-le-storie-pi-emblematiche_n85972.html",
+    "legal_pains": [
+      "Condizioni di vendita per clienti negli Stati Uniti, in Germania e nel Regno Unito",
+      "Tutela del marchio CHIARTE all'estero"
+    ],
+    "buyer": {
+      "name": "Chiara Tumiotto",
+      "title": null,
+      "source_url": "http://www.casa21.it/index.php/sermons/chiarte/",
+      "role_match": "nome senza ruolo"
+    },
+    "outreach_angle": "Perle d'Arte vende vetro decorato a mano soprattutto negli Stati Uniti, in Germania e nel Regno Unito. Vendere all'estero porta condizioni di vendita diverse e la tutela del marchio CHIARTE: Iusful le segue con un avvocato dedicato.",
+    "verification": {
+      "status": "superata",
+      "reason": "Fonti e buyer confermati"
+    },
+    "flags": [
+      "dipendenti_non_verificati"
+    ],
+    "evaluation_date": "2026-10-04",
+    "notes": "Candidato dal report Amazon sulle PMI (Businessonline, 24/07/2026). Tier B per i dipendenti non verificati: prima di contattarla serve la fascia di dipendenti."
+  }
+]

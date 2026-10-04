@@ -1,0 +1,22 @@
+{
+  "run_name": "Esecuzione del 2026-10-04: 40 candidati",
+  "date": "2026-10-04",
+  "candidates": 40,
+  "qualified": 25,
+  "tier_a": 7,
+  "tier_b": 18,
+  "tier_c": 8,
+  "rejected": 7,
+  "rejection_reasons": {
+    "startup_finanziata_vc": 3,
+    "oltre_50_dipendenti": 2,
+    "score_sotto_50": 1,
+    "filiale_gruppo_estero": 1
+  },
+  "missing_buyer": 5,
+  "unverified_employees": 5,
+  "with_recent_signal": 24,
+  "to_review": 0,
+  "qualification_rate": 62.5,
+  "weekly_notes": ""
+}

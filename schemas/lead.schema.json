@@ -1,0 +1,666 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/DC-09/GTM-MVP/schemas/lead.schema.json",
+  "title": "Lead Iusful GTM",
+  "description": "Un'azienda valutata con docs/icp.md e docs/scoring.md. Vale per tutti i lead valutati (A, B, C e scartati); a n8n si esportano solo quelli con status QUALIFIED. Il file dati è un array di questi oggetti.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "company_name",
+    "domain",
+    "evaluation_date",
+    "status",
+    "tier",
+    "facts",
+    "signals",
+    "legal_pains",
+    "buyer",
+    "evidence_deductions",
+    "sources",
+    "score",
+    "score_reason",
+    "flags",
+    "exclusion_reason",
+    "outreach_angle"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Slug unico, di solito dal dominio."
+    },
+    "company_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "domain": {
+      "type": "string",
+      "pattern": "^(?!https?://)[a-z0-9.-]+\\.[a-z]{2,}$",
+      "description": "Dominio senza protocollo né www."
+    },
+    "evaluation_date": {
+      "$ref": "#/$defs/fullDate"
+    },
+    "status": {
+      "enum": [
+        "QUALIFIED",
+        "RESERVE",
+        "REJECTED"
+      ],
+      "description": "QUALIFIED = Tier A o B; RESERVE = Tier C; REJECTED = scartato."
+    },
+    "tier": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "REJECT"
+      ]
+    },
+    "facts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "country",
+        "city",
+        "employees",
+        "revenue_eur",
+        "business_model",
+        "innovative_registry"
+      ],
+      "properties": {
+        "country": {
+          "$ref": "#/$defs/textFact"
+        },
+        "city": {
+          "$ref": "#/$defs/textFact"
+        },
+        "employees": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "range_min",
+            "range_max",
+            "source_url",
+            "source_says_unverified",
+            "note"
+          ],
+          "description": "Numero esatto (value) oppure fascia (range_min-range_max) da una fonte con URL. range_max null = fascia aperta ('oltre 70'). Mai stimato.",
+          "properties": {
+            "value": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "range_min": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "range_max": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "source_url": {
+              "$ref": "#/$defs/urlOrNull"
+            },
+            "source_says_unverified": {
+              "type": "boolean",
+              "description": "true se la fonte stessa indica il dato come stimato o da verificare."
+            },
+            "note": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "revenue_eur": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "range_min",
+            "range_max",
+            "year",
+            "source_url"
+          ],
+          "properties": {
+            "value": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "range_min": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "range_max": {
+              "type": [
+                "number",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "year": {
+              "type": [
+                "integer",
+                "null"
+              ]
+            },
+            "source_url": {
+              "$ref": "#/$defs/urlOrNull"
+            }
+          },
+          "description": "Valore esatto (value) oppure fascia (range_min-range_max) da una fonte con URL. range_max null = fascia aperta ('oltre N')."
+        },
+        "business_model": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "value",
+            "description",
+            "source_url"
+          ],
+          "properties": {
+            "value": {
+              "enum": [
+                "B2B",
+                "SaaS e piattaforme digitali",
+                "E-commerce e marketplace",
+                "Servizi digitali",
+                "Tech",
+                "Agenzie strutturate",
+                "Aziende innovative",
+                "Servizi B2C",
+                "Sanità e formazione",
+                "Fuori elenco",
+                null
+              ]
+            },
+            "description": {
+              "type": "string",
+              "description": "Cosa vende, max 25 parole, dalla fonte."
+            },
+            "source_url": {
+              "$ref": "#/$defs/urlOrNull"
+            }
+          }
+        },
+        "innovative_registry": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "section",
+            "source_url"
+          ],
+          "description": "Iscrizione alla sezione speciale del Registro delle imprese. Necessaria per il modello 'Aziende innovative'.",
+          "properties": {
+            "section": {
+              "enum": [
+                "startup innovativa",
+                "PMI innovativa",
+                null
+              ]
+            },
+            "source_url": {
+              "$ref": "#/$defs/urlOrNull"
+            }
+          }
+        }
+      }
+    },
+    "signals": {
+      "type": "array",
+      "description": "Fatti osservati che corrispondono a una riga della mappa di docs/icp.md §4.1. Solo con URL.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "map_row",
+          "observed_fact",
+          "url",
+          "date",
+          "date_basis",
+          "date_as_in_source"
+        ],
+        "properties": {
+          "map_row": {
+            "$ref": "#/$defs/mapRow"
+          },
+          "observed_fact": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Cosa dice la fonte, senza interpretazioni."
+          },
+          "evidence_quote": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Frase breve copiata testualmente dalla fonte che prova il fatto. Obbligatoria per i segnali che danno punti nei lead QUALIFIED: scripts/verify_sources.py la cerca nella pagina."
+          },
+          "url": {
+            "$ref": "#/$defs/url"
+          },
+          "date": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^\\d{4}(-\\d{2}(-\\d{2})?)?$",
+            "description": "YYYY-MM-DD, YYYY-MM o YYYY. Con date_basis 'fonte' è la data scritta nella fonte; con 'consultazione' è il giorno in cui l'annuncio è stato visto online. null se non c'è data."
+          },
+          "date_basis": {
+            "enum": [
+              "fonte",
+              "consultazione",
+              null
+            ],
+            "description": "'fonte' = data scritta nella fonte; 'consultazione' = annuncio di lavoro ancora online senza data, datato al giorno della consultazione (docs/scoring.md §2.3). null se date è null."
+          },
+          "date_as_in_source": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "legal_pains": {
+      "type": "array",
+      "maxItems": 3,
+      "description": "Bisogni legali plausibili: sono inferenze, non fatti.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "pain",
+          "area",
+          "basis"
+        ],
+        "properties": {
+          "pain": {
+            "type": "string",
+            "minLength": 1
+          },
+          "area": {
+            "$ref": "#/$defs/area"
+          },
+          "basis": {
+            "enum": [
+              "inferenza",
+              "ipotesi"
+            ]
+          }
+        }
+      }
+    },
+    "buyer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "title",
+        "source_url",
+        "linkedin_url",
+        "email",
+        "scenario",
+        "role_match",
+        "reason"
+      ],
+      "properties": {
+        "name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_url": {
+          "$ref": "#/$defs/urlOrNull"
+        },
+        "linkedin_url": {
+          "$ref": "#/$defs/urlOrNull"
+        },
+        "email": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Solo da enrichment o verifica. Mai costruita a mano."
+        },
+        "scenario": {
+          "enum": [
+            "1-5",
+            "5-10",
+            "5-15 generale",
+            "15-50 generale",
+            "15-50 operations complesse",
+            "hiring intenso",
+            "SaaS / AI e privacy",
+            "fundraising / governance",
+            "clienti su più paesi"
+          ]
+        },
+        "role_match": {
+          "enum": [
+            "primario",
+            "alternativa",
+            "solo ruolo",
+            "nome senza ruolo",
+            "unclear"
+          ],
+          "description": "primario 10, alternativa 7, solo ruolo o nome senza ruolo 4, unclear 0 (docs/scoring.md §2.4)."
+        },
+        "reason": {
+          "type": "string",
+          "description": "Perché questa persona possiede il problema, max 30 parole."
+        }
+      }
+    },
+    "evidence_deductions": {
+      "type": "array",
+      "description": "Sottrazioni a evidence_quality (docs/scoring.md §2.5).",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "code",
+          "detail"
+        ],
+        "properties": {
+          "code": {
+            "enum": [
+              "fatturato_mancante",
+              "nessuna_fonte_primaria",
+              "dato_non_verificato"
+            ]
+          },
+          "detail": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "url",
+          "type",
+          "accessed"
+        ],
+        "properties": {
+          "url": {
+            "$ref": "#/$defs/url"
+          },
+          "type": {
+            "enum": [
+              "primaria",
+              "secondaria"
+            ],
+            "description": "primaria = pagine dell'azienda stessa."
+          },
+          "accessed": {
+            "$ref": "#/$defs/fullDate"
+          }
+        }
+      }
+    },
+    "score": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "company_fit",
+        "legal_complexity",
+        "buying_signals",
+        "buyer_availability",
+        "evidence_quality",
+        "total"
+      ],
+      "properties": {
+        "company_fit": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 30
+        },
+        "legal_complexity": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 25
+        },
+        "buying_signals": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 25
+        },
+        "buyer_availability": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "evidence_quality": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "total": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    },
+    "score_reason": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "company_fit",
+        "legal_complexity",
+        "buying_signals",
+        "buyer_availability",
+        "evidence_quality"
+      ],
+      "properties": {
+        "company_fit": {
+          "type": "string",
+          "minLength": 1
+        },
+        "legal_complexity": {
+          "type": "string",
+          "minLength": 1
+        },
+        "buying_signals": {
+          "type": "string",
+          "minLength": 1
+        },
+        "buyer_availability": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_quality": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "flags": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "fuori_piani_pubblici_da_verificare",
+          "dipendenti_non_verificati"
+        ]
+      }
+    },
+    "exclusion_reason": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "rule",
+            "url",
+            "detail"
+          ],
+          "properties": {
+            "rule": {
+              "enum": [
+                "oltre_50_dipendenti",
+                "nessun_dipendente",
+                "fuori_italia",
+                "studio_legale",
+                "micro_locale_senza_complessita",
+                "startup_finanziata_vc",
+                "filiale_gruppo_estero",
+                "fatturato_oltre_X"
+              ]
+            },
+            "url": {
+              "$ref": "#/$defs/url"
+            },
+            "detail": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "doubts": {
+      "type": "array",
+      "description": "Dubbi davvero aperti che solo una persona può risolvere. Oggi un solo tipo: un indizio concreto di esclusione (fondo VC, oltre 50 o zero dipendenti, gruppo estero) che non si riesce né a confermare né a smentire. Non si usa per dati semplicemente mancanti.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "detail",
+          "url"
+        ],
+        "properties": {
+          "type": {
+            "enum": [
+              "possibile_esclusione"
+            ]
+          },
+          "detail": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "$ref": "#/$defs/urlOrNull"
+          }
+        }
+      }
+    },
+    "outreach_angle": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Obbligatorio per i QUALIFIED: parte da un fatto verificato, non afferma che l'azienda ha un problema legale."
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "$defs": {
+    "fullDate": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^https?://\\S+$"
+    },
+    "urlOrNull": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^https?://\\S+$"
+    },
+    "textFact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "value",
+        "source_url"
+      ],
+      "properties": {
+        "value": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_url": {
+          "$ref": "#/$defs/urlOrNull"
+        }
+      }
+    },
+    "area": {
+      "enum": [
+        "Dati & privacy",
+        "Societario",
+        "Lavoro & persone",
+        "Contratti",
+        "Proprietà intellettuale",
+        "Tech, AI & cyber"
+      ]
+    },
+    "mapRow": {
+      "enum": [
+        "piu_paesi",
+        "fundraising_soci",
+        "piani_dipendenti",
+        "assunzioni",
+        "remoto_ibrido",
+        "freelance_agenzie",
+        "prodotto_ai",
+        "saas_piattaforma",
+        "marketplace_ecommerce",
+        "brevetto",
+        "rete_sedi",
+        "apertura_acquisizione",
+        "servizio_continuativo",
+        "dati_particolari",
+        "appalti_convenzioni",
+        "nuovo_servizio"
+      ],
+      "description": "Righe di docs/icp.md §4.1. Aree e forza di ogni riga sono fisse in scripts/validate_leads.py."
+    }
+  }
+}

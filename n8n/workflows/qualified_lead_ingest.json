@@ -1,0 +1,452 @@
+{
+  "id": "iusfulLeadIngest",
+  "active": false,
+  "name": "QUALIFIED_LEAD_INGEST",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "iusful/qualified-lead",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "a1f0c6d2-1b1e-4c55-9d0a-000000000001",
+      "name": "Ricevi lead",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ],
+      "webhookId": "5b2f4a8e-7c1d-4e2a-9f3b-1a2b3c4d5e6f"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "c1",
+              "leftValue": "={{ $json.body.score_total }}",
+              "rightValue": 65,
+              "operator": {
+                "type": "number",
+                "operation": "gte"
+              }
+            },
+            {
+              "id": "c2",
+              "leftValue": "={{ $json.body.company_name }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty",
+                "singleValue": true
+              }
+            },
+            {
+              "id": "c3",
+              "leftValue": "={{ $json.body.domain }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty",
+                "singleValue": true
+              }
+            },
+            {
+              "id": "c4",
+              "leftValue": "={{ $json.body.evidence_url }}",
+              "rightValue": "http",
+              "operator": {
+                "type": "string",
+                "operation": "startsWith"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "a1f0c6d2-1b1e-4c55-9d0a-000000000002",
+      "name": "Valido e score >= 65?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        240,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Prepara le proprietà Notion a partire dal lead ricevuto.\n// update_properties non contiene \"Stato\": un aggiornamento non deve far tornare indietro\n// un lead che nel CRM è già passato a \"Pronto per sales\" o \"Contattato\".\nconst b = $json.body;\nconst txt = (s) => [{ text: { content: String(s ?? '').slice(0, 2000) } }];\nconst day = (s) => !s ? null : s.length === 4 ? `${s}-01-01` : s.length === 7 ? `${s}-01` : s;\nconst signalDate = day(b.primary_signal && b.primary_signal.date);\n\nconst common = {\n  'Azienda': { title: txt(b.company_name) },\n  'Dominio': { rich_text: txt(b.domain) },\n  'Sito': { url: b.website || null },\n  'Tier': { select: { name: b.tier } },\n  'Score': { number: b.score_total },\n  'Città': { rich_text: txt(b.city) },\n  'Dipendenti': { rich_text: txt(b.employees) },\n  'Segnale principale': { rich_text: txt(b.primary_signal && b.primary_signal.fact) },\n  'Data segnale': { date: signalDate ? { start: signalDate } : null },\n  'Fonte segnale': { url: b.evidence_url || null },\n  'Bisogni legali': { rich_text: txt((b.legal_pains || []).join('; ')) },\n  'Angle outreach': { rich_text: txt(b.outreach_angle) },\n  'Flag': { multi_select: (b.flags || []).map((name) => ({ name })) },\n  'Data valutazione': { date: { start: b.evaluation_date } },\n};\nif (b.business_model) common['Modello'] = { select: { name: b.business_model } };\n\n// Esito di scripts/verify_sources.py. In aggiornamento non sovrascrive \"Rivista a mano\".\nconst v = b.verification || {};\nconst verification = {\n  'Verifica': { select: { name: v.status === 'da_rivedere' ? 'Da rivedere' : 'Superata' } },\n  'Motivo verifica': { rich_text: txt(v.reason) },\n};\n\nreturn {\n  json: {\n    body: b,\n    create_properties: { ...common, ...verification, 'Stato': { select: { name: 'Qualificato' } } },\n    update_properties: common,\n    verification_properties: verification,\n  },\n};\n"
+      },
+      "id": "a1f0c6d2-1b1e-4c55-9d0a-000000000005",
+      "name": "Prepara proprietà CRM",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        -120
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.notion.com/v1/databases/47bd791712bb4d30acce6f2af257a433/query",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "notionApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Notion-Version",
+              "value": "2022-06-28"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ filter: { property: 'Dominio', rich_text: { equals: $json.body.domain } }, page_size: 1 }) }}",
+        "options": {}
+      },
+      "id": "a1f0c6d2-1b1e-4c55-9d0a-000000000006",
+      "name": "Cerca azienda per dominio",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        720,
+        -120
+      ],
+      "credentials": {
+        "notionApi": {
+          "id": "qKnWs8XNRRwGFV75",
+          "name": "Notion account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "e1",
+              "leftValue": "={{ $json.results.length }}",
+              "rightValue": 0,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "a1f0c6d2-1b1e-4c55-9d0a-000000000007",
+      "name": "Esiste già?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        960,
+        -120
+      ]
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "={{ 'https://api.notion.com/v1/pages/' + $json.results[0].id }}",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "notionApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Notion-Version",
+              "value": "2022-06-28"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ properties: Object.assign({}, $('Prepara proprietà CRM').item.json.update_properties, (($json.results[0].properties['Verifica'] || {}).select || {}).name === 'Rivista a mano' ? {} : $('Prepara proprietà CRM').item.json.verification_properties) }) }}",
+        "options": {}
+      },
+      "id": "a1f0c6d2-1b1e-4c55-9d0a-000000000008",
+      "name": "Aggiorna azienda",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1200,
+        -240
+      ],
+      "credentials": {
+        "notionApi": {
+          "id": "qKnWs8XNRRwGFV75",
+          "name": "Notion account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.notion.com/v1/pages",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "notionApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Notion-Version",
+              "value": "2022-06-28"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ parent: { database_id: '47bd791712bb4d30acce6f2af257a433' }, properties: $('Prepara proprietà CRM').item.json.create_properties }) }}",
+        "options": {}
+      },
+      "id": "a1f0c6d2-1b1e-4c55-9d0a-000000000009",
+      "name": "Crea azienda",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1200,
+        0
+      ],
+      "credentials": {
+        "notionApi": {
+          "id": "qKnWs8XNRRwGFV75",
+          "name": "Notion account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.notion.com/v1/pages",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "notionApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Notion-Version",
+              "value": "2022-06-28"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ parent: { database_id: '9ed966106914451594f22af8d009d1e3' }, properties: { 'Nome': { title: [{ text: { content: $('Prepara proprietà CRM').item.json.body.buyer.name || 'Buyer non identificato' } }] }, 'Ruolo': { rich_text: [{ text: { content: $('Prepara proprietà CRM').item.json.body.buyer.title || '' } }] }, 'Azienda': { relation: [{ id: $json.id }] }, 'Ruolo nel buying': { select: { name: $('Prepara proprietà CRM').item.json.body.buyer.role_match } }, 'Fonte': { url: $('Prepara proprietà CRM').item.json.body.buyer.source_url || null } } }) }}",
+        "options": {}
+      },
+      "id": "a1f0c6d2-1b1e-4c55-9d0a-000000000010",
+      "name": "Crea persona",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1440,
+        120
+      ],
+      "credentials": {
+        "notionApi": {
+          "id": "qKnWs8XNRRwGFV75",
+          "name": "Notion account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.notion.com/v1/pages",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "notionApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Notion-Version",
+              "value": "2022-06-28"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ parent: { database_id: 'f95fe1d7744640c3aadeabc8aca2ce45' }, properties: { 'Cosa': { title: [{ text: { content: 'Ricevuto da n8n: ' + ($('Cerca azienda per dominio').item.json.results.length > 0 ? 'aggiornato' : 'creato') + ' (Tier ' + $('Prepara proprietà CRM').item.json.body.tier + ', ' + $('Prepara proprietà CRM').item.json.body.score_total + ')' } }] }, 'Azienda': { relation: [{ id: $json.id }] }, 'Tipo': { select: { name: 'Nota' } }, 'Chi': { select: { name: 'n8n' } }, 'Data': { date: { start: $now.toISODate() } } } }) }}",
+        "options": {}
+      },
+      "id": "a1f0c6d2-1b1e-4c55-9d0a-000000000011",
+      "name": "Registra interazione",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1680,
+        -120
+      ],
+      "credentials": {
+        "notionApi": {
+          "id": "qKnWs8XNRRwGFV75",
+          "name": "Notion account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ accepted: true, company: $('Prepara proprietà CRM').item.json.body.company_name, tier: $('Prepara proprietà CRM').item.json.body.tier, score: $('Prepara proprietà CRM').item.json.body.score_total, crm: $('Cerca azienda per dominio').item.json.results.length > 0 ? 'aggiornato' : 'creato' }) }}",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "id": "a1f0c6d2-1b1e-4c55-9d0a-000000000003",
+      "name": "Accettato",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        1920,
+        -120
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ accepted: false, reason: 'rejected_by_automation', company: $json.body.company_name || null, score: $json.body.score_total ?? null }) }}",
+        "options": {
+          "responseCode": 422
+        }
+      },
+      "id": "a1f0c6d2-1b1e-4c55-9d0a-000000000004",
+      "name": "Scartato",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        480,
+        160
+      ]
+    }
+  ],
+  "connections": {
+    "Ricevi lead": {
+      "main": [
+        [
+          {
+            "node": "Valido e score >= 65?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Valido e score >= 65?": {
+      "main": [
+        [
+          {
+            "node": "Prepara proprietà CRM",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Scartato",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepara proprietà CRM": {
+      "main": [
+        [
+          {
+            "node": "Cerca azienda per dominio",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Cerca azienda per dominio": {
+      "main": [
+        [
+          {
+            "node": "Esiste già?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Esiste già?": {
+      "main": [
+        [
+          {
+            "node": "Aggiorna azienda",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Crea azienda",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggiorna azienda": {
+      "main": [
+        [
+          {
+            "node": "Registra interazione",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Crea azienda": {
+      "main": [
+        [
+          {
+            "node": "Registra interazione",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Crea persona",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Registra interazione": {
+      "main": [
+        [
+          {
+            "node": "Accettato",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {}
+}

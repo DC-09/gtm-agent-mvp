@@ -1,0 +1,218 @@
+[
+  {
+    "id": "elodiebrides",
+    "company_name": "Elodie Brides",
+    "domain": "elodiebrides.com",
+    "evaluation_date": "2026-10-03",
+    "status": "RESERVE",
+    "tier": "C",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://elodiebrides.com/pages/termini-e-condizioni"
+      },
+      "city": {
+        "value": "Milano",
+        "source_url": "https://elodiebrides.com/pages/termini-e-condizioni"
+      },
+      "employees": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "source_url": null,
+        "source_says_unverified": false,
+        "note": "docs/clienti_lookalike.md: probabilmente sotto i 5, non verificato"
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "Abiti da sposa venduti tramite e-commerce proprio e atelier a Milano.",
+        "source_url": "https://elodiebrides.com/pages/termini-e-condizioni"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "Vende online tramite il proprio e-commerce.",
+        "url": "https://elodiebrides.com/pages/termini-e-condizioni",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Condizioni generali di vendita online e diritto di recesso per consumatori",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Informative e consensi per i dati dei clienti dell'e-commerce",
+        "area": "Dati & privacy",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Francesca Mantovani",
+      "title": "Co-founder",
+      "source_url": "https://www.cbinsights.com/company/elodie-brides/people",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "1-5",
+      "role_match": "primario",
+      "reason": "Co-founder di un'azienda molto piccola: decide lei sui fornitori, legale compreso."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://elodiebrides.com/pages/termini-e-condizioni",
+        "type": "primaria",
+        "accessed": "2026-10-02"
+      },
+      {
+        "url": "https://www.cbinsights.com/company/elodie-brides/people",
+        "type": "secondaria",
+        "accessed": "2026-10-02"
+      }
+    ],
+    "score": {
+      "company_fit": 20,
+      "legal_complexity": 13,
+      "buying_signals": 0,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 52
+    },
+    "score_reason": {
+      "company_fit": "Milano (T&C) +5; dipendenti non verificati 0, tier massimo B; e-commerce (T&C) +15. Totale 20.",
+      "legal_complexity": "E-commerce (T&C) → Contratti, Dati & privacy, Tech AI & cyber (inferenza): 3 aree 13; nessun segnale forte. Totale 13.",
+      "buying_signals": "E-commerce strutturale, non conta; nessun segnale di attività datato. Totale 0.",
+      "buyer_availability": "Francesca Mantovani, co-founder (cbinsights); scenario 1-5, primario. 10.",
+      "evidence_quality": "Fatturato non trovato −1; fonte primaria presente. 9."
+    },
+    "flags": [
+      "dipendenti_non_verificati"
+    ],
+    "exclusion_reason": null,
+    "outreach_angle": null,
+    "notes": "Cliente attuale di Iusful: caso di prova del controllore, non un prospect. Valori attesi in docs/scoring.md §8."
+  },
+  {
+    "id": "trademybusiness",
+    "company_name": "Trademybusiness.com",
+    "domain": "trademybusiness.com",
+    "evaluation_date": "2026-10-03",
+    "status": "REJECTED",
+    "tier": "REJECT",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.trademybusiness.com/chi-siamo-2/"
+      },
+      "city": {
+        "value": "Milano",
+        "source_url": "https://www.trademybusiness.com/chi-siamo-2/"
+      },
+      "employees": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "source_url": null,
+        "source_says_unverified": false,
+        "note": "Una fonte di enrichment indica 3, da verificare; URL non registrato"
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "B2B",
+        "description": "Advisory per imprenditori che vendono l'azienda ad acquirenti e investitori.",
+        "source_url": "https://www.trademybusiness.com/chi-siamo-2/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "freelance_agenzie",
+        "observed_fact": "Lavora con una rete di professionisti esterni.",
+        "url": "https://www.trademybusiness.com/chi-siamo-2/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Contratti e NDA con i professionisti esterni della rete",
+        "area": "Contratti",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": null,
+      "title": "CEO e co-founder",
+      "source_url": "https://iusful.it",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "1-5",
+      "role_match": "solo ruolo",
+      "reason": "Firma la testimonianza su Iusful; noto solo per ruolo."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.trademybusiness.com/chi-siamo-2/",
+        "type": "primaria",
+        "accessed": "2026-10-02"
+      }
+    ],
+    "score": {
+      "company_fit": 20,
+      "legal_complexity": 9,
+      "buying_signals": 0,
+      "buyer_availability": 4,
+      "evidence_quality": 9,
+      "total": 42
+    },
+    "score_reason": {
+      "company_fit": "Milano (chi-siamo) +5; dipendenti non verificati 0, tier massimo B; advisory B2B (chi-siamo) +15. Totale 20.",
+      "legal_complexity": "Rete di professionisti esterni (chi-siamo) → Proprietà intellettuale, Contratti (inferenza): 2 aree 9. Totale 9.",
+      "buying_signals": "Professionisti esterni (chi-siamo, data non trovata), non conta. Totale 0.",
+      "buyer_availability": "\"CEO e co-founder\" noto solo per ruolo (testimonianza su iusful.it); scenario 1-5. 4.",
+      "evidence_quality": "Fatturato non trovato −1; fonte primaria presente. 9."
+    },
+    "flags": [
+      "dipendenti_non_verificati"
+    ],
+    "exclusion_reason": null,
+    "outreach_angle": null,
+    "notes": "Cliente attuale di Iusful: caso di prova del controllore, non un prospect. Valori attesi in docs/scoring.md §8."
+  }
+]

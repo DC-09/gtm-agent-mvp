@@ -1,0 +1,104 @@
+{
+  "id": "iusfulRunSummary",
+  "active": false,
+  "name": "GTM_RUN_SUMMARY",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "iusful/run-summary",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "b2f0c6d2-1b1e-4c55-9d0a-000000000001",
+      "name": "Ricevi funnel",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ],
+      "webhookId": "6c3a5b9f-8d2e-4f3b-a04c-2b3c4d5e6f70"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.notion.com/v1/pages",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "notionApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Notion-Version",
+              "value": "2022-06-28"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ parent: { database_id: 'c80f0cbb73a9400593fee933737cd5ca' }, properties: { 'Esecuzione': { title: [{ text: { content: $json.body.run_name } }] }, 'Data': { date: { start: $json.body.date } }, 'Candidati valutati': { number: $json.body.candidates }, 'Qualificati': { number: $json.body.qualified }, 'Tier A': { number: $json.body.tier_a }, 'Tier B': { number: $json.body.tier_b }, 'Riserva (C)': { number: $json.body.tier_c }, 'Scartati': { number: $json.body.rejected }, 'Motivi di scarto': { rich_text: [{ text: { content: Object.entries($json.body.rejection_reasons || {}).map(([k, v]) => k + ': ' + v).join('; ') } }] }, 'Buyer non trovato': { number: $json.body.missing_buyer }, 'Dipendenti non verificati': { number: $json.body.unverified_employees }, 'Con segnale recente': { number: $json.body.with_recent_signal }, 'Da rivedere': { number: $json.body.to_review ?? 0 }, 'Novità della settimana': { rich_text: [{ text: { content: String($json.body.weekly_notes || '').slice(0, 2000) } }] }, 'Tasso di qualificazione %': { number: $json.body.qualification_rate } } }) }}",
+        "options": {}
+      },
+      "id": "b2f0c6d2-1b1e-4c55-9d0a-000000000002",
+      "name": "Scrivi report su Notion",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        260,
+        0
+      ],
+      "credentials": {
+        "notionApi": {
+          "id": "qKnWs8XNRRwGFV75",
+          "name": "Notion account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ saved: true, report_url: $json.url }) }}",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "id": "b2f0c6d2-1b1e-4c55-9d0a-000000000003",
+      "name": "Report salvato",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        520,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "Ricevi funnel": {
+      "main": [
+        [
+          {
+            "node": "Scrivi report su Notion",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Scrivi report su Notion": {
+      "main": [
+        [
+          {
+            "node": "Report salvato",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {}
+}

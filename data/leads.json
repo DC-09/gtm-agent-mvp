@@ -1,0 +1,5068 @@
+[
+  {
+    "id": "talentware",
+    "company_name": "Talentware Srl",
+    "domain": "talentware.ai",
+    "evaluation_date": "2026-10-03",
+    "status": "REJECTED",
+    "tier": "REJECT",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://talentware.ai/en/company/about-us/"
+      },
+      "city": {
+        "value": "Milano",
+        "source_url": "https://talentware.ai/en/company/about-us/"
+      },
+      "employees": {
+        "value": 30,
+        "range_min": null,
+        "range_max": null,
+        "source_url": "https://startupitalia.eu/startup/talentware-round-33-milioni-round-seed/",
+        "source_says_unverified": false,
+        "note": "Articolo del 21/07/2026: '30 persone'. Atoka indica 18 dipendenti (dato 2025): si usa il dato più recente; entrambi dentro 1-50."
+      },
+      "revenue_eur": {
+        "value": 486000,
+        "range_min": null,
+        "range_max": null,
+        "year": 2025,
+        "source_url": "https://atoka.io/public/it/azienda/talentware-srl/a2990169d488"
+      },
+      "business_model": {
+        "value": "SaaS e piattaforme digitali",
+        "description": "Piattaforma SaaS B2B con AI per mappare le competenze dei dipendenti e pianificare formazione e mobilità interna.",
+        "source_url": "https://startupitalia.eu/startup/talentware-round-33-milioni-round-seed/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "saas_piattaforma",
+        "observed_fact": "Piattaforma B2B SaaS di talent management basata su AI.",
+        "evidence_quote": null,
+        "url": "https://startupitalia.eu/startup/talentware-round-33-milioni-round-seed/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "fundraising_soci",
+        "observed_fact": "Round seed da 3,3 milioni guidato da CDP Venture Capital e 360 Capital, con altri investitori e business angel.",
+        "evidence_quote": null,
+        "url": "https://startupitalia.eu/startup/talentware-round-33-milioni-round-seed/",
+        "date": "2026-07-21",
+        "date_basis": "fonte",
+        "date_as_in_source": "21/07/2026"
+      },
+      {
+        "map_row": "assunzioni",
+        "observed_fact": "7 posizioni aperte sulla pagina careers (vendite, tecnologia, prodotto) più la candidatura spontanea, online al 03/10/2026.",
+        "evidence_quote": null,
+        "url": "https://talentwaresrl.teamtailor.com/jobs",
+        "date": "2026-10-03",
+        "date_basis": "consultazione",
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "remoto_ibrido",
+        "observed_fact": "Tutte le posizioni aperte sono a Milano in modalità ibrida, online al 03/10/2026.",
+        "evidence_quote": null,
+        "url": "https://talentwaresrl.teamtailor.com/jobs",
+        "date": "2026-10-03",
+        "date_basis": "consultazione",
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "piu_paesi",
+        "observed_fact": "Posizione aperta di Senior Account Executive dedicata al mercato spagnolo, online al 03/10/2026.",
+        "evidence_quote": null,
+        "url": "https://talentwaresrl.teamtailor.com/jobs",
+        "date": "2026-10-03",
+        "date_basis": "consultazione",
+        "date_as_in_source": null
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Patti parasociali e governance dopo l'ingresso dei nuovi investitori del seed",
+        "area": "Societario",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Contratti di lavoro e smart working policy per le nuove assunzioni in modalità ibrida",
+        "area": "Lavoro & persone",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Condizioni contrattuali e nomine privacy (DPA) con i clienti in Spagna",
+        "area": "Contratti",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Giacomo Marchiori",
+      "title": "CEO",
+      "source_url": "https://talentware.ai/en/company/about-us/",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "15-50 generale",
+      "role_match": "primario",
+      "reason": "CEO di un'azienda di 30 persone appena finanziata: soci, assunzioni e primi contratti esteri passano da lui."
+    },
+    "evidence_deductions": [],
+    "sources": [
+      {
+        "url": "https://talentware.ai/en/company/about-us/",
+        "type": "primaria",
+        "accessed": "2026-10-03"
+      },
+      {
+        "url": "https://talentwaresrl.teamtailor.com/jobs",
+        "type": "primaria",
+        "accessed": "2026-10-03"
+      },
+      {
+        "url": "https://startupitalia.eu/startup/talentware-round-33-milioni-round-seed/",
+        "type": "secondaria",
+        "accessed": "2026-10-03"
+      },
+      {
+        "url": "https://atoka.io/public/it/azienda/talentware-srl/a2990169d488",
+        "type": "secondaria",
+        "accessed": "2026-10-03"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 25,
+      "buying_signals": 19,
+      "buyer_availability": 10,
+      "evidence_quality": 10,
+      "total": 94
+    },
+    "score_reason": {
+      "company_fit": "Milano (about-us) +5; 30 dipendenti (StartupItalia, 21/07/2026) +10; SaaS B2B (StartupItalia) +15. Totale 30.",
+      "legal_complexity": "SaaS → Contratti, Dati & privacy, Tech AI & cyber; seed → Societario; assunzioni → Lavoro & persone (inferenza): 5 aree 20; ruolo per il mercato spagnolo, forte +5. Totale 25.",
+      "buying_signals": "Seed 3,3M (StartupItalia, 21/07/2026, 2 mesi) normale 7; pagina careers online al 03/10/2026, conta una volta: ruolo per il mercato spagnolo, forte 12. Totale 19.",
+      "buyer_availability": "Giacomo Marchiori, CEO (about-us); scenario 15-50 generale, primario. 10.",
+      "evidence_quality": "Fatturato 2025 trovato (Atoka); fonti primarie presenti (sito, careers). Nessuna sottrazione. 10."
+    },
+    "flags": [],
+    "exclusion_reason": {
+      "rule": "startup_finanziata_vc",
+      "url": "https://startupitalia.eu/startup/talentware-round-33-milioni-round-seed/",
+      "detail": "Seed da 3,3 milioni guidato da CDP Venture Capital e 360 Capital (21/07/2026)"
+    },
+    "outreach_angle": null,
+    "notes": "Esclusa il 3 ottobre 2026 come startup finanziata da fondi di venture capital (docs/decisions.md): il punteggio è indicativo. Il ruolo per il mercato spagnolo è letto come espansione estera: è un'interpretazione diretta della posizione aperta, non una vendita osservata.",
+    "doubts": []
+  },
+  {
+    "id": "cato",
+    "company_name": "Cato Srl",
+    "domain": "get-cato.com",
+    "evaluation_date": "2026-10-03",
+    "status": "REJECTED",
+    "tier": "REJECT",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.get-cato.com"
+      },
+      "city": {
+        "value": "Milano",
+        "source_url": "https://www.get-cato.com"
+      },
+      "employees": {
+        "value": 35,
+        "range_min": null,
+        "range_max": null,
+        "source_url": "https://forbes.it/2026/09/07/cato-round-6-milioni-ai-appalti-pubblici",
+        "source_says_unverified": false,
+        "note": "Forbes, 7 settembre 2026: 35 persone."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "SaaS e piattaforme digitali",
+        "description": "Piattaforma SaaS con AI per cercare, analizzare e preparare la partecipazione delle imprese alle gare d'appalto pubbliche.",
+        "source_url": "https://www.get-cato.com"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "saas_piattaforma",
+        "observed_fact": "Piattaforma SaaS per la ricerca e la gestione delle gare d'appalto pubbliche italiane.",
+        "evidence_quote": null,
+        "url": "https://www.get-cato.com",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "prodotto_ai",
+        "observed_fact": "Analisi automatica dei documenti di gara e compilazione assistita delle offerte con AI.",
+        "evidence_quote": null,
+        "url": "https://www.get-cato.com",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "fundraising_soci",
+        "observed_fact": "Round seed da 6 milioni guidato da Keen Venture Partners; raccolta totale 7,6 milioni.",
+        "evidence_quote": null,
+        "url": "https://forbes.it/2026/09/07/cato-round-6-milioni-ai-appalti-pubblici",
+        "date": "2026-09-07",
+        "date_basis": "fonte",
+        "date_as_in_source": "7 settembre 2026"
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Patti parasociali e governance con i nuovi investitori del seed",
+        "area": "Societario",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Termini d'uso, DPA e limiti di responsabilità sui documenti di gara elaborati per i clienti",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Classificazione del rischio AI e gap analysis AI Act per l'agente che compila le offerte",
+        "area": "Tech, AI & cyber",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Andrea Zorzetto",
+      "title": "CEO e co-founder",
+      "source_url": "https://forbes.it/2026/09/07/cato-round-6-milioni-ai-appalti-pubblici",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "15-50 generale",
+      "role_match": "primario",
+      "reason": "CEO di un'azienda di 35 persone appena finanziata: decide su governance e sulla conformità del prodotto AI."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.get-cato.com",
+        "type": "primaria",
+        "accessed": "2026-10-03"
+      },
+      {
+        "url": "https://forbes.it/2026/09/07/cato-round-6-milioni-ai-appalti-pubblici",
+        "type": "secondaria",
+        "accessed": "2026-10-03"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 17,
+      "buying_signals": 7,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 73
+    },
+    "score_reason": {
+      "company_fit": "Milano (get-cato.com) +5; 35 dipendenti (Forbes, 07/09/2026) +10; SaaS AI per gare d'appalto (get-cato.com) +15. Totale 30.",
+      "legal_complexity": "SaaS e funzioni AI → Contratti, Dati & privacy, Tech AI & cyber; seed → Societario (inferenza): 4 aree 17; nessun segnale forte, mercato solo italiano. Totale 17.",
+      "buying_signals": "Seed 6M (Forbes, 07/09/2026, meno di 1 mese) normale 7; nessun altro segnale di attività datato. Totale 7.",
+      "buyer_availability": "Andrea Zorzetto, CEO e co-founder (Forbes); scenario 15-50 generale, primario. 10.",
+      "evidence_quality": "Fatturato non trovato −1; fonte primaria presente (get-cato.com). 9."
+    },
+    "flags": [],
+    "exclusion_reason": {
+      "rule": "startup_finanziata_vc",
+      "url": "https://forbes.it/2026/09/07/cato-round-6-milioni-ai-appalti-pubblici",
+      "detail": "Seed da 6 milioni guidato dal fondo Keen Venture Partners (07/09/2026)"
+    },
+    "outreach_angle": null,
+    "notes": "Esclusa il 3 ottobre 2026 come startup finanziata da fondi di venture capital (docs/decisions.md): il punteggio è indicativo. Secondo Forbes il pre-seed è stato guidato da Italian Founders Fund, tra i lead del round di Iusful (docs/iusful_product.md): possibile presentazione tramite un investitore comune, da verificare.",
+    "doubts": []
+  },
+  {
+    "id": "computis",
+    "company_name": "Computis S.r.l.",
+    "domain": "computis.it",
+    "evaluation_date": "2026-10-03",
+    "status": "REJECTED",
+    "tier": "REJECT",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.computis.it/chi-siamo/"
+      },
+      "city": {
+        "value": "Milano",
+        "source_url": "https://www.computis.it/chi-siamo/"
+      },
+      "employees": {
+        "value": 9,
+        "range_min": null,
+        "range_max": null,
+        "source_url": "https://www.computis.it/blog/computis-round-pre-seed-2-milioni/",
+        "source_says_unverified": false,
+        "note": "Blog aziendale del 1 ottobre 2026: 9 persone, obiettivo circa 12 tra fine 2026 e inizio 2027."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "SaaS e piattaforme digitali",
+        "description": "Piattaforma di contabilità per PMI che unisce AI, contabili interni e commercialisti partner.",
+        "source_url": "https://www.computis.it/chi-siamo/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "saas_piattaforma",
+        "observed_fact": "Piattaforma di contabilità e gestione amministrativa per PMI, usata da clienti, contabili e commercialisti partner.",
+        "evidence_quote": null,
+        "url": "https://www.computis.it/chi-siamo/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "fundraising_soci",
+        "observed_fact": "Round pre-seed da 2 milioni guidato da Techshop Capital, con altri sette investitori.",
+        "evidence_quote": null,
+        "url": "https://www.computis.it/blog/computis-round-pre-seed-2-milioni/",
+        "date": "2026-10-01",
+        "date_basis": "fonte",
+        "date_as_in_source": "1 ottobre 2026"
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Patti parasociali con gli otto nuovi investitori del pre-seed",
+        "area": "Societario",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Nomine a responsabile del trattamento (DPA) per i dati contabili dei clienti",
+        "area": "Dati & privacy",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Condizioni di servizio e limiti di responsabilità con clienti e commercialisti partner",
+        "area": "Contratti",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Enrico Nicosia",
+      "title": "CEO e co-founder",
+      "source_url": "https://www.computis.it/chi-siamo/",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "5-10",
+      "role_match": "primario",
+      "reason": "CEO di un team di 9 persone: in un'azienda così piccola soci, contratti e privacy li decide il CEO."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato (azienda fondata nel 2026)"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.computis.it/chi-siamo/",
+        "type": "primaria",
+        "accessed": "2026-10-03"
+      },
+      {
+        "url": "https://www.computis.it/blog/computis-round-pre-seed-2-milioni/",
+        "type": "primaria",
+        "accessed": "2026-10-03"
+      },
+      {
+        "url": "https://www.startupbusiness.it/en/e2-million-funding-round-for-computiss-accounting-solutions/202847/",
+        "type": "secondaria",
+        "accessed": "2026-10-03"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 17,
+      "buying_signals": 7,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 73
+    },
+    "score_reason": {
+      "company_fit": "Milano (chi-siamo) +5; 9 dipendenti (blog aziendale, 01/10/2026) +10; piattaforma contabile per PMI (chi-siamo) +15. Totale 30.",
+      "legal_complexity": "Piattaforma → Contratti, Dati & privacy, Tech AI & cyber; pre-seed → Societario (inferenza): 4 aree 17; nessun segnale forte. Totale 17.",
+      "buying_signals": "Pre-seed 2M (blog aziendale, 01/10/2026, meno di 1 mese) normale 7; obiettivo di 12 persone non è un'assunzione osservata. Totale 7.",
+      "buyer_availability": "Enrico Nicosia, CEO e co-founder (chi-siamo); scenario 5-10, primario. 10.",
+      "evidence_quality": "Fatturato non trovato −1; fonti primarie presenti (sito, blog). 9."
+    },
+    "flags": [],
+    "exclusion_reason": {
+      "rule": "startup_finanziata_vc",
+      "url": "https://www.computis.it/blog/computis-round-pre-seed-2-milioni/",
+      "detail": "Pre-seed da 2 milioni guidato da Techshop Capital, con fondi come Heartfelt e Zanichelli Venture (01/10/2026)"
+    },
+    "outreach_angle": null,
+    "notes": "Esclusa il 3 ottobre 2026 come startup finanziata da fondi di venture capital (docs/decisions.md): il punteggio è indicativo. Serve PMI sotto i 50 dipendenti, lo stesso target di Iusful: possibile anche come partner di canale oltre che come cliente (inferenza).",
+    "doubts": []
+  },
+  {
+    "id": "officinedigitaliitaliane",
+    "company_name": "Officine Digitali Italiane Srl",
+    "domain": "officinedigitaliitaliane.it",
+    "evaluation_date": "2026-10-03",
+    "status": "RESERVE",
+    "tier": "C",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://officinedigitaliitaliane.it/"
+      },
+      "city": {
+        "value": "Bergamo",
+        "source_url": "https://officinedigitaliitaliane.it/"
+      },
+      "employees": {
+        "value": null,
+        "range_min": 11,
+        "range_max": 50,
+        "source_url": "https://it.linkedin.com/company/officinedigitaliitaliane",
+        "source_says_unverified": false,
+        "note": "Fascia LinkedIn 11-50; LinkedIn elenca 30 profili. Il sito indica '+40 persone nella squadra', che può includere collaboratori."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": 600000,
+        "range_max": 1500000,
+        "year": 2024,
+        "source_url": "https://www.informazione-aziende.it/Azienda_OFFICINE-DIGITALI-ITALIANE-SRL"
+      },
+      "business_model": {
+        "value": "Agenzie strutturate",
+        "description": "Agenzia digitale e software house: advertising, SEO, social, sviluppo web, app ed e-commerce B2B.",
+        "source_url": "https://officinedigitaliitaliane.it/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "freelance_agenzie",
+        "observed_fact": "Tre posizioni aperte come collaborazione freelance o a partita IVA (email marketing, Google Ads), online al 03/10/2026.",
+        "evidence_quote": null,
+        "url": "https://officinedigitaliitaliane.it/lavora-con-noi/",
+        "date": "2026-10-03",
+        "date_basis": "consultazione",
+        "date_as_in_source": null
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Contratti con i freelance e cessione dei diritti su contenuti e software prodotti per i clienti",
+        "area": "Proprietà intellettuale",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "NDA e condizioni di collaborazione con i professionisti a partita IVA",
+        "area": "Contratti",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Luca Locatelli",
+      "title": "Direttore Generale",
+      "source_url": "https://it.linkedin.com/in/lucalocatelli",
+      "linkedin_url": "https://it.linkedin.com/in/lucalocatelli",
+      "email": null,
+      "scenario": "15-50 generale",
+      "role_match": "alternativa",
+      "reason": "Direttore Generale: ruolo operativo vicino al COO, alternativa al CEO nello scenario 15-50."
+    },
+    "evidence_deductions": [],
+    "sources": [
+      {
+        "url": "https://officinedigitaliitaliane.it/",
+        "type": "primaria",
+        "accessed": "2026-10-03"
+      },
+      {
+        "url": "https://officinedigitaliitaliane.it/chi-siamo/",
+        "type": "primaria",
+        "accessed": "2026-10-03"
+      },
+      {
+        "url": "https://officinedigitaliitaliane.it/lavora-con-noi/",
+        "type": "primaria",
+        "accessed": "2026-10-03"
+      },
+      {
+        "url": "https://it.linkedin.com/company/officinedigitaliitaliane",
+        "type": "secondaria",
+        "accessed": "2026-10-03"
+      },
+      {
+        "url": "https://www.informazione-aziende.it/Azienda_OFFICINE-DIGITALI-ITALIANE-SRL",
+        "type": "secondaria",
+        "accessed": "2026-10-03"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 9,
+      "buying_signals": 7,
+      "buyer_availability": 7,
+      "evidence_quality": 10,
+      "total": 63
+    },
+    "score_reason": {
+      "company_fit": "Bergamo (sito) +5; fascia 11-50 (LinkedIn) +10; agenzia digitale e software house (sito) +15. Totale 30.",
+      "legal_complexity": "Collaboratori freelance e a partita IVA (lavora-con-noi) → Proprietà intellettuale, Contratti (inferenza): 2 aree 9; nessun segnale forte. Totale 9.",
+      "buying_signals": "Annunci freelance (lavora-con-noi, senza data) online al 03/10/2026, datati alla consultazione, normale 7; nessuna notizia datata. Totale 7.",
+      "buyer_availability": "Luca Locatelli, Direttore Generale (LinkedIn); scenario 15-50 generale, alternativa al CEO. 7.",
+      "evidence_quality": "Fatturato 2024 in fascia (informazione-aziende); fonte primaria presente. Nessuna sottrazione. 10."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "outreach_angle": null,
+    "notes": "Caso di un'azienda 'silenziosa': in target, dati verificati, nessuna notizia datata; il segnale recente viene solo dagli annunci online. Il CEO non è stato trovato.",
+    "doubts": []
+  },
+  {
+    "id": "pillar",
+    "company_name": "Pillar",
+    "domain": "pillar.it",
+    "evaluation_date": "2026-10-03",
+    "status": "REJECTED",
+    "tier": "REJECT",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.economyup.it/startup/pillar-la-storia-i-founder-e-i-progetti-della-startup-delledilizia-che-ha-raccolto-152-milioni-in-otto-mesi/"
+      },
+      "city": {
+        "value": "Milano",
+        "source_url": "https://www.economyup.it/startup/pillar-la-storia-i-founder-e-i-progetti-della-startup-delledilizia-che-ha-raccolto-152-milioni-in-otto-mesi/"
+      },
+      "employees": {
+        "value": null,
+        "range_min": 71,
+        "range_max": null,
+        "source_url": "https://www.economyup.it/startup/pillar-la-storia-i-founder-e-i-progetti-della-startup-delledilizia-che-ha-raccolto-152-milioni-in-otto-mesi/",
+        "source_says_unverified": false,
+        "note": "EconomyUp, 3 settembre 2026: 'oltre 70 persone'. ANSA (12/05/2026) indica sede a Roma e obiettivo di 120 persone entro il 2027."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "SaaS e piattaforme digitali",
+        "description": "Software con AI per la gestione amministrativa e di cantiere delle imprese edili.",
+        "source_url": "https://www.ansa.it/sito/notizie/economia/2026/05/12/pillar-raccoglie-12-milioni-per-nuove-linee-prodotto-ed-espansione-estera_e5c4b0f5-223c-43a9-8a53-a1228395e173.html"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "saas_piattaforma",
+        "observed_fact": "Sistema operativo con AI per il back office delle imprese edili.",
+        "evidence_quote": null,
+        "url": "https://www.ansa.it/sito/notizie/economia/2026/05/12/pillar-raccoglie-12-milioni-per-nuove-linee-prodotto-ed-espansione-estera_e5c4b0f5-223c-43a9-8a53-a1228395e173.html",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "fundraising_soci",
+        "observed_fact": "Round seed da 12 milioni guidato da Earlybird e Base10 Partners.",
+        "evidence_quote": null,
+        "url": "https://www.ansa.it/sito/notizie/economia/2026/05/12/pillar-raccoglie-12-milioni-per-nuove-linee-prodotto-ed-espansione-estera_e5c4b0f5-223c-43a9-8a53-a1228395e173.html",
+        "date": "2026-05-12",
+        "date_basis": "fonte",
+        "date_as_in_source": "12 maggio 2026"
+      }
+    ],
+    "legal_pains": [],
+    "buyer": {
+      "name": "Gabriel Guinea Montalvo",
+      "title": "CEO (amministratore delegato)",
+      "source_url": "https://www.economyup.it/startup/pillar-la-storia-i-founder-e-i-progetti-della-startup-delledilizia-che-ha-raccolto-152-milioni-in-otto-mesi/",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "fundraising / governance",
+      "role_match": "primario",
+      "reason": "CEO; riportato solo per completezza, l'azienda è fuori perimetro."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato (l'ARR non è fatturato)"
+      },
+      {
+        "code": "nessuna_fonte_primaria",
+        "detail": "Ricerca fermata all'esclusione, sito aziendale non consultato"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.economyup.it/startup/pillar-la-storia-i-founder-e-i-progetti-della-startup-delledilizia-che-ha-raccolto-152-milioni-in-otto-mesi/",
+        "type": "secondaria",
+        "accessed": "2026-10-03"
+      },
+      {
+        "url": "https://www.ansa.it/sito/notizie/economia/2026/05/12/pillar-raccoglie-12-milioni-per-nuove-linee-prodotto-ed-espansione-estera_e5c4b0f5-223c-43a9-8a53-a1228395e173.html",
+        "type": "secondaria",
+        "accessed": "2026-10-03"
+      }
+    ],
+    "score": {
+      "company_fit": 20,
+      "legal_complexity": 17,
+      "buying_signals": 7,
+      "buyer_availability": 10,
+      "evidence_quality": 7,
+      "total": 61
+    },
+    "score_reason": {
+      "company_fit": "Milano (EconomyUp) +5; oltre 70 persone (EconomyUp, 03/09/2026), fuori perimetro 0; SaaS per l'edilizia (ANSA) +15. Totale 20, indicativo.",
+      "legal_complexity": "SaaS → Contratti, Dati & privacy, Tech AI & cyber; seed → Societario (inferenza): 4 aree 17. Totale 17.",
+      "buying_signals": "Seed 12M (ANSA, 12/05/2026, 4 mesi) normale 7. Totale 7.",
+      "buyer_availability": "Gabriel Guinea Montalvo, CEO (EconomyUp); scenario fundraising / governance, primario. 10.",
+      "evidence_quality": "Fatturato non trovato −1; nessuna fonte primaria consultata −2, ricerca fermata all'esclusione. 7."
+    },
+    "flags": [],
+    "exclusion_reason": {
+      "rule": "oltre_50_dipendenti",
+      "url": "https://www.economyup.it/startup/pillar-la-storia-i-founder-e-i-progetti-della-startup-delledilizia-che-ha-raccolto-152-milioni-in-otto-mesi/",
+      "detail": "'oltre 70 persone' nel team al 3 settembre 2026"
+    },
+    "outreach_angle": null,
+    "notes": "Ricerca fermata appena verificata l'esclusione (loop agentico, punto 6: fermarsi presto sui lead deboli).",
+    "doubts": []
+  },
+  {
+    "id": "dmora",
+    "company_name": "Crido Consulting S.r.l. (Dmora)",
+    "domain": "dmora.it",
+    "evaluation_date": "2026-10-03",
+    "status": "QUALIFIED",
+    "tier": "A",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.dmora.it/about"
+      },
+      "city": {
+        "value": "Chiavenna",
+        "source_url": "https://www.dmora.it/about"
+      },
+      "employees": {
+        "value": 19,
+        "range_min": null,
+        "range_max": null,
+        "source_url": "https://atoka.io/public/it/azienda/crido-consulting-srl/faffdca76648",
+        "source_says_unverified": false,
+        "note": "Atoka, dato 2025; confermato da ufficiocamerale (19, dato 2026), verifica manuale il 03/10/2026. aziende.it indica 21 (2024); la pagina team del sito elenca 24 persone."
+      },
+      "revenue_eur": {
+        "value": 20000000,
+        "range_min": null,
+        "range_max": null,
+        "year": 2024,
+        "source_url": "https://www.dmora.it/about"
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "Arredamento e complementi per la casa venduti online, sul proprio sito e su oltre 30 marketplace.",
+        "source_url": "https://www.dmora.it/about"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "E-commerce di arredamento, presente su oltre 30 marketplace.",
+        "evidence_quote": null,
+        "url": "https://www.dmora.it/about",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "piu_paesi",
+        "observed_fact": "Presente in 12 paesi europei; ingresso negli Stati Uniti previsto nel 2026.",
+        "evidence_quote": "presenza in 12 mercati europei e su oltre 30 marketplace",
+        "url": "https://www.trend-online.com/2026/05/26/arredamento-online-lexport-passa-dai-marketplace/",
+        "date": "2026-05-26",
+        "date_basis": "fonte",
+        "date_as_in_source": "26 Maggio 2026"
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Condizioni generali di vendita e recesso per consumatori in 12 paesi",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Informative e consensi per clienti di più paesi europei",
+        "area": "Dati & privacy",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Termini con oltre 30 marketplace e obblighi DSA",
+        "area": "Tech, AI & cyber",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Elena Gadola",
+      "title": "Head of Finance",
+      "source_url": "https://www.dmora.it/about",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "clienti su più paesi",
+      "role_match": "alternativa",
+      "reason": "Con vendite in 12 paesi i contratti passano dalla finanza; il CEO non è indicato, Head of Finance è l'alternativa prevista."
+    },
+    "evidence_deductions": [],
+    "sources": [
+      {
+        "url": "https://www.dmora.it/about",
+        "type": "primaria",
+        "accessed": "2026-10-03"
+      },
+      {
+        "url": "https://atoka.io/public/it/azienda/crido-consulting-srl/faffdca76648",
+        "type": "secondaria",
+        "accessed": "2026-10-03"
+      },
+      {
+        "url": "https://www.trend-online.com/2026/05/26/arredamento-online-lexport-passa-dai-marketplace/",
+        "type": "secondaria",
+        "accessed": "2026-10-03"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 12,
+      "buyer_availability": 7,
+      "evidence_quality": 10,
+      "total": 81
+    },
+    "score_reason": {
+      "company_fit": "Chiavenna (about) +5; 19 dipendenti (Atoka, 2025) +10; e-commerce di arredamento (about) +15. Totale 30.",
+      "legal_complexity": "E-commerce → Contratti, Dati & privacy, Tech AI & cyber; vendite estere → Societario (inferenza): 4 aree 17; vendite su più paesi, forte +5. Totale 22.",
+      "buying_signals": "Vendite in 12 paesi europei (Trend Online, 26/05/2026, 4 mesi) forte 12. Totale 12.",
+      "buyer_availability": "Elena Gadola, Head of Finance (about); scenario clienti su più paesi, alternativa al CEO. 7.",
+      "evidence_quality": "Fatturato 2024 trovato (sito); fonte primaria presente. Nessuna sottrazione. 10."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "outreach_angle": "Dmora vende arredamento in 12 paesi europei e su oltre 30 marketplace, e guarda agli Stati Uniti. Ogni nuovo mercato porta condizioni di vendita, privacy e regole dei marketplace da tenere aggiornate: Iusful le segue con un avvocato dedicato e un costo mensile noto.",
+    "notes": "Nessun investitore esterno indicato sul sito; nessun round VC trovato. Il CEO non è indicato: i fondatori sono Claudia Russo (Founder) e Riccardo Dolci (Co-founder).",
+    "doubts": []
+  },
+  {
+    "id": "cuorelavico",
+    "company_name": "Cuore Lavico srl",
+    "domain": "cuorelavico.it",
+    "evaluation_date": "2026-10-03",
+    "status": "QUALIFIED",
+    "tier": "B",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://cuorelavico.it/"
+      },
+      "city": {
+        "value": "Biancavilla",
+        "source_url": "https://cuorelavico.it/"
+      },
+      "employees": {
+        "value": 2,
+        "range_min": null,
+        "range_max": null,
+        "source_url": "https://www.ufficiocamerale.it/trova-azienda",
+        "source_says_unverified": false,
+        "note": "Verificato a mano su ufficiocamerale (Trova Azienda, partita IVA 05047710875) il 03/10/2026."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": 300000,
+        "range_max": 600000,
+        "year": 2025,
+        "source_url": "https://www.informazione-aziende.it/Azienda_CUORE-LAVICO-SRL"
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "Piastre refrattarie e oggetti in pietra lavica dell'Etna, venduti con e-commerce proprio in 5 lingue e configuratore 3D.",
+        "source_url": "https://cuorelavico.it/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "Negozio online proprio in 5 lingue, con configuratore 3D delle piastre.",
+        "evidence_quote": null,
+        "url": "https://cuorelavico.it/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "piu_paesi",
+        "observed_fact": "Il 90% delle vendite viene dall'online; ha raggiunto mercati come Germania e Svezia.",
+        "evidence_quote": "raggiungendo nuovi segmenti di pubblico e mercati come Germania e Svezia",
+        "url": "https://www.businessonline.it/news/le-pmi-italiane-vendono-4-miliardi-su-amazon-chi-sono-quali-prodotti-offrono-e-le-storie-pi-emblematiche_n85972.html",
+        "date": "2026-07-24",
+        "date_basis": "fonte",
+        "date_as_in_source": "24 luglio 2026"
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Condizioni di vendita e garanzie per clienti in Germania, Svezia e altri paesi",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Informative e consensi del negozio online multilingue",
+        "area": "Dati & privacy",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Francesco Cunsolo",
+      "title": null,
+      "source_url": "https://cuorelavico.it/chi-siamo/",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "clienti su più paesi",
+      "role_match": "nome senza ruolo",
+      "reason": "Tra i fondatori, indicato come imprenditore esperto di export; non è detto che sia il CEO."
+    },
+    "evidence_deductions": [],
+    "sources": [
+      {
+        "url": "https://cuorelavico.it/",
+        "type": "primaria",
+        "accessed": "2026-10-03"
+      },
+      {
+        "url": "https://cuorelavico.it/chi-siamo/",
+        "type": "primaria",
+        "accessed": "2026-10-03"
+      },
+      {
+        "url": "https://www.businessonline.it/news/le-pmi-italiane-vendono-4-miliardi-su-amazon-chi-sono-quali-prodotti-offrono-e-le-storie-pi-emblematiche_n85972.html",
+        "type": "secondaria",
+        "accessed": "2026-10-03"
+      },
+      {
+        "url": "https://www.informazione-aziende.it/Azienda_CUORE-LAVICO-SRL",
+        "type": "secondaria",
+        "accessed": "2026-10-03"
+      },
+      {
+        "url": "https://www.ufficiocamerale.it/trova-azienda",
+        "type": "secondaria",
+        "accessed": "2026-10-03"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 12,
+      "buyer_availability": 4,
+      "evidence_quality": 10,
+      "total": 78
+    },
+    "score_reason": {
+      "company_fit": "Biancavilla (sito) +5; 2 dipendenti (ufficiocamerale, verifica manuale 03/10/2026) +10; e-commerce proprio (sito) +15. Totale 30.",
+      "legal_complexity": "E-commerce → Contratti, Dati & privacy, Tech AI & cyber; vendite estere → Societario (inferenza): 4 aree 17; vendite su più paesi, forte +5. Totale 22.",
+      "buying_signals": "Vendite in Germania e Svezia (BusinessOnline, 24/07/2026, 2 mesi) forte 12. Totale 12.",
+      "buyer_availability": "Francesco Cunsolo, fondatore esperto di export (chi-siamo); ruolo di CEO non confermato. 4.",
+      "evidence_quality": "Fatturato 2025 in fascia (informazione-aziende); fonti primarie presenti. Nessuna sottrazione. 10."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "outreach_angle": "Cuore Lavico vende quasi tutto online e ha portato la pietra lavica dell'Etna in Germania e Svezia. Vendere all'estero significa condizioni di vendita e privacy valide in più paesi: Iusful le segue con un avvocato dedicato, a un costo mensile noto.",
+    "notes": "Nessun round VC trovato. Sul sito annuncia una nuova sede produttiva con nuovi macchinari (pagina senza data, non è un segnale della mappa).",
+    "doubts": []
+  },
+  {
+    "id": "unaloe",
+    "company_name": "UNALOE (Ferrara Giovanni)",
+    "domain": "unaloe.it",
+    "evaluation_date": "2026-10-03",
+    "status": "QUALIFIED",
+    "tier": "B",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.unaloe.it/il-territorio/"
+      },
+      "city": {
+        "value": "OroMare (Campania)",
+        "source_url": "https://www.unaloe.it/il-territorio/"
+      },
+      "employees": {
+        "value": 1,
+        "range_min": null,
+        "range_max": null,
+        "source_url": "https://www.ufficiocamerale.it/trova-azienda",
+        "source_says_unverified": false,
+        "note": "Verificato a mano su ufficiocamerale (Trova Azienda, partita IVA 04692120613) il 03/10/2026."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "Gioielli in argento fatti a mano, venduti con negozio online proprio e spedizioni in tutto il mondo.",
+        "source_url": "https://www.unaloe.it/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "Negozio online proprio con spedizione gratuita nel mondo da 199 euro.",
+        "evidence_quote": null,
+        "url": "https://www.unaloe.it/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "piu_paesi",
+        "observed_fact": "Esporta quasi l'80% del fatturato in Canada, Stati Uniti, Australia e in tutta Europa.",
+        "evidence_quote": "esportando quasi l'80% del fatturato in Canada, Stati Uniti, Australia e in tutta Europa",
+        "url": "https://www.businessonline.it/news/le-pmi-italiane-vendono-4-miliardi-su-amazon-chi-sono-quali-prodotti-offrono-e-le-storie-pi-emblematiche_n85972.html",
+        "date": "2026-07-24",
+        "date_basis": "fonte",
+        "date_as_in_source": "24 luglio 2026"
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Condizioni di vendita, garanzie e recesso per clienti extra UE",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Trasferimenti di dati dei clienti verso paesi extra UE",
+        "area": "Dati & privacy",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Giovanni Ferrara",
+      "title": null,
+      "source_url": "https://www.unaloe.it/il-territorio/",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "clienti su più paesi",
+      "role_match": "nome senza ruolo",
+      "reason": "La ragione sociale del sito è 'Ferrara Giovanni': probabilmente il titolare (inferenza), ruolo non confermato da una fonte."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.unaloe.it/",
+        "type": "primaria",
+        "accessed": "2026-10-03"
+      },
+      {
+        "url": "https://www.unaloe.it/il-territorio/",
+        "type": "primaria",
+        "accessed": "2026-10-03"
+      },
+      {
+        "url": "https://www.businessonline.it/news/le-pmi-italiane-vendono-4-miliardi-su-amazon-chi-sono-quali-prodotti-offrono-e-le-storie-pi-emblematiche_n85972.html",
+        "type": "secondaria",
+        "accessed": "2026-10-03"
+      },
+      {
+        "url": "https://www.ufficiocamerale.it/trova-azienda",
+        "type": "secondaria",
+        "accessed": "2026-10-03"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 12,
+      "buyer_availability": 4,
+      "evidence_quality": 9,
+      "total": 77
+    },
+    "score_reason": {
+      "company_fit": "Campania (sito) +5; 1 dipendente (ufficiocamerale, verifica manuale 03/10/2026) +10; e-commerce proprio (sito) +15. Totale 30.",
+      "legal_complexity": "E-commerce → Contratti, Dati & privacy, Tech AI & cyber; vendite estere → Societario (inferenza): 4 aree 17; vendite su più paesi, forte +5. Totale 22.",
+      "buying_signals": "Quasi 80% del fatturato all'estero (BusinessOnline, 24/07/2026, 2 mesi) forte 12. Totale 12.",
+      "buyer_availability": "Giovanni Ferrara, nome dalla ragione sociale (sito); ruolo non confermato. 4.",
+      "evidence_quality": "Fatturato non trovato −1; fonti primarie presenti. 9."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "outreach_angle": "UNALOE esporta quasi l'80% del fatturato tra Europa, Stati Uniti, Canada e Australia, dal proprio negozio online. Vendere in così tanti paesi vuol dire condizioni di vendita e privacy da adattare: Iusful offre un avvocato dedicato con un costo mensile noto.",
+    "notes": "Ditta individuale con 1 dipendente. Nessun round VC trovato.",
+    "doubts": []
+  },
+  {
+    "id": "emiliafoodlove",
+    "company_name": "4 FOOD SRL (Emilia Food Love)",
+    "domain": "emiliafood.love",
+    "evaluation_date": "2026-10-03",
+    "status": "QUALIFIED",
+    "tier": "A",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://en.emiliafood.love/pages/help"
+      },
+      "city": {
+        "value": "Quattro Castella",
+        "source_url": "https://en.emiliafood.love/pages/help"
+      },
+      "employees": {
+        "value": 4,
+        "range_min": null,
+        "range_max": null,
+        "source_url": "https://www.ufficiocamerale.it/trova-azienda",
+        "source_says_unverified": false,
+        "note": "Verificato a mano su ufficiocamerale (Trova Azienda, partita IVA 02948220351, 4 FOOD S.R.L.) il 03/10/2026: 4 dipendenti (2026). LinkedIn indica la fascia 2-10. Il sito aziendale riporta la partita IVA 02948210351, probabilmente un refuso."
+      },
+      "revenue_eur": {
+        "value": 2196068,
+        "range_min": null,
+        "range_max": null,
+        "year": 2025,
+        "source_url": "https://www.ufficiocamerale.it/trova-azienda"
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "E-commerce proprio che esporta prodotti tipici emiliani, soprattutto negli Stati Uniti.",
+        "source_url": "https://startupitalia.eu/startup/emiliane-food-love-andrea-magnone-usa/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "E-commerce proprietario di prodotti alimentari emiliani.",
+        "evidence_quote": null,
+        "url": "https://startupitalia.eu/startup/emiliane-food-love-andrea-magnone-usa/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "piu_paesi",
+        "observed_fact": "25.000 ordini negli USA con circa 30.000 clienti l'anno scorso; prossimi mercati Regno Unito e Giappone.",
+        "evidence_quote": "25mila ordini negli USA con 30mila clienti",
+        "url": "https://startupitalia.eu/startup/emiliane-food-love-andrea-magnone-usa/",
+        "date": "2026-02-12",
+        "date_basis": "fonte",
+        "date_as_in_source": "12 febbraio 2026"
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Condizioni di vendita e responsabilità per spedizioni alimentari negli Stati Uniti",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Trasferimento dei dati dei clienti verso gli Stati Uniti",
+        "area": "Dati & privacy",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Andrea Magnone",
+      "title": "CEO",
+      "source_url": "https://startupitalia.eu/startup/emiliane-food-love-andrea-magnone-usa/",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "clienti su più paesi",
+      "role_match": "primario",
+      "reason": "CEO e co-fondatore: con il mercato principale negli Stati Uniti, contratti e privacy passano da lui."
+    },
+    "evidence_deductions": [],
+    "sources": [
+      {
+        "url": "https://en.emiliafood.love/pages/help",
+        "type": "primaria",
+        "accessed": "2026-10-03"
+      },
+      {
+        "url": "https://startupitalia.eu/startup/emiliane-food-love-andrea-magnone-usa/",
+        "type": "secondaria",
+        "accessed": "2026-10-03"
+      },
+      {
+        "url": "https://www.linkedin.com/company/emilia-food-love",
+        "type": "secondaria",
+        "accessed": "2026-10-03"
+      },
+      {
+        "url": "https://www.ufficiocamerale.it/trova-azienda",
+        "type": "secondaria",
+        "accessed": "2026-10-03"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 12,
+      "buyer_availability": 10,
+      "evidence_quality": 10,
+      "total": 84
+    },
+    "score_reason": {
+      "company_fit": "Quattro Castella (sito) +5; 4 dipendenti (ufficiocamerale, verifica manuale 03/10/2026) +10; e-commerce proprio (StartupItalia) +15. Totale 30.",
+      "legal_complexity": "E-commerce → Contratti, Dati & privacy, Tech AI & cyber; vendite estere → Societario (inferenza): 4 aree 17; vendite su più paesi, forte +5. Totale 22.",
+      "buying_signals": "25.000 ordini negli USA (StartupItalia, 12/02/2026, 7 mesi) forte 12. Totale 12.",
+      "buyer_availability": "Andrea Magnone, CEO (StartupItalia); scenario clienti su più paesi, primario. 10.",
+      "evidence_quality": "Fatturato 2025 trovato (ufficiocamerale); fonte primaria presente (sito). Nessuna sottrazione. 10."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "outreach_angle": "Emilia Food Love spedisce prodotti emiliani a decine di migliaia di clienti negli Stati Uniti e guarda a Regno Unito e Giappone. Ogni nuovo paese porta condizioni di vendita e privacy da adattare: Iusful le segue con un avvocato dedicato e un costo mensile noto.",
+    "notes": "Aumento di capitale nel 2026 visto solo in un'anteprima di ricerca (non è una fonte) e nessun round VC trovato: non è un dubbio da rivedere. Le altre fonti sono confermate.",
+    "doubts": []
+  },
+  {
+    "id": "sdcalabria",
+    "company_name": "SD Calabria (Spesa digitale di Quaranta Antonino)",
+    "domain": "sdcalabria.it",
+    "evaluation_date": "2026-10-03",
+    "status": "QUALIFIED",
+    "tier": "A",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/"
+      },
+      "city": {
+        "value": null,
+        "source_url": null
+      },
+      "employees": {
+        "value": 1,
+        "range_min": null,
+        "range_max": null,
+        "source_url": "https://www.ufficiocamerale.it/trova-azienda",
+        "source_says_unverified": false,
+        "note": "Verificato a mano su ufficiocamerale (Trova Azienda, partita IVA 02174880803) il 03/10/2026."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "Prodotti alimentari tipici calabresi venduti online e su Temu.",
+        "source_url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "Vende prodotti tipici calabresi online e tramite il programma per venditori locali di Temu.",
+        "evidence_quote": null,
+        "url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "piu_paesi",
+        "observed_fact": "Tramite Temu vende a clienti in Spagna, Germania, Paesi Bassi, Polonia, Austria, Irlanda, Danimarca e Repubblica Ceca.",
+        "evidence_quote": "acquirenti provenienti da Paesi Bassi, Polonia, Austria, Irlanda, Danimarca e Repubblica Ceca",
+        "url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/",
+        "date": "2026-08-31",
+        "date_basis": "fonte",
+        "date_as_in_source": "31 agosto 2026"
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Condizioni di vendita per consumatori in otto paesi europei",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Termini del marketplace e obblighi verso i clienti esteri",
+        "area": "Tech, AI & cyber",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Antonino Quaranta",
+      "title": "Titolare",
+      "source_url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "clienti su più paesi",
+      "role_match": "primario",
+      "reason": "Titolare della ditta individuale: è lui che decide, ruolo equivalente al founder e CEO."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato"
+      },
+      {
+        "code": "nessuna_fonte_primaria",
+        "detail": "Sito aziendale non consultabile (403)"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/",
+        "type": "secondaria",
+        "accessed": "2026-10-03"
+      },
+      {
+        "url": "https://www.ufficiocamerale.it/trova-azienda",
+        "type": "secondaria",
+        "accessed": "2026-10-03"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 12,
+      "buyer_availability": 10,
+      "evidence_quality": 7,
+      "total": 81
+    },
+    "score_reason": {
+      "company_fit": "Calabria (Il Dispaccio) +5; 1 dipendente (ufficiocamerale, verifica manuale 03/10/2026) +10; e-commerce e marketplace (Il Dispaccio) +15. Totale 30.",
+      "legal_complexity": "E-commerce → Contratti, Dati & privacy, Tech AI & cyber; vendite estere → Societario (inferenza): 4 aree 17; vendite su più paesi, forte +5. Totale 22.",
+      "buying_signals": "Clienti in otto paesi europei via Temu (Il Dispaccio, 31/08/2026, 1 mese) forte 12. Totale 12.",
+      "buyer_availability": "Antonino Quaranta, titolare (Il Dispaccio); scenario clienti su più paesi, primario. 10.",
+      "evidence_quality": "Fatturato non trovato −1; nessuna fonte primaria consultata, sito non raggiungibile −2. 7."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "outreach_angle": "Grazie a Temu SD Calabria ora vende i prodotti calabresi in otto paesi europei. Vendere all'estero porta condizioni di vendita e regole dei marketplace da adattare: Iusful le segue con un avvocato dedicato e un costo mensile noto.",
+    "notes": "Ditta individuale con 1 dipendente. Nessun round VC trovato.",
+    "doubts": []
+  },
+  {
+    "id": "esplodia",
+    "company_name": "Gruppo Tera srl (Esplodia)",
+    "domain": "esplodia.com",
+    "evaluation_date": "2026-10-04",
+    "status": "QUALIFIED",
+    "tier": "A",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.esplodia.com/"
+      },
+      "city": {
+        "value": "Caivano",
+        "source_url": "https://www.esplodia.com/"
+      },
+      "employees": {
+        "value": 25,
+        "range_min": null,
+        "range_max": null,
+        "source_url": "https://arenadigitale.it/2026/07/22/nuova-storia-di-un-venditore-italiano-su-temu/",
+        "source_says_unverified": false,
+        "note": "'Un team di 25 persone' (Arena Digitale, 22/07/2026); LinkedIn indica la fascia 11-50."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "E-commerce di prodotti per casa, giardino, fitness e giocattoli, sul sito e su più marketplace.",
+        "source_url": "https://www.esplodia.com/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "E-commerce proprio e vendita su più marketplace, tra cui Temu.",
+        "evidence_quote": null,
+        "url": "https://www.esplodia.com/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "piu_paesi",
+        "observed_fact": "Gestisce ordini in Italia, Spagna, Francia, Germania, Paesi Bassi e Polonia.",
+        "evidence_quote": "gestiva ordini in Italia, Spagna, Francia, Germania, Paesi Bassi e Polonia",
+        "url": "https://arenadigitale.it/2026/07/22/nuova-storia-di-un-venditore-italiano-su-temu/",
+        "date": "2026-07-22",
+        "date_basis": "fonte",
+        "date_as_in_source": "22/07/2026"
+      },
+      {
+        "map_row": "assunzioni",
+        "observed_fact": "Ha inserito quattro nuove persone in organico e costruisce un nuovo magazzino di 10.000 metri quadrati.",
+        "evidence_quote": "ha inserito quattro nuove persone nel proprio organico",
+        "url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/",
+        "date": "2026-08-31",
+        "date_basis": "fonte",
+        "date_as_in_source": "31 agosto 2026"
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Condizioni di vendita e recesso per consumatori in sei paesi europei",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Contratti di lavoro per le nuove assunzioni legate al nuovo magazzino",
+        "area": "Lavoro & persone",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Informative privacy per clienti di più paesi e obblighi verso i marketplace",
+        "area": "Dati & privacy",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Fabrizio Provitera",
+      "title": "Contitolare",
+      "source_url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/",
+      "linkedin_url": "https://www.linkedin.com/in/fabrizio-provitera-6484541a5/",
+      "email": null,
+      "scenario": "clienti su più paesi",
+      "role_match": "primario",
+      "reason": "Contitolare: gestisce l'azienda con i fratelli e decide su contratti, vendite estere e assunzioni."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.esplodia.com/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://arenadigitale.it/2026/07/22/nuova-storia-di-un-venditore-italiano-su-temu/",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 25,
+      "buying_signals": 19,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 93
+    },
+    "score_reason": {
+      "company_fit": "Caivano (sito) +5; 25 persone (Arena Digitale, 22/07/2026) +10; e-commerce e marketplace (sito) +15. Totale 30.",
+      "legal_complexity": "E-commerce → Contratti, Dati & privacy, Tech AI & cyber; sei paesi → Societario; assunzioni → Lavoro & persone (inferenza): 5 aree 20; forte +5. Totale 25.",
+      "buying_signals": "Ordini in sei paesi (Arena Digitale, 22/07/2026, 2 mesi) forte 12; quattro nuove persone (Il Dispaccio, 31/08/2026, 1 mese) normale 7. Totale 19.",
+      "buyer_availability": "Fabrizio Provitera, contitolare (Il Dispaccio); scenario clienti su più paesi, primario. 10.",
+      "evidence_quality": "Fatturato non trovato da fonte leggibile −1; fonte primaria presente. 9."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": "Esplodia vende in sei paesi europei, ha appena inserito quattro persone e sta costruendo un nuovo magazzino. Crescere così porta insieme condizioni di vendita estere, contratti di lavoro e privacy: Iusful li segue con un avvocato dedicato e un costo mensile noto.",
+    "notes": "Fonte del candidato: articoli su Temu. Aiuti pubblici ricevuti (garanzie e finanziamenti agevolati), nessun fondo VC trovato. Un'anteprima di ricerca indica 24,8 milioni di fatturato 2025: non è una fonte."
+  },
+  {
+    "id": "cucciolotta",
+    "company_name": "IT Design srl (Cucciolotta)",
+    "domain": "cucciolotta.com",
+    "evaluation_date": "2026-10-04",
+    "status": "QUALIFIED",
+    "tier": "B",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.cucciolotta.com/chi-siamo/"
+      },
+      "city": {
+        "value": "Giaveno",
+        "source_url": "https://www.cucciolotta.com/chi-siamo/"
+      },
+      "employees": {
+        "value": 13,
+        "range_min": null,
+        "range_max": null,
+        "source_url": "https://www.cuneo24.it/2026/07/le-pmi-piemontesi-nella-top-10-italiana-di-amazon-piu-170-milioni-di-euro-di-vendite-351339/",
+        "source_says_unverified": false,
+        "note": "'Un team di 13 persone' (Cuneo24, 23/07/2026)."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "Progetta e produce cucce, pollai e arredi da giardino in HPL, venduti online sul proprio sito e su Amazon.",
+        "source_url": "https://www.cucciolotta.com/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "Vende online sul proprio sito e su Amazon dal 2022.",
+        "evidence_quote": null,
+        "url": "https://www.cuneo24.it/2026/07/le-pmi-piemontesi-nella-top-10-italiana-di-amazon-piu-170-milioni-di-euro-di-vendite-351339/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "piu_paesi",
+        "observed_fact": "L'export è cresciuto del 12% in Francia, Belgio, Germania, Paesi Bassi, Danimarca e Repubblica Ceca.",
+        "evidence_quote": "mercati chiave come Francia, Belgio, Germania, Paesi Bassi, Danimarca e Repubblica Ceca",
+        "url": "https://www.cuneo24.it/2026/07/le-pmi-piemontesi-nella-top-10-italiana-di-amazon-piu-170-milioni-di-euro-di-vendite-351339/",
+        "date": "2026-07-23",
+        "date_basis": "fonte",
+        "date_as_in_source": "23 luglio 2026"
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Condizioni di vendita e garanzie per clienti in sei paesi europei",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Tutela dei prodotti brevettati e del marchio sui marketplace esteri",
+        "area": "Proprietà intellettuale",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Francesco Polito",
+      "title": "Responsabile vendite Italia",
+      "source_url": "https://www.cuneo24.it/2026/07/le-pmi-piemontesi-nella-top-10-italiana-di-amazon-piu-170-milioni-di-euro-di-vendite-351339/",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "clienti su più paesi",
+      "role_match": "nome senza ruolo",
+      "reason": "Parla a nome dell'azienda sull'export, ma non è il CEO né il responsabile finanza: ruolo atteso non confermato."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.cucciolotta.com/chi-siamo/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.cucciolotta.com/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.cuneo24.it/2026/07/le-pmi-piemontesi-nella-top-10-italiana-di-amazon-piu-170-milioni-di-euro-di-vendite-351339/",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 12,
+      "buyer_availability": 4,
+      "evidence_quality": 9,
+      "total": 77
+    },
+    "score_reason": {
+      "company_fit": "Giaveno (sito) +5; 13 persone (Cuneo24, 23/07/2026) +10; vende online, sito e Amazon (Cuneo24) +15. Totale 30.",
+      "legal_complexity": "E-commerce → Contratti, Dati & privacy, Tech AI & cyber; vendite estere → Societario (inferenza): 4 aree 17; vendite su più paesi, forte +5. Totale 22.",
+      "buying_signals": "Export in sei paesi in crescita del 12% (Cuneo24, 23/07/2026, 2 mesi) forte 12. Totale 12.",
+      "buyer_availability": "Francesco Polito, responsabile vendite Italia (Cuneo24); CEO o finanza non trovati. 4.",
+      "evidence_quality": "Fatturato non trovato da fonte leggibile −1; fonte primaria presente. 9."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": "Cucciolotta ha fatto crescere del 12% l'export dei suoi pollai e cucce in HPL in sei paesi europei. Vendere all'estero prodotti brevettati porta condizioni di vendita e tutela del marchio da gestire paese per paese: Iusful li segue con un avvocato dedicato.",
+    "notes": "Nessun round VC trovato; ANSA (2024) la chiama startup ma senza investitori. Da trovare il CEO o l'amministratore: con il ruolo giusto sale al Tier A."
+  },
+  {
+    "id": "kalucreations",
+    "company_name": "Marmeria Russo Luca & C. sas (Kalu Creations)",
+    "domain": "marmeriarussoluca.it",
+    "evaluation_date": "2026-10-04",
+    "status": "QUALIFIED",
+    "tier": "B",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.marmeriarussoluca.it/it/kalu-creations"
+      },
+      "city": {
+        "value": "Vernole",
+        "source_url": "https://www.marmeriarussoluca.it/it/kalu-creations"
+      },
+      "employees": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "source_url": null,
+        "source_says_unverified": false,
+        "note": "Non trovati da una fonte leggibile."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "Oggetti di design e accessori per la tavola in marmo e pietra, venduti anche nella vetrina Made in Italy di Amazon.",
+        "source_url": "https://www.borderline24.com/2026/07/24/la-puglia-del-digitale-corre-su-amazon-quarto-posto-in-italia-con-250-milioni-di-vendite-superato-il-veneto/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "Vende tramite la vetrina Made in Italy di Amazon, con l'Agenzia ICE.",
+        "evidence_quote": null,
+        "url": "https://www.borderline24.com/2026/07/24/la-puglia-del-digitale-corre-su-amazon-quarto-posto-in-italia-con-250-milioni-di-vendite-superato-il-veneto/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "piu_paesi",
+        "observed_fact": "Oggetti in marmo apprezzati in tutta Europa; citata come caso di internazionalizzazione delle PMI pugliesi.",
+        "evidence_quote": "accessori per la tavola apprezzati in tutta Europa",
+        "url": "https://www.borderline24.com/2026/07/24/la-puglia-del-digitale-corre-su-amazon-quarto-posto-in-italia-con-250-milioni-di-vendite-superato-il-veneto/",
+        "date": "2026-07-24",
+        "date_basis": "fonte",
+        "date_as_in_source": "24/07/2026"
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Condizioni di vendita per clienti in più paesi europei",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Tutela del marchio Kalu Creations sui marketplace",
+        "area": "Proprietà intellettuale",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Luca Russo",
+      "title": null,
+      "source_url": "https://www.marmeriarussoluca.it/it/kalu-creations",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "clienti su più paesi",
+      "role_match": "nome senza ruolo",
+      "reason": "Maestro artigiano che dà il nome alla società: probabile titolare (inferenza), ruolo non confermato."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.marmeriarussoluca.it/it/kalu-creations",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.borderline24.com/2026/07/24/la-puglia-del-digitale-corre-su-amazon-quarto-posto-in-italia-con-250-milioni-di-vendite-superato-il-veneto/",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 20,
+      "legal_complexity": 22,
+      "buying_signals": 12,
+      "buyer_availability": 4,
+      "evidence_quality": 9,
+      "total": 67
+    },
+    "score_reason": {
+      "company_fit": "Vernole (sito) +5; dipendenti non verificati 0, tier massimo B; vendita su Amazon (Borderline24) +15. Totale 20.",
+      "legal_complexity": "E-commerce → Contratti, Dati & privacy, Tech AI & cyber; vendite estere → Societario (inferenza): 4 aree 17; vendite su più paesi, forte +5. Totale 22.",
+      "buying_signals": "Prodotti apprezzati in tutta Europa (Borderline24, 24/07/2026, 2 mesi) forte 12. Totale 12.",
+      "buyer_availability": "Luca Russo, nome dalla ragione sociale (sito); ruolo non confermato. 4.",
+      "evidence_quality": "Fatturato non trovato −1; fonte primaria presente. 9."
+    },
+    "flags": [
+      "dipendenti_non_verificati"
+    ],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": "Kalu Creations porta il marmo pugliese sulle tavole di tutta Europa tramite la vetrina Made in Italy di Amazon. Vendere all'estero con un proprio marchio richiede condizioni di vendita e tutela del marchio pensate per più paesi: Iusful le segue con un avvocato dedicato.",
+    "notes": "Fonte del candidato: comunicato regionale Amazon. Da verificare i dipendenti (visura) e il ruolo di Luca Russo."
+  },
+  {
+    "id": "caffebarbaro",
+    "company_name": "Nutis srl (Caffè Barbaro)",
+    "domain": "caffebarbaro.it",
+    "evaluation_date": "2026-10-04",
+    "status": "QUALIFIED",
+    "tier": "B",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://caffebarbaro.com/pages/about-us"
+      },
+      "city": {
+        "value": "Scafati",
+        "source_url": "https://it.linkedin.com/company/nutis-srl-caffebarbaro"
+      },
+      "employees": {
+        "value": null,
+        "range_min": 11,
+        "range_max": 50,
+        "source_url": "https://it.linkedin.com/company/nutis-srl-caffebarbaro",
+        "source_says_unverified": false,
+        "note": "Fascia LinkedIn 11-50, 22 profili collegati."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "Torrefazione dal 1956 che vende caffè anche online, sul proprio shop e su Temu.",
+        "source_url": "https://caffebarbaro.com/pages/home"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "Vende online sul proprio sito e su Temu.",
+        "evidence_quote": null,
+        "url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "piu_paesi",
+        "observed_fact": "La storia aziendale cita mercati in Cina, Mediterraneo, Medio Oriente e Stati Uniti.",
+        "evidence_quote": null,
+        "url": "https://caffebarbaro.com/pages/about-us",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Contratti con distributori e clienti esteri",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Condizioni di vendita e privacy del negozio online",
+        "area": "Dati & privacy",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Giovanni Iovine",
+      "title": "CEO",
+      "source_url": "https://caffebarbaro.com/pages/about-us",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "clienti su più paesi",
+      "role_match": "primario",
+      "reason": "CEO e terza generazione della famiglia: decide su vendite estere e contratti."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://caffebarbaro.com/pages/about-us",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://it.linkedin.com/company/nutis-srl-caffebarbaro",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 0,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 71
+    },
+    "score_reason": {
+      "company_fit": "Scafati (LinkedIn) +5; fascia 11-50 (LinkedIn) +10; caffè venduto online, sito e Temu (Il Dispaccio) +15. Totale 30.",
+      "legal_complexity": "E-commerce → Contratti, Dati & privacy, Tech AI & cyber; vendite estere → Societario (inferenza): 4 aree 17; vendite su più paesi, forte +5. Totale 22.",
+      "buying_signals": "Mercati esteri citati sul sito senza data, non contano; i piani di espansione (Il Dispaccio) non sono un fatto osservato. Totale 0.",
+      "buyer_availability": "Giovanni Iovine, CEO (about-us); scenario clienti su più paesi, primario. 10.",
+      "evidence_quality": "Fatturato non trovato −1; fonte primaria presente. 9."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": "Caffè Barbaro porta l'espresso napoletano dal 1956 in mercati che vanno dalla Cina agli Stati Uniti, e ora vende anche online. Contratti con distributori esteri e regole del negozio online sono temi ricorrenti: Iusful li segue con un avvocato dedicato e un costo mensile noto.",
+    "notes": "Il riassunto automatico dell'articolo attribuiva a Caffè Barbaro 'oltre 90 mercati': nel testo la frase riguarda Temu. Corretto prima dello score."
+  },
+  {
+    "id": "baronihome",
+    "company_name": "Baroni Home",
+    "domain": "baronihome.it",
+    "evaluation_date": "2026-10-04",
+    "status": "REJECTED",
+    "tier": "REJECT",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/"
+      },
+      "city": {
+        "value": "Firenze",
+        "source_url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/"
+      },
+      "employees": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "source_url": null,
+        "source_says_unverified": false,
+        "note": "Non trovati."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "Articoli per la casa venduti online e su marketplace, tra cui Temu.",
+        "source_url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "Vende articoli per la casa su Temu dal febbraio 2025, con oltre 200 prodotti.",
+        "evidence_quote": null,
+        "url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      }
+    ],
+    "legal_pains": [],
+    "buyer": {
+      "name": "Edoardo Borgioli",
+      "title": "Direttore",
+      "source_url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "5-15 generale",
+      "role_match": "nome senza ruolo",
+      "reason": "Direttore citato nell'articolo; non è detto che sia il CEO o il fondatore."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      },
+      {
+        "code": "nessuna_fonte_primaria",
+        "detail": "Sito baronihome.it non raggiungibile (certificato non valido)"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://ildispaccio.it/calabria/2026/08/31/nuova-ricerca-pmi-italiane-ed-e-commerce-il-68-si-espande-sui-mercati-internazionali-il-caso-dellazienda-calabrese-sd-calabria/",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 20,
+      "legal_complexity": 13,
+      "buying_signals": 0,
+      "buyer_availability": 4,
+      "evidence_quality": 7,
+      "total": 44
+    },
+    "score_reason": {
+      "company_fit": "Firenze (Il Dispaccio) +5; dipendenti non verificati 0; e-commerce e marketplace (Il Dispaccio) +15. Totale 20.",
+      "legal_complexity": "Marketplace → Contratti, Dati & privacy, Tech AI & cyber (inferenza): 3 aree 13. Totale 13.",
+      "buying_signals": "Ingresso su Temu nel febbraio 2025 è il modello di vendita, non un segnale di attività. Totale 0.",
+      "buyer_availability": "Edoardo Borgioli, direttore (Il Dispaccio); ruolo atteso non confermato. 4.",
+      "evidence_quality": "Fatturato non trovato −1; nessuna fonte primaria, sito non raggiungibile −2. 7."
+    },
+    "flags": [
+      "dipendenti_non_verificati"
+    ],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": null,
+    "notes": "Lead debole, ricerca fermata presto (loop agentico, punto 6). baroni-firenze.com è un'altra azienda (pelletteria dal 1912), da non confondere."
+  },
+  {
+    "id": "all4cycling",
+    "company_name": "Lunar Sport srl (All4cycling)",
+    "domain": "all4cycling.com",
+    "evaluation_date": "2026-10-04",
+    "status": "QUALIFIED",
+    "tier": "B",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.linkedin.com/company/lunarsport"
+      },
+      "city": {
+        "value": "Gazzada Schianno",
+        "source_url": "https://www.linkedin.com/company/lunarsport"
+      },
+      "employees": {
+        "value": null,
+        "range_min": 11,
+        "range_max": 50,
+        "source_url": "https://www.linkedin.com/company/lunarsport",
+        "source_says_unverified": false,
+        "note": "Fascia LinkedIn 11-50, dall'export di Clay (Find Companies, 03/10/2026)."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "E-commerce di abbigliamento tecnico, bici e accessori per il ciclismo, con negozio a Varese.",
+        "source_url": "https://www.all4cycling.com/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "Negozio online di ciclismo con più di 300 marchi.",
+        "evidence_quote": null,
+        "url": "https://www.all4cycling.com/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "piu_paesi",
+        "observed_fact": "Sito in italiano, inglese, francese e tedesco; spedizioni con corrieri internazionali.",
+        "evidence_quote": null,
+        "url": "https://www.all4cycling.com/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "fundraising_soci",
+        "observed_fact": "Sportler spa ha acquisito l'80% di Lunar Sport srl, che possiede All4cycling.",
+        "evidence_quote": "Sportler acquisisce l’80% della varesina All4cycling",
+        "url": "https://www.malpensa24.it/varse-sportler-all4cycling-nardello-acquisizione/",
+        "date": "2021-10-27",
+        "date_basis": "fonte",
+        "date_as_in_source": "27/10/2021"
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Patti tra soci con Sportler, socio di maggioranza",
+        "area": "Societario",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Condizioni di vendita per clienti in più paesi europei",
+        "area": "Contratti",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Luca Nardello",
+      "title": "Founder & CEO",
+      "source_url": "https://www.malpensa24.it/varse-sportler-all4cycling-nardello-acquisizione/",
+      "linkedin_url": "https://www.linkedin.com/in/luca-nardello-2443a58/",
+      "email": null,
+      "scenario": "clienti su più paesi",
+      "role_match": "primario",
+      "reason": "Fondatore e amministratore, resta alla guida dopo l'ingresso di Sportler."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.all4cycling.com/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/company/lunarsport",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.malpensa24.it/varse-sportler-all4cycling-nardello-acquisizione/",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 0,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 71
+    },
+    "score_reason": {
+      "company_fit": "Gazzada Schianno (LinkedIn) +5; fascia 11-50 (LinkedIn, via Clay) +10; e-commerce di ciclismo (sito) +15. Totale 30.",
+      "legal_complexity": "E-commerce → Contratti, Dati & privacy, Tech AI & cyber; vendite estere → Societario (inferenza): 4 aree 17; vendite su più paesi, forte +5. Totale 22.",
+      "buying_signals": "Vendite estere senza data; ingresso di Sportler (Malpensa24, 27/10/2021, 59 mesi) oltre 18 mesi. Totale 0.",
+      "buyer_availability": "Luca Nardello, fondatore e CEO (Malpensa24; trovato anche da Clay); scenario clienti su più paesi, primario. 10.",
+      "evidence_quality": "Fatturato non trovato −1; fonte primaria presente. 9."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": "All4cycling vende ciclismo online in quattro lingue e dal 2021 ha Sportler come socio di maggioranza. Rapporti tra soci e vendite estere sono temi che si ripresentano: Iusful li segue con un avvocato dedicato e un costo mensile noto.",
+    "notes": "Candidato da Clay. Non è un fondo VC: Nardello dichiarava di cercare un partner strategico, non un investitore finanziario. Dubbio rivisto a mano il 04/10/2026: è controllata all'80% da Sportler spa, gruppo italiano; le controllate di gruppi italiani non sono escluse (docs/decisions.md)."
+  },
+  {
+    "id": "acqualagnatartufi",
+    "company_name": "Acqualagna Tartufi srl",
+    "domain": "acqualagnatartufi.com",
+    "evaluation_date": "2026-10-04",
+    "status": "QUALIFIED",
+    "tier": "B",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.acqualagnatartufi.com/"
+      },
+      "city": {
+        "value": "Acqualagna",
+        "source_url": "https://www.acqualagnatartufi.com/"
+      },
+      "employees": {
+        "value": null,
+        "range_min": 11,
+        "range_max": 50,
+        "source_url": "https://www.linkedin.com/company/acqualagna-tartufi-srl",
+        "source_says_unverified": false,
+        "note": "Fascia LinkedIn 11-50, dall'export di Clay (Find Companies, 03/10/2026)."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "Raccolta, lavorazione e vendita di tartufi e prodotti al tartufo, con negozio online e punto vendita.",
+        "source_url": "https://www.acqualagnatartufi.com/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "Negozio online Tartufi e Sapori e sito in sei lingue.",
+        "evidence_quote": null,
+        "url": "https://www.acqualagnatartufi.com/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "piu_paesi",
+        "observed_fact": "Vende in gran parte d'Europa, in Asia, in America Latina e in Medio Oriente.",
+        "evidence_quote": null,
+        "url": "https://www.acqualagnatartufi.com/chi-siamo/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Contratti con importatori e distributori esteri",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Condizioni di vendita del negozio online per clienti di più paesi",
+        "area": "Dati & privacy",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Emanuela Bartolucci",
+      "title": "Amministratore Unico",
+      "source_url": "https://www.acqualagnatartufi.com/chi-siamo/",
+      "linkedin_url": "https://www.linkedin.com/in/emanuela-bartolucci-920891203/",
+      "email": null,
+      "scenario": "clienti su più paesi",
+      "role_match": "primario",
+      "reason": "Fondatrice e amministratore unico: decide su contratti esteri e vendite online."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.acqualagnatartufi.com/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.acqualagnatartufi.com/chi-siamo/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/company/acqualagna-tartufi-srl",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 0,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 71
+    },
+    "score_reason": {
+      "company_fit": "Acqualagna (sito) +5; fascia 11-50 (LinkedIn, via Clay) +10; negozio online (sito) +15. Totale 30.",
+      "legal_complexity": "E-commerce → Contratti, Dati & privacy, Tech AI & cyber; vendite estere → Societario (inferenza): 4 aree 17; vendite su più paesi, forte +5. Totale 22.",
+      "buying_signals": "Vendite estere senza data nella fonte: contano per la complessità, non come segnale recente. Totale 0.",
+      "buyer_availability": "Emanuela Bartolucci, amministratore unico (chi-siamo; trovata anche da Clay); scenario clienti su più paesi, primario. 10.",
+      "evidence_quality": "Fatturato non trovato −1; fonti primarie presenti. 9."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": "Acqualagna Tartufi vende tartufi in gran parte d'Europa, in Asia, in America Latina e in Medio Oriente, anche online. Contratti con importatori e condizioni di vendita valide in più paesi sono temi ricorrenti: Iusful li segue con un avvocato dedicato.",
+    "notes": "Candidato da Clay. Buyer da Clay confermato dal sito aziendale. Nessun round VC trovato."
+  },
+  {
+    "id": "yeseatis",
+    "company_name": "Mikand Way srl (YesEatIs)",
+    "domain": "yeseatis.com",
+    "evaluation_date": "2026-10-04",
+    "status": "QUALIFIED",
+    "tier": "B",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.yeseatis.com/"
+      },
+      "city": {
+        "value": "Varedo",
+        "source_url": "https://www.yeseatis.com/"
+      },
+      "employees": {
+        "value": null,
+        "range_min": 2,
+        "range_max": 10,
+        "source_url": "https://www.linkedin.com/company/yeseatis-com",
+        "source_says_unverified": false,
+        "note": "Fascia LinkedIn 2-10, dall'export di Clay (Find Companies, 03/10/2026)."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "E-commerce di prodotti enogastronomici italiani e accessori per la casa, in sei lingue.",
+        "source_url": "https://www.yeseatis.com/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "E-commerce proprio in sei lingue e vendita sui marketplace internazionali.",
+        "evidence_quote": null,
+        "url": "https://www.yeseatis.com/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "piu_paesi",
+        "observed_fact": "Esporta più di 30.000 prodotti nel mondo, in Europa e oltre.",
+        "evidence_quote": null,
+        "url": "https://www.yeseatis.com/en/company.html",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Condizioni di vendita alimentari per consumatori di più paesi",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Informative privacy e consensi del sito multilingue",
+        "area": "Dati & privacy",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Michele Berti",
+      "title": "Owner and Founder",
+      "source_url": "https://www.linkedin.com/in/micheleberti/",
+      "linkedin_url": "https://www.linkedin.com/in/micheleberti/",
+      "email": null,
+      "scenario": "clienti su più paesi",
+      "role_match": "primario",
+      "reason": "Fondatore e titolare: in un'azienda di 2-10 persone decide su contratti e vendite estere."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.yeseatis.com/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.yeseatis.com/en/company.html",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/company/yeseatis-com",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 0,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 71
+    },
+    "score_reason": {
+      "company_fit": "Varedo (sito) +5; fascia 2-10 (LinkedIn, via Clay) +10; e-commerce in sei lingue (sito) +15. Totale 30.",
+      "legal_complexity": "E-commerce → Contratti, Dati & privacy, Tech AI & cyber; vendite estere → Societario (inferenza): 4 aree 17; vendite su più paesi, forte +5. Totale 22.",
+      "buying_signals": "Vendite estere senza data nella fonte: contano per la complessità, non come segnale recente. Totale 0.",
+      "buyer_availability": "Michele Berti, owner and founder (profilo LinkedIn trovato da Clay); scenario clienti su più paesi, primario. 10.",
+      "evidence_quality": "Fatturato non trovato −1; fonti primarie presenti. 9."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": "YesEatIs vende enogastronomia italiana in sei lingue ed esporta più di 30.000 prodotti nel mondo. Vendere cibo online a consumatori di tanti paesi porta condizioni di vendita e privacy da tenere allineate: Iusful le segue con un avvocato dedicato.",
+    "notes": "Candidato da Clay. Mikand Way offre anche consulenza su Amazon ad altre aziende: attività secondaria, non un'agenzia. Nessun round VC trovato."
+  },
+  {
+    "id": "buyleatheronline",
+    "company_name": "Mapel & C. srl (BuyLeatherOnline)",
+    "domain": "buyleatheronline.com",
+    "evaluation_date": "2026-10-04",
+    "status": "QUALIFIED",
+    "tier": "B",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.mapelec.it/en/about-us-leather-wholesale/"
+      },
+      "city": {
+        "value": "Ponte a Egola",
+        "source_url": "https://www.mapelec.it/en/about-us-leather-wholesale/"
+      },
+      "employees": {
+        "value": null,
+        "range_min": 11,
+        "range_max": 50,
+        "source_url": "https://www.linkedin.com/company/buyleatheronline",
+        "source_says_unverified": false,
+        "note": "Fascia LinkedIn 11-50, dall'export di Clay (Find Companies, 03/10/2026)."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "E-commerce di pelli italiane per artigiani e aziende, accanto al commercio all'ingrosso.",
+        "source_url": "https://www.buyleatheronline.com/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "Negozio online di pelli in quattro lingue con spedizioni in tutto il mondo.",
+        "evidence_quote": null,
+        "url": "https://www.buyleatheronline.com/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "piu_paesi",
+        "observed_fact": "Presente in Europa, Russia, Africa e Asia; spedizioni worldwide.",
+        "evidence_quote": null,
+        "url": "https://www.mapelec.it/en/about-us-leather-wholesale/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Condizioni di vendita e garanzie per clienti in più continenti",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Regole del negozio online per clienti privati e aziende di più paesi",
+        "area": "Dati & privacy",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Carlo Ciardi",
+      "title": "CEO",
+      "source_url": "https://www.mapelec.it/en/about-us-leather-wholesale/",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "clienti su più paesi",
+      "role_match": "primario",
+      "reason": "CEO con oltre 40 anni nel settore: decide su contratti esteri e sul canale online."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.buyleatheronline.com/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.mapelec.it/en/about-us-leather-wholesale/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/company/buyleatheronline",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 0,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 71
+    },
+    "score_reason": {
+      "company_fit": "Ponte a Egola (sito) +5; fascia 11-50 (LinkedIn, via Clay) +10; e-commerce di pelli (sito) +15. Totale 30.",
+      "legal_complexity": "E-commerce → Contratti, Dati & privacy, Tech AI & cyber; vendite estere → Societario (inferenza): 4 aree 17; vendite su più paesi, forte +5. Totale 22.",
+      "buying_signals": "Vendite estere senza data nella fonte: contano per la complessità, non come segnale recente. Totale 0.",
+      "buyer_availability": "Carlo Ciardi, CEO (sito Mapel); scenario clienti su più paesi, primario. 10.",
+      "evidence_quality": "Fatturato non trovato −1; fonti primarie presenti. 9."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": "BuyLeatherOnline vende pelli italiane online in quattro lingue, con clienti in Europa, Africa e Asia. Vendere a privati e aziende di tanti paesi porta condizioni di vendita e garanzie da adattare: Iusful le segue con un avvocato dedicato.",
+    "notes": "Candidato da Clay; Clay non ha trovato persone, il CEO è sul sito Mapel. Da non confondere con Mapel Group, acquisita da Rino Mastrotto."
+  },
+  {
+    "id": "timegallery",
+    "company_name": "Time Gallery srl",
+    "domain": "timegallery.it",
+    "evaluation_date": "2026-10-04",
+    "status": "RESERVE",
+    "tier": "C",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.timegallery.it/"
+      },
+      "city": {
+        "value": "Roma",
+        "source_url": "https://www.timegallery.it/"
+      },
+      "employees": {
+        "value": null,
+        "range_min": 11,
+        "range_max": 50,
+        "source_url": "https://www.linkedin.com/company/time-gallery-s-r-l",
+        "source_says_unverified": false,
+        "note": "Fascia LinkedIn 11-50, dall'export di Clay (Find Companies, 03/10/2026)."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "B2B",
+        "description": "Distribuzione di profumi e cosmetici di lusso, con una boutique a Roma.",
+        "source_url": "https://www.timegallery.it/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "piu_paesi",
+        "observed_fact": "Distribuisce in più di 35 paesi tra Europa, Asia-Pacifico e Americhe.",
+        "evidence_quote": null,
+        "url": "https://www.timegallery.it/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      }
+    ],
+    "legal_pains": [],
+    "buyer": {
+      "name": null,
+      "title": null,
+      "source_url": null,
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "15-50 generale",
+      "role_match": "unclear",
+      "reason": "Nessun nome trovato sul sito né da Clay."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.timegallery.it/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/company/time-gallery-s-r-l",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 14,
+      "buying_signals": 0,
+      "buyer_availability": 0,
+      "evidence_quality": 9,
+      "total": 53
+    },
+    "score_reason": {
+      "company_fit": "Roma (sito) +5; fascia 11-50 (LinkedIn, via Clay) +10; distribuzione B2B (sito) +15. Totale 30.",
+      "legal_complexity": "Distribuzione in più paesi → Contratti, Societario (inferenza): 2 aree 9; forte +5. Totale 14.",
+      "buying_signals": "Vendite estere senza data nella fonte: contano per la complessità, non come segnale recente. Totale 0.",
+      "buyer_availability": "Nessuna persona trovata: unclear. 0.",
+      "evidence_quality": "Fatturato non trovato −1; fonte primaria presente. 9."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": null,
+    "notes": "Candidato da Clay. Su LinkedIn scrive che sta assumendo (link a Indeed), non verificato sulla pagina annunci. Con un buyer e l'annuncio confermato salirebbe al Tier B."
+  },
+  {
+    "id": "produceshop",
+    "company_name": "Pasmara srl (ProduceShop)",
+    "domain": "produceshop.com",
+    "evaluation_date": "2026-10-04",
+    "status": "QUALIFIED",
+    "tier": "A",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.teleborsa.it/News/2026/07/16/produceshop-rinasce-dal-fallimento-10-milioni-di-fatturato-in-8-mesi-e-gia-in-utile-con-l-ai-1.html"
+      },
+      "city": {
+        "value": "Milano",
+        "source_url": "https://www.teleborsa.it/News/2026/07/16/produceshop-rinasce-dal-fallimento-10-milioni-di-fatturato-in-8-mesi-e-gia-in-utile-con-l-ai-1.html"
+      },
+      "employees": {
+        "value": 10,
+        "range_min": null,
+        "range_max": null,
+        "source_url": "https://www.teleborsa.it/News/2026/07/16/produceshop-rinasce-dal-fallimento-10-milioni-di-fatturato-in-8-mesi-e-gia-in-utile-con-l-ai-1.html",
+        "source_says_unverified": false,
+        "note": "Teleborsa, 16/07/2026: 'un team di circa dieci persone'. LinkedIn (via Clay) indica 11-50: entrambe dentro 1-50."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": 10000000,
+        "range_max": null,
+        "year": 2026,
+        "source_url": "https://www.teleborsa.it/News/2026/07/16/produceshop-rinasce-dal-fallimento-10-milioni-di-fatturato-in-8-mesi-e-gia-in-utile-con-l-ai-1.html"
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "E-commerce europeo di arredo, casa e giardino, rilanciato a fine 2025 da Pasmara srl.",
+        "source_url": "https://www.teleborsa.it/News/2026/07/16/produceshop-rinasce-dal-fallimento-10-milioni-di-fatturato-in-8-mesi-e-gia-in-utile-con-l-ai-1.html"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "E-commerce Home & Living con piattaforma proprietaria Pasmara OS.",
+        "evidence_quote": null,
+        "url": "https://www.teleborsa.it/News/2026/07/16/produceshop-rinasce-dal-fallimento-10-milioni-di-fatturato-in-8-mesi-e-gia-in-utile-con-l-ai-1.html",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "piu_paesi",
+        "observed_fact": "Attiva in Italia, Francia, Spagna, Germania e Austria.",
+        "evidence_quote": "Oggi ProduceShop è attiva in Italia, Francia, Spagna, Germania e Austria",
+        "url": "https://www.teleborsa.it/News/2026/07/16/produceshop-rinasce-dal-fallimento-10-milioni-di-fatturato-in-8-mesi-e-gia-in-utile-con-l-ai-1.html",
+        "date": "2026-07-16",
+        "date_basis": "fonte",
+        "date_as_in_source": "16 luglio 2026"
+      },
+      {
+        "map_row": "fundraising_soci",
+        "observed_fact": "Investimento di circa 3 milioni di euro da privati del network del fondatore, non da fondi.",
+        "evidence_quote": "un investimento di circa 3 milioni di euro da persone abbienti del network dell'imprenditore",
+        "url": "https://www.teleborsa.it/News/2026/07/16/produceshop-rinasce-dal-fallimento-10-milioni-di-fatturato-in-8-mesi-e-gia-in-utile-con-l-ai-1.html",
+        "date": "2026-07-16",
+        "date_basis": "fonte",
+        "date_as_in_source": "16 luglio 2026"
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Patti con i nuovi soci che hanno investito circa 3 milioni",
+        "area": "Societario",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Condizioni di vendita e resi per clienti in cinque paesi",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Uso dei dati dei clienti nella piattaforma con intelligenza artificiale",
+        "area": "Dati & privacy",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Karim El Saket",
+      "title": "Fondatore e CEO",
+      "source_url": "https://www.teleborsa.it/News/2026/07/16/produceshop-rinasce-dal-fallimento-10-milioni-di-fatturato-in-8-mesi-e-gia-in-utile-con-l-ai-1.html",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "clienti su più paesi",
+      "role_match": "primario",
+      "reason": "Fondatore e CEO: ha rilevato gli asset e guida il rilancio e l'espansione europea."
+    },
+    "evidence_deductions": [
+      {
+        "code": "nessuna_fonte_primaria",
+        "detail": "Il sito produceshop.com non è stato letto: fatti da Teleborsa e FocusEcommerce"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.teleborsa.it/News/2026/07/16/produceshop-rinasce-dal-fallimento-10-milioni-di-fatturato-in-8-mesi-e-gia-in-utile-con-l-ai-1.html",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.focusecommerce.it/karim-el-saket-lancia-produceshop-oltre-10-milioni-di-euro-di-ricavi-nei-primi-otto-mesi-e-lobiettivo-di-costruire-dallitalia-un-nuovo-top-player-del-settore-casa-255240/",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/company/produceshop",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 19,
+      "buyer_availability": 10,
+      "evidence_quality": 8,
+      "total": 89
+    },
+    "score_reason": {
+      "company_fit": "Milano (Teleborsa) +5; circa dieci persone (Teleborsa, 16/07/2026) +10; e-commerce casa e giardino +15. Totale 30.",
+      "legal_complexity": "E-commerce → Contratti, Dati & privacy, Tech AI & cyber; cinque paesi e nuovi soci → Societario (inferenza): 4 aree 17; vendite su più paesi, forte +5. Totale 22.",
+      "buying_signals": "Cinque paesi (Teleborsa, 16/07/2026, 2 mesi) forte 12; 3 milioni da privati (stessa fonte) normale 7. Totale 19.",
+      "buyer_availability": "Karim El Saket, fondatore e CEO (Teleborsa); scenario clienti su più paesi, primario. 10.",
+      "evidence_quality": "Fatturato oltre 10 milioni in otto mesi (Teleborsa); nessuna fonte primaria consultata −2. 8."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": "ProduceShop è ripartita a novembre 2025 dopo il fallimento della vecchia società, vende in cinque paesi e ha nuovi soci. Il rilancio è passato da tribunali e avvocati; ora contratti, soci e dati sono temi continui: Iusful li segue con un avvocato dedicato.",
+    "notes": "Candidato da Clay; Clay indicava Ivan Cianci (COO), si sceglie il fondatore e CEO citato dalla fonte. Non è VC: capitali propri e privati; El Saket dice di non cercare round. Il fatturato è dei primi otto mesi, non annuale."
+  },
+  {
+    "id": "sciara",
+    "company_name": "Sciara srl (Sciara - La Terra del Pistacchio)",
+    "domain": "sciarapistacchio.com",
+    "evaluation_date": "2026-10-04",
+    "status": "QUALIFIED",
+    "tier": "A",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://shop.sciarapistacchio.com/pages/scopri-sciara-la-terra-del-pistacchio"
+      },
+      "city": {
+        "value": "Bronte",
+        "source_url": "https://shop.sciarapistacchio.com/pages/scopri-sciara-la-terra-del-pistacchio"
+      },
+      "employees": {
+        "value": 10,
+        "range_min": null,
+        "range_max": null,
+        "source_url": "https://shop.sciarapistacchio.com/pages/scopri-sciara-la-terra-del-pistacchio",
+        "source_says_unverified": false,
+        "note": "Sito, pagina chi siamo: 'un team di 10 persone (più personale stagionale)'."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "Produce e vende specialità al pistacchio di Bronte, con negozio online, Amazon e spaccio aziendale.",
+        "source_url": "https://shop.sciarapistacchio.com/pages/scopri-sciara-la-terra-del-pistacchio"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "Negozio online proprio e vendita su Amazon dal maggio 2020.",
+        "evidence_quote": null,
+        "url": "https://shop.sciarapistacchio.com/pages/scopri-sciara-la-terra-del-pistacchio",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "piu_paesi",
+        "observed_fact": "Su Amazon raggiunge gli italiani all'estero e clienti stranieri, fino agli Stati Uniti.",
+        "evidence_quote": "grazie ad Amazon non solo riusciamo a raggiungere moltissimi italiani all'estero",
+        "url": "https://www.ansa.it/sicilia/notizie/2026/07/22/vendite-su-amazon-pmi-della-sicilia-nella-top-5-delle-regioni-piu_97a0fcbe-fa02-48b4-915e-351fe662d9eb.html",
+        "date": "2026-07-22",
+        "date_basis": "fonte",
+        "date_as_in_source": "22 luglio 2026"
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Etichette e regole alimentari per la vendita negli Stati Uniti e in Europa",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Condizioni di vendita online per clienti di più paesi",
+        "area": "Dati & privacy",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Accordi con rivenditori in Italia e all'estero",
+        "area": "Contratti",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Denny Cascino",
+      "title": "Fondatore",
+      "source_url": "https://www.freshplaza.it/article/9193955/a-bronte-il-pistacchio-trasformato-in-tutte-le-sue-forme/",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "clienti su più paesi",
+      "role_match": "primario",
+      "reason": "Fondatore insieme ad Alessandra, Gionatan e Daisy; il team è di 10 persone."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://shop.sciarapistacchio.com/pages/scopri-sciara-la-terra-del-pistacchio",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.ansa.it/sicilia/notizie/2026/07/22/vendite-su-amazon-pmi-della-sicilia-nella-top-5-delle-regioni-piu_97a0fcbe-fa02-48b4-915e-351fe662d9eb.html",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.freshplaza.it/article/9193955/a-bronte-il-pistacchio-trasformato-in-tutte-le-sue-forme/",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 12,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 83
+    },
+    "score_reason": {
+      "company_fit": "Bronte (sito) +5; team di 10 persone (sito) +10; negozio online e Amazon (sito) +15. Totale 30.",
+      "legal_complexity": "E-commerce → Contratti, Dati & privacy, Tech AI & cyber; vendite estere → Societario (inferenza): 4 aree 17; vendite su più paesi, forte +5. Totale 22.",
+      "buying_signals": "Vendite all'estero fino agli Stati Uniti (ANSA, 22/07/2026, 2 mesi) forte 12. Totale 12.",
+      "buyer_availability": "Denny Cascino, fondatore (FreshPlaza); scenario clienti su più paesi, primario. 10.",
+      "evidence_quality": "Fatturato non trovato −1; fonte primaria presente. 9."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": "Sciara vende il pistacchio di Bronte online e su Amazon, fino agli Stati Uniti, con un team di 10 persone. Etichette, regole alimentari e condizioni di vendita cambiano da paese a paese: Iusful le segue con un avvocato dedicato e un costo mensile noto.",
+    "notes": "Candidato dal report Amazon sulle PMI (ANSA, 22/07/2026). Nell'articolo parla Corrado Emmolo, responsabile Amazon; si sceglie il fondatore. Nessun round VC trovato."
+  },
+  {
+    "id": "drako",
+    "company_name": "Drako Legacy srl (Drako.it)",
+    "domain": "drako.it",
+    "evaluation_date": "2026-10-04",
+    "status": "QUALIFIED",
+    "tier": "B",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.drako.it/"
+      },
+      "city": {
+        "value": "Milano",
+        "source_url": "https://www.drako.it/"
+      },
+      "employees": {
+        "value": null,
+        "range_min": 2,
+        "range_max": 10,
+        "source_url": "https://www.linkedin.com/company/drakoit",
+        "source_says_unverified": false,
+        "note": "Fascia LinkedIn 2-10, dall'export di Clay (Find Companies, 03/10/2026)."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "Negozio online di hardware per PC e gaming, con showroom a Milano e sede logistica nel mantovano.",
+        "source_url": "https://www.drako.it/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "Negozio online con oltre 7.000 prodotti e consegna in tutta Italia.",
+        "evidence_quote": null,
+        "url": "https://www.drako.it/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "assunzioni",
+        "observed_fact": "Annuncio aperto per un commerciale / addetto vendite a Milano o Mantova.",
+        "evidence_quote": "Cerchiamo una figura commerciale da inserire nel nostro team vendite",
+        "url": "https://www.drako.it/drako_catalog/info/lavora-con-noi",
+        "date": "2026-10-04",
+        "date_basis": "consultazione",
+        "date_as_in_source": null
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Contratto e inquadramento del nuovo commerciale",
+        "area": "Lavoro & persone",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Garanzie, recesso e resi nella vendita online di elettronica",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Privacy e dati dei clienti del negozio online",
+        "area": "Dati & privacy",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Alexander Marfia",
+      "title": "Fondatore e CEO",
+      "source_url": "https://www.drako.it/drako_catalog/info/chi-siamo",
+      "linkedin_url": "https://www.linkedin.com/in/alexander-marfia-0a898911/",
+      "email": null,
+      "scenario": "5-10",
+      "role_match": "primario",
+      "reason": "Fondatore e CEO, indicato nella pagina chi siamo; trovato anche da Clay."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.drako.it/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.drako.it/drako_catalog/info/chi-siamo",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.drako.it/drako_catalog/info/lavora-con-noi",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/company/drakoit",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 17,
+      "buying_signals": 7,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 73
+    },
+    "score_reason": {
+      "company_fit": "Milano (sito) +5; fascia 2-10 (LinkedIn, via Clay) +10; negozio online (sito) +15. Totale 30.",
+      "legal_complexity": "E-commerce → Contratti, Dati & privacy, Tech AI & cyber; assunzioni → Lavoro & persone (inferenza): 4 aree 17. Totale 17.",
+      "buying_signals": "Annuncio per commerciale online senza data, datato alla consultazione (04/10/2026) normale 7. Totale 7.",
+      "buyer_availability": "Alexander Marfia, fondatore e CEO (sito; trovato anche da Clay); scenario 5-10, primario. 10.",
+      "evidence_quality": "Fatturato non trovato −1; fonti primarie presenti. 9."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": "Drako vende hardware online dal 2001 e sta cercando un commerciale per Milano o Mantova. Un nuovo assunto porta contratto e inquadramento, mentre la vendita online richiede garanzie e resi chiari: Iusful segue entrambi con un avvocato dedicato.",
+    "notes": "Candidato da Clay (Find Companies). Nessun round VC trovato."
+  },
+  {
+    "id": "perledarte",
+    "company_name": "Perle d'Arte di Tumiotto Chiara & C. snc",
+    "domain": "perledarte.it",
+    "evaluation_date": "2026-10-04",
+    "status": "QUALIFIED",
+    "tier": "B",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "http://www.casa21.it/index.php/sermons/chiarte/"
+      },
+      "city": {
+        "value": "Monastier di Treviso",
+        "source_url": "http://www.casa21.it/index.php/sermons/chiarte/"
+      },
+      "employees": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "source_url": null,
+        "source_says_unverified": false,
+        "note": "Nessuna fonte leggibile sul numero di dipendenti; il sito perledarte.it non si legge in automatico."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "Laboratorio artigiano che decora a mano vetro e cristallo in stile veneziano e vende online, anche su Amazon.",
+        "source_url": "https://www.businessonline.it/news/le-pmi-italiane-vendono-4-miliardi-su-amazon-chi-sono-quali-prodotti-offrono-e-le-storie-pi-emblematiche_n85972.html"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "Vende su Amazon, dove ha raddoppiato le vendite in pochi anni.",
+        "evidence_quote": null,
+        "url": "https://www.businessonline.it/news/le-pmi-italiane-vendono-4-miliardi-su-amazon-chi-sono-quali-prodotti-offrono-e-le-storie-pi-emblematiche_n85972.html",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "piu_paesi",
+        "observed_fact": "Vende soprattutto sul mercato internazionale: USA, Germania e Gran Bretagna.",
+        "evidence_quote": "rivolgendosi soprattutto al mercato internazionale USA-Germania-Gran Bretagna",
+        "url": "https://www.businessonline.it/news/le-pmi-italiane-vendono-4-miliardi-su-amazon-chi-sono-quali-prodotti-offrono-e-le-storie-pi-emblematiche_n85972.html",
+        "date": "2026-07-24",
+        "date_basis": "fonte",
+        "date_as_in_source": "24 luglio 2026"
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Condizioni di vendita per clienti negli Stati Uniti, in Germania e nel Regno Unito",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Tutela del marchio CHIARTE all'estero",
+        "area": "Proprietà intellettuale",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Chiara Tumiotto",
+      "title": null,
+      "source_url": "http://www.casa21.it/index.php/sermons/chiarte/",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "clienti su più paesi",
+      "role_match": "nome senza ruolo",
+      "reason": "Il nome è nella ragione sociale della snc; il ruolo non è scritto nella fonte."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      },
+      {
+        "code": "nessuna_fonte_primaria",
+        "detail": "Il sito perledarte.it si carica solo con JavaScript"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.businessonline.it/news/le-pmi-italiane-vendono-4-miliardi-su-amazon-chi-sono-quali-prodotti-offrono-e-le-storie-pi-emblematiche_n85972.html",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "http://www.casa21.it/index.php/sermons/chiarte/",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 20,
+      "legal_complexity": 22,
+      "buying_signals": 12,
+      "buyer_availability": 4,
+      "evidence_quality": 7,
+      "total": 65
+    },
+    "score_reason": {
+      "company_fit": "Monastier di Treviso (Casa21) +5; dipendenti non trovati 0; vendita online su Amazon (Businessonline) +15. Totale 20.",
+      "legal_complexity": "E-commerce → Contratti, Dati & privacy, Tech AI & cyber; vendite estere → Societario (inferenza): 4 aree 17; vendite su più paesi, forte +5. Totale 22.",
+      "buying_signals": "Vendite in USA, Germania e Gran Bretagna (Businessonline, 24/07/2026, 2 mesi) forte 12. Totale 12.",
+      "buyer_availability": "Chiara Tumiotto, nome nella ragione sociale (Casa21) senza ruolo scritto; nome senza ruolo. 4.",
+      "evidence_quality": "Fatturato non trovato −1; nessuna fonte primaria leggibile −2. 7."
+    },
+    "flags": [
+      "dipendenti_non_verificati"
+    ],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": "Perle d'Arte vende vetro decorato a mano soprattutto negli Stati Uniti, in Germania e nel Regno Unito. Vendere all'estero porta condizioni di vendita diverse e la tutela del marchio CHIARTE: Iusful le segue con un avvocato dedicato.",
+    "notes": "Candidato dal report Amazon sulle PMI (Businessonline, 24/07/2026). Tier B per i dipendenti non verificati: prima di contattarla serve la fascia di dipendenti."
+  },
+  {
+    "id": "samplelover",
+    "company_name": "Sample Lover",
+    "domain": "samplelover.it",
+    "evaluation_date": "2026-10-04",
+    "status": "QUALIFIED",
+    "tier": "B",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://samplelover.it/"
+      },
+      "city": {
+        "value": "Milano",
+        "source_url": "https://samplelover.it/"
+      },
+      "employees": {
+        "value": null,
+        "range_min": 2,
+        "range_max": 10,
+        "source_url": "https://www.linkedin.com/company/sample-lover",
+        "source_says_unverified": false,
+        "note": "Fascia LinkedIn 2-10, dall'export di Clay (Find Companies, 03/10/2026)."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "Piattaforma online di flash sale di campionari e collezioni passate di marchi di moda e beauty.",
+        "source_url": "https://samplelover.it/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "Vende online campionari di marchi terzi con vendite a tempo.",
+        "evidence_quote": null,
+        "url": "https://samplelover.it/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "piu_paesi",
+        "observed_fact": "Sito in italiano, inglese e spagnolo; spedisce anche all'estero.",
+        "evidence_quote": null,
+        "url": "https://samplelover.it/policies/shipping-policy",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Contratti di conto vendita con i marchi che affidano i campionari",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Uso dei marchi altrui nelle vendite online",
+        "area": "Proprietà intellettuale",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Condizioni di vendita per clienti di più paesi",
+        "area": "Dati & privacy",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Rossana Ammaturo",
+      "title": "Founder",
+      "source_url": "https://www.linkedin.com/in/rossana-ammaturo-885a1890/",
+      "linkedin_url": "https://www.linkedin.com/in/rossana-ammaturo-885a1890/",
+      "email": null,
+      "scenario": "clienti su più paesi",
+      "role_match": "primario",
+      "reason": "Fondatrice: decide sui contratti con i marchi e sulle vendite estere."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://samplelover.it/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://samplelover.it/policies/shipping-policy",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/company/sample-lover",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 0,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 71
+    },
+    "score_reason": {
+      "company_fit": "Milano (sito) +5; fascia 2-10 (LinkedIn, via Clay) +10; piattaforma di vendita online (sito) +15. Totale 30.",
+      "legal_complexity": "E-commerce → Contratti, Dati & privacy, Tech AI & cyber; vendite estere → Societario (inferenza): 4 aree 17; vendite su più paesi, forte +5. Totale 22.",
+      "buying_signals": "Vendite estere senza data nella fonte: contano per la complessità, non come segnale recente. Totale 0.",
+      "buyer_availability": "Rossana Ammaturo, founder (LinkedIn, via Clay); scenario clienti su più paesi, primario. 10.",
+      "evidence_quality": "Fatturato non trovato −1; fonti primarie presenti. 9."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": "Sample Lover vende online i campionari di tanti marchi, in tre lingue. Ogni marchio porta un contratto e l'uso del suo nome, e i clienti esteri regole di vendita diverse: Iusful li segue con un avvocato dedicato e un costo mensile noto.",
+    "notes": "Candidato da Clay. Nel 2022 Pambianco scriveva che guardava a investitori esterni; nessun round trovato, quindi non è un indizio di esclusione."
+  },
+  {
+    "id": "ilgiardinodeilibri",
+    "company_name": "Il Giardino dei Libri srl",
+    "domain": "ilgiardinodeilibri.it",
+    "evaluation_date": "2026-10-04",
+    "status": "QUALIFIED",
+    "tier": "B",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.ilgiardinodeilibri.it/chi_siamo.php"
+      },
+      "city": {
+        "value": "Bellaria-Igea Marina",
+        "source_url": "https://www.ilgiardinodeilibri.it/chi_siamo.php"
+      },
+      "employees": {
+        "value": 40,
+        "range_min": null,
+        "range_max": null,
+        "source_url": "https://www.linkedin.com/company/ilgiardinodeilibri",
+        "source_says_unverified": false,
+        "note": "Pagina LinkedIn aziendale: 'oggi impiega 40 dipendenti che spediscono circa 900 ordini ogni giorno'; fascia 11-50."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "Libreria online specializzata in benessere e crescita personale, online dal 1998, circa 1.000 ordini al giorno.",
+        "source_url": "https://www.ilgiardinodeilibri.it/chi_siamo.php"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "E-commerce dal 1998, circa 1.000 ordini spediti ogni giorno.",
+        "evidence_quote": null,
+        "url": "https://www.ilgiardinodeilibri.it/chi_siamo.php",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "piu_paesi",
+        "observed_fact": "Spedisce all'estero con corriere espresso, in Svizzera e in altri paesi.",
+        "evidence_quote": null,
+        "url": "https://www.ilgiardinodeilibri.it/pagamenti_spedizioni.php",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Condizioni di vendita e recesso per clienti italiani ed esteri",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Gestione dei dati di oltre 230.000 iscritti alla newsletter",
+        "area": "Dati & privacy",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Luca Gori",
+      "title": "Guida l'azienda con Rosa Tumolo",
+      "source_url": "https://www.ilgiardinodeilibri.it/chi_siamo.php",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "clienti su più paesi",
+      "role_match": "primario",
+      "reason": "Il sito scrive che Luca Gori e Rosa Tumolo guidano l'azienda e il team."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.ilgiardinodeilibri.it/chi_siamo.php",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.ilgiardinodeilibri.it/pagamenti_spedizioni.php",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/company/ilgiardinodeilibri",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 0,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 71
+    },
+    "score_reason": {
+      "company_fit": "Bellaria-Igea Marina (sito) +5; 40 dipendenti (LinkedIn) +10; libreria online (sito) +15. Totale 30.",
+      "legal_complexity": "E-commerce → Contratti, Dati & privacy, Tech AI & cyber; vendite estere → Societario (inferenza): 4 aree 17; vendite su più paesi, forte +5. Totale 22.",
+      "buying_signals": "Vendite estere senza data nella fonte: contano per la complessità, non come segnale recente. Totale 0.",
+      "buyer_availability": "Luca Gori, guida l'azienda con Rosa Tumolo (sito); scenario clienti su più paesi, primario. 10.",
+      "evidence_quality": "Fatturato non trovato −1; fonti primarie presenti. 9."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": "Il Giardino dei Libri spedisce circa 1.000 ordini al giorno, anche all'estero, e ha più di 230.000 iscritti alla newsletter. Condizioni di vendita e dati dei clienti vanno tenuti in ordine di continuo: Iusful lo fa con un avvocato dedicato.",
+    "notes": "Candidato da Clay; Clay non ha trovato persone, i nomi sono sul sito. Candidata al Netcomm Award 2023. Nessun round VC trovato."
+  },
+  {
+    "id": "otticadalpasso",
+    "company_name": "Dalpasso srl (Ottica Dalpasso)",
+    "domain": "otticadalpasso.it",
+    "evaluation_date": "2026-10-04",
+    "status": "QUALIFIED",
+    "tier": "B",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.otticadalpasso.it/"
+      },
+      "city": {
+        "value": "Reggio Emilia",
+        "source_url": "https://www.otticadalpasso.it/"
+      },
+      "employees": {
+        "value": null,
+        "range_min": 11,
+        "range_max": 50,
+        "source_url": "https://www.linkedin.com/company/ottica-dalpasso-srl",
+        "source_says_unverified": false,
+        "note": "Fascia LinkedIn 11-50, dall'export di Clay (Find Companies, 03/10/2026)."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "Catena di 5 centri ottici in Emilia e a Milano, con negozio online.",
+        "source_url": "https://www.otticadalpasso.it/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "Negozio online di occhiali accanto ai 5 centri ottici.",
+        "evidence_quote": null,
+        "url": "https://www.otticadalpasso.it/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "assunzioni",
+        "observed_fact": "Quattro annunci aperti su LinkedIn per ottici e addetti alla vendita a Modena e Parma, a tempo indeterminato.",
+        "evidence_quote": "Ti offriamo inserimento immediato nell'organico del nostro Centro Ottico di Modena, contratto a tempo indeterminato",
+        "url": "https://www.linkedin.com/jobs/view/ottico-diplomato-o-addetto-alla-vendite-esperto-at-ottica-dalpasso-4465032303",
+        "date": "2026-09-09",
+        "date_basis": "fonte",
+        "date_as_in_source": "3 settimane fa (pubblicato il 09/09/2026 secondo Clay)"
+      },
+      {
+        "map_row": "rete_sedi",
+        "observed_fact": "Centri ottici a Reggio Emilia, Bologna, Milano, Modena e Parma.",
+        "evidence_quote": null,
+        "url": "https://www.otticadalpasso.it/la-nostra-storia/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "dati_particolari",
+        "observed_fact": "Dalpasso S.r.l. realizza protesi oculari su misura in sette sedi, anche pediatriche, convenzionate con il Servizio sanitario: tratta dati sanitari e di minori.",
+        "evidence_quote": null,
+        "url": "https://www.dalpasso.it/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Contratti di locazione e fornitura per i centri in cinque città",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Contratti e inquadramento per le nuove assunzioni a Modena e Parma",
+        "area": "Lavoro & persone",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Condizioni di vendita e privacy del negozio online",
+        "area": "Contratti",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Sara Catellani Dalpasso",
+      "title": "Co-titolare e coordinatrice dei centri ottici",
+      "source_url": "https://www.linkedin.com/in/sara-catellani-dalpasso-765249219/",
+      "linkedin_url": "https://www.linkedin.com/in/sara-catellani-dalpasso-765249219/",
+      "email": null,
+      "scenario": "15-50 generale",
+      "role_match": "primario",
+      "reason": "Co-titolare (LinkedIn, via Clay)."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.otticadalpasso.it/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.otticadalpasso.it/la-nostra-storia/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/company/ottica-dalpasso-srl",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/ottico-diplomato-o-addetto-alla-vendite-esperto-at-ottica-dalpasso-4465032303",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.dalpasso.it/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 7,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 78
+    },
+    "score_reason": {
+      "company_fit": "Reggio Emilia (sito) +5; fascia 11-50 (LinkedIn, via Clay) +10; negozio online (sito) +15. Totale 30.",
+      "legal_complexity": "E-commerce → Contratti, Dati & privacy, Tech AI & cyber; centri e assunzioni → Lavoro & persone; protesi e dati sanitari (inferenza): 4 aree 17; rete di sedi e dati particolari, forte +5. Totale 22.",
+      "buying_signals": "Quattro annunci aperti (LinkedIn, 09/09/2026, meno di 1 mese) normale 7. Totale 7.",
+      "buyer_availability": "Sara Catellani Dalpasso, co-titolare (LinkedIn, via Clay); scenario 15-50 generale, primario. 10.",
+      "evidence_quality": "Fatturato non trovato −1; fonte primaria presente. 9."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": "Ottica Dalpasso sta assumendo in più centri ottici. Contratti di lavoro e regole del negozio online sono temi ricorrenti per una catena in crescita: Iusful li segue con un avvocato dedicato.",
+    "notes": "Candidato da Clay. Annunci trovati da Clay (Open Jobs) il 04/10/2026 e verificati sulla pagina LinkedIn. Clay conta 31 persone collegate alla pagina, coerente con la fascia 11-50. Il 4 ottobre 2026 Clay ha trovato 'Dalpasso Protesi Oculari' come azienda separata: è la stessa Dalpasso S.r.l. (P.IVA 01432940359), quindi niente nuovo lead. Il dominio non basta come chiave: serve la partita IVA."
+  },
+  {
+    "id": "ausilium",
+    "company_name": "Ausilium srl",
+    "domain": "ausilium.it",
+    "evaluation_date": "2026-10-04",
+    "status": "RESERVE",
+    "tier": "C",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.ausilium.it/"
+      },
+      "city": {
+        "value": "Venaria Reale",
+        "source_url": "https://www.ausilium.it/"
+      },
+      "employees": {
+        "value": null,
+        "range_min": 11,
+        "range_max": 50,
+        "source_url": "https://www.linkedin.com/company/ausilium",
+        "source_says_unverified": false,
+        "note": "Fascia LinkedIn 11-50, dall'export di Clay (Find Companies, 03/10/2026)."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "Negozio online di ausili per anziani e disabili, oltre 15.000 prodotti, spedizioni in tutta Italia.",
+        "source_url": "https://www.ausilium.it/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "E-commerce di ausili con spedizioni in tutta Italia.",
+        "evidence_quote": null,
+        "url": "https://www.ausilium.it/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      }
+    ],
+    "legal_pains": [],
+    "buyer": {
+      "name": "Luca Bianco",
+      "title": "Owner",
+      "source_url": "https://www.linkedin.com/in/luca-bianco-/",
+      "linkedin_url": "https://www.linkedin.com/in/luca-bianco-/",
+      "email": null,
+      "scenario": "15-50 generale",
+      "role_match": "primario",
+      "reason": "Titolare (LinkedIn, via Clay)."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.ausilium.it/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/company/ausilium",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 13,
+      "buying_signals": 0,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 62
+    },
+    "score_reason": {
+      "company_fit": "Venaria Reale (sito) +5; fascia 11-50 (LinkedIn, via Clay) +10; negozio online (sito) +15. Totale 30.",
+      "legal_complexity": "E-commerce → Contratti, Dati & privacy, Tech AI & cyber (inferenza): 3 aree 13. Totale 13.",
+      "buying_signals": "Nessun segnale datato; la pagina lavora con noi dice che non cercano persone. Totale 0.",
+      "buyer_availability": "Luca Bianco, owner (LinkedIn, via Clay); scenario 15-50 generale, primario. 10.",
+      "evidence_quality": "Fatturato non trovato −1; fonte primaria presente. 9."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": null,
+    "notes": "Candidato da Clay. Vende solo in Italia e oggi non assume."
+  },
+  {
+    "id": "etualy",
+    "company_name": "Beauty Project srl (Etualy)",
+    "domain": "etualy.com",
+    "evaluation_date": "2026-10-04",
+    "status": "RESERVE",
+    "tier": "C",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.etualy.com/"
+      },
+      "city": {
+        "value": "Saronno",
+        "source_url": "https://www.etualy.com/"
+      },
+      "employees": {
+        "value": null,
+        "range_min": 2,
+        "range_max": 10,
+        "source_url": "https://www.linkedin.com/company/beauty-project-s-r-l",
+        "source_says_unverified": false,
+        "note": "Fascia LinkedIn 2-10, dall'export di Clay (Find Companies, 03/10/2026)."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "Profumi e cosmetici di nicchia: due boutique (Sesto Calende, Bergamo) e negozio online.",
+        "source_url": "https://www.etualy.com/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "Negozio online di profumi e cosmetici accanto a due boutique.",
+        "evidence_quote": null,
+        "url": "https://www.etualy.com/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      }
+    ],
+    "legal_pains": [],
+    "buyer": {
+      "name": "Angelo Cavalli",
+      "title": "Company Owner",
+      "source_url": "https://www.linkedin.com/in/angelo-cavalli-b0143816/",
+      "linkedin_url": "https://www.linkedin.com/in/angelo-cavalli-b0143816/",
+      "email": null,
+      "scenario": "5-10",
+      "role_match": "primario",
+      "reason": "Titolare (LinkedIn, via Clay)."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.etualy.com/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/company/beauty-project-s-r-l",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 13,
+      "buying_signals": 0,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 62
+    },
+    "score_reason": {
+      "company_fit": "Saronno (sito) +5; fascia 2-10 (LinkedIn, via Clay) +10; negozio online (sito) +15. Totale 30.",
+      "legal_complexity": "E-commerce → Contratti, Dati & privacy, Tech AI & cyber (inferenza): 3 aree 13. Totale 13.",
+      "buying_signals": "Nessun segnale datato; nessun annuncio aperto. Totale 0.",
+      "buyer_availability": "Angelo Cavalli, owner (LinkedIn, via Clay); scenario 5-10, primario. 10.",
+      "evidence_quality": "Fatturato non trovato −1; fonte primaria presente. 9."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": null,
+    "notes": "Candidato da Clay. Vende in Italia; nessun segnale recente."
+  },
+  {
+    "id": "rollawaycontainer",
+    "company_name": "Rollawaycontainer.com srl",
+    "domain": "rollawaycontainer.it",
+    "evaluation_date": "2026-10-04",
+    "status": "RESERVE",
+    "tier": "C",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.rollawaycontainer.it/"
+      },
+      "city": {
+        "value": "Fossalta di Piave",
+        "source_url": "https://www.linkedin.com/company/rollawaycontainer"
+      },
+      "employees": {
+        "value": null,
+        "range_min": 11,
+        "range_max": 50,
+        "source_url": "https://www.linkedin.com/company/rollawaycontainer",
+        "source_says_unverified": false,
+        "note": "Fascia LinkedIn 11-50, dall'export di Clay (Find Companies, 03/10/2026)."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "Produzione e vendita diretta online di contenitori e attrezzature per magazzino e logistica.",
+        "source_url": "https://www.rollawaycontainer.it/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "Vendita diretta online di oltre 100.000 prodotti.",
+        "evidence_quote": null,
+        "url": "https://www.rollawaycontainer.it/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "piu_paesi",
+        "observed_fact": "Siti in italiano, inglese, francese e tedesco (.it, .com, .fr, .de).",
+        "evidence_quote": null,
+        "url": "https://www.rollawaycontainer.it/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      }
+    ],
+    "legal_pains": [],
+    "buyer": {
+      "name": null,
+      "title": null,
+      "source_url": null,
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "15-50 generale",
+      "role_match": "unclear",
+      "reason": "Nessun nome trovato sul sito né da Clay."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.rollawaycontainer.it/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/company/rollawaycontainer",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 22,
+      "buying_signals": 0,
+      "buyer_availability": 0,
+      "evidence_quality": 9,
+      "total": 61
+    },
+    "score_reason": {
+      "company_fit": "Fossalta di Piave (LinkedIn) +5; fascia 11-50 (LinkedIn, via Clay) +10; vendita online (sito) +15. Totale 30.",
+      "legal_complexity": "E-commerce → Contratti, Dati & privacy, Tech AI & cyber; vendite estere → Societario (inferenza): 4 aree 17; vendite su più paesi, forte +5. Totale 22.",
+      "buying_signals": "Vendite estere senza data nella fonte: contano per la complessità, non come segnale recente. Totale 0.",
+      "buyer_availability": "Nessuna persona trovata: unclear. 0.",
+      "evidence_quality": "Fatturato non trovato −1; fonte primaria presente. 9."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": null,
+    "notes": "Candidato da Clay. Con un titolare identificato salirebbe al Tier B."
+  },
+  {
+    "id": "otticafoppa",
+    "company_name": "Progetto 2017 srl (Ottica Foppa)",
+    "domain": "foppa.it",
+    "evaluation_date": "2026-10-04",
+    "status": "REJECTED",
+    "tier": "REJECT",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.foppa.it/"
+      },
+      "city": {
+        "value": "Azzano San Paolo",
+        "source_url": "https://www.foppa.it/"
+      },
+      "employees": {
+        "value": null,
+        "range_min": 111,
+        "range_max": null,
+        "source_url": "https://www.bergamonews.it/2025/11/28/limpresa-di-restare-in-citta-la-crescita-di-ottica-foppa/850212/",
+        "source_says_unverified": false,
+        "note": "BergamoNews, 28/11/2025: '24 negozi e oltre 110 dipendenti'. La fascia LinkedIn 11-50 usata da Clay era sbagliata."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "E-commerce e marketplace",
+        "description": "Catena di ottica con 25 negozi e negozio online.",
+        "source_url": "https://www.foppa.it/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "Negozio online di occhiali da sole e da vista.",
+        "evidence_quote": null,
+        "url": "https://www.foppa.it/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      }
+    ],
+    "legal_pains": [],
+    "buyer": {
+      "name": "Luca Virginio Foppa",
+      "title": "Owner",
+      "source_url": "https://www.linkedin.com/in/luca-virginio-foppa-890b29348/",
+      "linkedin_url": "https://www.linkedin.com/in/luca-virginio-foppa-890b29348/",
+      "email": null,
+      "scenario": "15-50 generale",
+      "role_match": "primario",
+      "reason": "Titolare; riportato solo per completezza, l'azienda è fuori perimetro."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.foppa.it/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.bergamonews.it/2025/11/28/limpresa-di-restare-in-citta-la-crescita-di-ottica-foppa/850212/",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/company/otticafoppa",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 20,
+      "legal_complexity": 13,
+      "buying_signals": 0,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 52
+    },
+    "score_reason": {
+      "company_fit": "Azzano San Paolo (sito) +5; oltre 110 dipendenti (BergamoNews), fuori perimetro 0; negozio online (sito) +15. Totale 20, indicativo.",
+      "legal_complexity": "E-commerce → Contratti, Dati & privacy, Tech AI & cyber (inferenza): 3 aree 13. Totale 13.",
+      "buying_signals": "Nessun segnale datato usato: ricerca fermata all'esclusione. Totale 0.",
+      "buyer_availability": "Luca Virginio Foppa, owner (LinkedIn, via Clay); primario. 10.",
+      "evidence_quality": "Fatturato non trovato −1; fonte primaria presente. 9."
+    },
+    "flags": [],
+    "exclusion_reason": {
+      "rule": "oltre_50_dipendenti",
+      "url": "https://www.bergamonews.it/2025/11/28/limpresa-di-restare-in-citta-la-crescita-di-ottica-foppa/850212/",
+      "detail": "24 negozi e oltre 110 dipendenti (BergamoNews, 28/11/2025)"
+    },
+    "doubts": [],
+    "outreach_angle": null,
+    "notes": "Candidato da Clay con fascia LinkedIn 11-50: la fonte giornalistica dice oltre 110 dipendenti."
+  },
+  {
+    "id": "guicciardini",
+    "company_name": "Poliambulatorio Guicciardini srl",
+    "domain": "guicciardini.pc.it",
+    "evaluation_date": "2026-10-04",
+    "status": "QUALIFIED",
+    "tier": "B",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://guicciardini.pc.it/"
+      },
+      "city": {
+        "value": "Piacenza",
+        "source_url": "https://guicciardini.pc.it/"
+      },
+      "employees": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "source_url": null,
+        "source_says_unverified": false,
+        "note": "Non trovato: società attiva da circa un anno, nessuna pagina LinkedIn; molti medici sono probabilmente liberi professionisti."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "Sanità e formazione",
+        "description": "Poliambulatorio privato con 24 ambulatori, day surgery e prenotazione online.",
+        "source_url": "https://guicciardini.pc.it/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "dati_particolari",
+        "observed_fact": "Tratta dati sanitari dei pazienti: oltre 25 specialità, genetica e chirurgia in day surgery.",
+        "evidence_quote": null,
+        "url": "https://guicciardini.pc.it/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "apertura_acquisizione",
+        "observed_fact": "Inaugurato a fine luglio 2026 un nuovo polo con 24 ambulatori e blocco operatorio.",
+        "evidence_quote": "con l'inaugurazione del nuovo Poliambulatorio Guicciardini",
+        "url": "https://www.ilpiacenza.it/salute/nuovo-polo-per-la-sanita-privata-d-eccellenza-apre-il-poliambulatorio-guicciardini.html",
+        "date": "2026-07-29",
+        "date_basis": "fonte",
+        "date_as_in_source": "29 luglio 2026"
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Registro dei trattamenti, informative e DPIA per dati sanitari e genetici",
+        "area": "Dati & privacy",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Contratti con i medici liberi professionisti e con i fornitori",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Sicurezza dei sistemi per referti e prenotazioni online",
+        "area": "Tech, AI & cyber",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Nawal Loubadi",
+      "title": "Direttore Operativo",
+      "source_url": "https://www.ilpiacenza.it/salute/nuovo-polo-per-la-sanita-privata-d-eccellenza-apre-il-poliambulatorio-guicciardini.html",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "15-50 operations complesse",
+      "role_match": "primario",
+      "reason": "Direttrice operativa di una struttura con sale operatorie e 24 ambulatori: il ruolo che governa contratti e processi."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://guicciardini.pc.it/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.ilpiacenza.it/salute/nuovo-polo-per-la-sanita-privata-d-eccellenza-apre-il-poliambulatorio-guicciardini.html",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 20,
+      "legal_complexity": 22,
+      "buying_signals": 7,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 68
+    },
+    "score_reason": {
+      "company_fit": "Piacenza (sito) +5; dipendenti non trovati 0; poliambulatorio con prenotazione online (sito) +15. Totale 20.",
+      "legal_complexity": "Dati sanitari → Dati & privacy, Tech AI & cyber; nuova struttura → Contratti, Lavoro & persone (inferenza): 4 aree 17; dati particolari, forte +5. Totale 22.",
+      "buying_signals": "Inaugurazione del nuovo polo (IlPiacenza, 29/07/2026, 2 mesi) normale 7. Totale 7.",
+      "buyer_availability": "Nawal Loubadi, direttore operativo (IlPiacenza); scenario 15-50 operations complesse, primario. 10.",
+      "evidence_quality": "Fatturato non trovato −1; fonte primaria presente. 9."
+    },
+    "flags": [
+      "dipendenti_non_verificati"
+    ],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": "Il Poliambulatorio Guicciardini ha aperto a luglio 2026 un polo con 24 ambulatori e day surgery. Dati sanitari, contratti con i medici e fornitori sono temi continui: Iusful li segue con un avvocato dedicato.",
+    "notes": "Segmento sanità e formazione (4 ottobre 2026). P.IVA 01907140337. Tier B per i dipendenti non verificati: va controllato il numero prima del contatto."
+  },
+  {
+    "id": "pontalpino",
+    "company_name": "Gruppo Botol (Poliambulatorio Pontalpino)",
+    "domain": "poliambulatoriopontalpino.it",
+    "evaluation_date": "2026-10-04",
+    "status": "RESERVE",
+    "tier": "C",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.bellunesinelmondo.info/2026/05/14/nasce-il-poliambulatorio-pontalpino-una-nuova-eccellenza-sanitaria-a-ponte-nelle-alpi/"
+      },
+      "city": {
+        "value": "Ponte nelle Alpi",
+        "source_url": "https://www.bellunesinelmondo.info/2026/05/14/nasce-il-poliambulatorio-pontalpino-una-nuova-eccellenza-sanitaria-a-ponte-nelle-alpi/"
+      },
+      "employees": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "source_url": null,
+        "source_says_unverified": false,
+        "note": "Non trovato: nessuna pagina LinkedIn e nessun dato sul sito."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "Fuori elenco",
+        "description": "Poliambulatorio nel Bellunese; prenotazione online non verificata, quindi nessun canale digitale.",
+        "source_url": "https://poliambulatoriopontalpino.it/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "dati_particolari",
+        "observed_fact": "Visite specialistiche, analisi cliniche e fisioterapia: tratta dati sanitari.",
+        "evidence_quote": null,
+        "url": "https://poliambulatoriopontalpino.it/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "apertura_acquisizione",
+        "observed_fact": "Nuovo poliambulatorio al posto della storica FisioMedik, inaugurato il 16 maggio 2026.",
+        "evidence_quote": "Il poliambulatorio nasce dalla visione imprenditoriale di Fabrizio Vigilante",
+        "url": "https://www.bellunesinelmondo.info/2026/05/14/nasce-il-poliambulatorio-pontalpino-una-nuova-eccellenza-sanitaria-a-ponte-nelle-alpi/",
+        "date": "2026-05-14",
+        "date_basis": "fonte",
+        "date_as_in_source": "14 maggio 2026"
+      }
+    ],
+    "legal_pains": [],
+    "buyer": {
+      "name": "Fabrizio Vigilante",
+      "title": "Fondatore del Gruppo Botol e direttore generale",
+      "source_url": "https://www.bellunesinelmondo.info/2026/05/14/nasce-il-poliambulatorio-pontalpino-una-nuova-eccellenza-sanitaria-a-ponte-nelle-alpi/",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "5-15 generale",
+      "role_match": "primario",
+      "reason": "Fondatore del gruppo e direttore generale del poliambulatorio."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://poliambulatoriopontalpino.it/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.bellunesinelmondo.info/2026/05/14/nasce-il-poliambulatorio-pontalpino-una-nuova-eccellenza-sanitaria-a-ponte-nelle-alpi/",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 5,
+      "legal_complexity": 22,
+      "buying_signals": 7,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 53
+    },
+    "score_reason": {
+      "company_fit": "Ponte nelle Alpi (Bellunesi nel mondo) +5; dipendenti non trovati 0; nessun canale digitale verificato, fuori elenco 0. Totale 5.",
+      "legal_complexity": "Dati sanitari → Dati & privacy, Tech AI & cyber; nuova struttura → Contratti, Lavoro & persone (inferenza): 4 aree 17; dati particolari, forte +5. Totale 22.",
+      "buying_signals": "Nuovo poliambulatorio (Bellunesi nel mondo, 14/05/2026, 4 mesi) normale 7. Totale 7.",
+      "buyer_availability": "Fabrizio Vigilante, fondatore e direttore generale (Bellunesi nel mondo); primario. 10.",
+      "evidence_quality": "Fatturato non trovato −1; fonte primaria presente. 9."
+    },
+    "flags": [
+      "dipendenti_non_verificati"
+    ],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": null,
+    "notes": "Segmento sanità. Senza un canale digitale verificabile non prende i punti del modello: con la prenotazione online salirebbe al Tier B. L'articolo sull'acquisizione da parte di Botol Group non è più online."
+  },
+  {
+    "id": "vistra",
+    "company_name": "Vistra srl",
+    "domain": "vistraqhse.it",
+    "evaluation_date": "2026-10-04",
+    "status": "QUALIFIED",
+    "tier": "B",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.vistraqhse.it/"
+      },
+      "city": {
+        "value": "Tavagnacco",
+        "source_url": "https://www.vistraqhse.it/"
+      },
+      "employees": {
+        "value": null,
+        "range_min": 11,
+        "range_max": 50,
+        "source_url": "https://www.linkedin.com/company/vistra-srl",
+        "source_says_unverified": false,
+        "note": "Fascia LinkedIn 11-50; Clay conta 29 persone collegate alla pagina."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "B2B",
+        "description": "Consulenza, servizi e formazione su qualità, salute, sicurezza e ambiente (QHSE) per aziende in Italia e all'estero.",
+        "source_url": "https://www.linkedin.com/company/vistra-srl"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "servizio_continuativo",
+        "observed_fact": "Servizi QHSE a un portafoglio di oltre 500 clienti.",
+        "evidence_quote": null,
+        "url": "https://www.linkedin.com/company/vistra-srl",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "piu_paesi",
+        "observed_fact": "Clienti in 101 paesi nei 5 continenti.",
+        "evidence_quote": null,
+        "url": "https://www.vistraqhse.it/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "piu_paesi",
+        "observed_fact": "Annuncio aperto per un supervisore HSE su un progetto in Spagna.",
+        "evidence_quote": "Vistra Srl Jerez de los Caballeros, Estremadura, Spagna",
+        "url": "https://www.linkedin.com/jobs/view/supervisore-hse-at-vistra-srl-4471748109",
+        "date": "2026-09-29",
+        "date_basis": "fonte",
+        "date_as_in_source": "5 giorni fa (pubblicato il 29/09/2026 secondo Clay)"
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Contratti e limiti di responsabilità per servizi di sicurezza su cantieri esteri",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Nomine a responsabile del trattamento per i dati dei clienti",
+        "area": "Dati & privacy",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Distacco o assunzione di personale per progetti all'estero",
+        "area": "Societario",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Andrea Martini",
+      "title": "Amministratore delegato",
+      "source_url": "https://www.linkedin.com/in/andrea-martini-4b059436/",
+      "linkedin_url": "https://www.linkedin.com/in/andrea-martini-4b059436/",
+      "email": null,
+      "scenario": "clienti su più paesi",
+      "role_match": "primario",
+      "reason": "Amministratore delegato; profilo LinkedIn trovato con la ricerca web, autore sul blog aziendale."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.vistraqhse.it/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/company/vistra-srl",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/supervisore-hse-at-vistra-srl-4471748109",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 18,
+      "buying_signals": 12,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 79
+    },
+    "score_reason": {
+      "company_fit": "Tavagnacco (sito) +5; fascia 11-50 (LinkedIn, via Clay) +10; servizi B2B (LinkedIn) +15. Totale 30.",
+      "legal_complexity": "Servizi continuativi → Contratti, Dati & privacy; più paesi → Societario (inferenza): 3 aree 13; vendite su più paesi, forte +5. Totale 18.",
+      "buying_signals": "Annuncio per un progetto in Spagna (LinkedIn, 29/09/2026, meno di 1 mese) forte 12. Totale 12.",
+      "buyer_availability": "Andrea Martini, amministratore delegato (LinkedIn); scenario clienti su più paesi, primario. 10.",
+      "evidence_quality": "Fatturato non trovato −1; fonte primaria presente. 9."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": "Vistra lavora per clienti in 101 paesi e sta cercando personale per un progetto in Spagna. Contratti con clienti esteri e responsabilità sui cantieri sono temi continui: Iusful li segue con un avvocato dedicato.",
+    "notes": "Segmento servizi B2B (4 ottobre 2026), trovato con Clay. P.IVA 02159000302. Da non confondere con Vistra Corp., società americana dell'energia."
+  },
+  {
+    "id": "gammaservizi",
+    "company_name": "Consorzio Gamma Servizi",
+    "domain": "gammaservizi.it",
+    "evaluation_date": "2026-10-04",
+    "status": "RESERVE",
+    "tier": "C",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.gammaservizi.it/"
+      },
+      "city": {
+        "value": "Torino",
+        "source_url": "https://www.linkedin.com/company/consorzio-gamma-servizi"
+      },
+      "employees": {
+        "value": null,
+        "range_min": 11,
+        "range_max": 50,
+        "source_url": "https://www.linkedin.com/company/consorzio-gamma-servizi",
+        "source_says_unverified": false,
+        "note": "Fascia LinkedIn 11-50; la pagina conta 33 dipendenti."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "B2B",
+        "description": "Progetta e gestisce piani di formazione finanziata per imprese e pubbliche amministrazioni.",
+        "source_url": "https://www.gammaservizi.it/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "rete_sedi",
+        "observed_fact": "Sede storica a Torino e sedi a Mantova e Verona.",
+        "evidence_quote": null,
+        "url": "https://www.linkedin.com/company/consorzio-gamma-servizi",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      }
+    ],
+    "legal_pains": [],
+    "buyer": {
+      "name": null,
+      "title": null,
+      "source_url": null,
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "15-50 generale",
+      "role_match": "unclear",
+      "reason": "Nessun nome trovato sul sito né da Clay."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.gammaservizi.it/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/company/consorzio-gamma-servizi",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 14,
+      "buying_signals": 0,
+      "buyer_availability": 0,
+      "evidence_quality": 9,
+      "total": 53
+    },
+    "score_reason": {
+      "company_fit": "Torino (LinkedIn) +5; fascia 11-50 (LinkedIn, via Clay) +10; servizi di formazione a imprese e PA (sito) +15. Totale 30.",
+      "legal_complexity": "Tre sedi → Contratti, Lavoro & persone (inferenza): 2 aree 9; rete di sedi, forte +5. Totale 14.",
+      "buying_signals": "Nessun segnale datato; Clay non trova annunci né notizie. Totale 0.",
+      "buyer_availability": "Nessuna persona trovata: unclear. 0.",
+      "evidence_quality": "Fatturato non trovato −1; fonte primaria presente. 9."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": null,
+    "notes": "Segmento formazione, trovato con Clay. P.IVA 08084340010. Con un responsabile identificato salirebbe a 63."
+  },
+  {
+    "id": "fcppsicologia",
+    "company_name": "Pesi Italia srl (Formazione Continua in Psicologia)",
+    "domain": "formazionecontinuainpsicologia.it",
+    "evaluation_date": "2026-10-04",
+    "status": "RESERVE",
+    "tier": "C",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://formazionecontinuainpsicologia.it/"
+      },
+      "city": {
+        "value": "Roma",
+        "source_url": "https://www.linkedin.com/company/formazione-continua-in-psicologia"
+      },
+      "employees": {
+        "value": null,
+        "range_min": 2,
+        "range_max": 10,
+        "source_url": "https://www.linkedin.com/company/formazione-continua-in-psicologia",
+        "source_says_unverified": false,
+        "note": "Fascia LinkedIn 2-10; Clay conta 15 persone collegate alla pagina."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "Sanità e formazione",
+        "description": "Piattaforma di corsi online, on demand e in presenza per psicologi e psicoterapeuti, con crediti ECM.",
+        "source_url": "https://formazionecontinuainpsicologia.it/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "marketplace_ecommerce",
+        "observed_fact": "Vende online corsi, master e corsi on demand.",
+        "evidence_quote": null,
+        "url": "https://formazionecontinuainpsicologia.it/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      }
+    ],
+    "legal_pains": [],
+    "buyer": {
+      "name": null,
+      "title": null,
+      "source_url": null,
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "5-10",
+      "role_match": "unclear",
+      "reason": "Nessun nome trovato sul sito né da Clay."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://formazionecontinuainpsicologia.it/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/company/formazione-continua-in-psicologia",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 13,
+      "buying_signals": 0,
+      "buyer_availability": 0,
+      "evidence_quality": 9,
+      "total": 52
+    },
+    "score_reason": {
+      "company_fit": "Roma (LinkedIn) +5; fascia 2-10 (LinkedIn, via Clay) +10; corsi online (sito) +15. Totale 30.",
+      "legal_complexity": "Vendita online di corsi → Contratti, Dati & privacy, Tech AI & cyber (inferenza): 3 aree 13. Totale 13.",
+      "buying_signals": "Nuovi corsi annunciati senza data verificabile. Totale 0.",
+      "buyer_availability": "Nessuna persona trovata: unclear. 0.",
+      "evidence_quality": "Fatturato non trovato −1; fonte primaria presente. 9."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": null,
+    "notes": "Segmento formazione, trovato con Clay. P.IVA 11818651009."
+  },
+  {
+    "id": "ollum",
+    "company_name": "Ollum",
+    "domain": "ollum.it",
+    "evaluation_date": "2026-10-04",
+    "status": "REJECTED",
+    "tier": "REJECT",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.ollum.it/"
+      },
+      "city": {
+        "value": "Milano",
+        "source_url": "https://www.linkedin.com/company/ollum"
+      },
+      "employees": {
+        "value": null,
+        "range_min": 11,
+        "range_max": 50,
+        "source_url": "https://www.linkedin.com/company/ollum",
+        "source_says_unverified": false,
+        "note": "Fascia LinkedIn 11-50."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "B2B",
+        "description": "Consulenza sulla sostenibilità aziendale per imprese in Italia e all'estero.",
+        "source_url": "https://www.ollum.it/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "piu_paesi",
+        "observed_fact": "Supporta aziende in Italia e in oltre 15 paesi.",
+        "evidence_quote": null,
+        "url": "https://www.linkedin.com/company/ollum",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      }
+    ],
+    "legal_pains": [],
+    "buyer": {
+      "name": null,
+      "title": null,
+      "source_url": null,
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "15-50 generale",
+      "role_match": "unclear",
+      "reason": "Non cercata: l'azienda è fuori perimetro."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.ollum.it/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/company/ollum",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 14,
+      "buying_signals": 0,
+      "buyer_availability": 0,
+      "evidence_quality": 9,
+      "total": 53
+    },
+    "score_reason": {
+      "company_fit": "Milano (LinkedIn) +5; fascia 11-50 (LinkedIn) +10; consulenza B2B (sito) +15. Totale 30, indicativo.",
+      "legal_complexity": "Più paesi → Contratti, Societario (inferenza): 2 aree 9; forte +5. Totale 14.",
+      "buying_signals": "Ricerca fermata all'esclusione. Totale 0.",
+      "buyer_availability": "Non cercata. 0.",
+      "evidence_quality": "Fatturato non trovato −1; fonte primaria presente. 9."
+    },
+    "flags": [],
+    "exclusion_reason": {
+      "rule": "filiale_gruppo_estero",
+      "url": "https://www.ollum.it/",
+      "detail": "Il sito indica 'Gruppo TÜV AUSTRIA' (ingresso nel 2025, secondo la pagina LinkedIn)"
+    },
+    "doubts": [],
+    "outreach_angle": null,
+    "notes": "Segmento servizi B2B, trovato con Clay. Esclusa: fa parte del gruppo austriaco TÜV AUSTRIA dal 2025."
+  },
+  {
+    "id": "youmedical",
+    "company_name": "You Medical",
+    "domain": "youmedical.it",
+    "evaluation_date": "2026-10-04",
+    "status": "QUALIFIED",
+    "tier": "A",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.youmedical.it/"
+      },
+      "city": {
+        "value": "Seregno",
+        "source_url": "https://www.linkedin.com/company/you-medical"
+      },
+      "employees": {
+        "value": null,
+        "range_min": 11,
+        "range_max": 50,
+        "source_url": "https://www.linkedin.com/company/you-medical",
+        "source_says_unverified": false,
+        "note": "Fascia LinkedIn 11-50; Clay conta 14 persone collegate alla pagina."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "Sanità e formazione",
+        "description": "Centri di odontoiatria e medicina estetica in Lombardia e Piemonte, con prenotazione di appuntamenti dal sito.",
+        "source_url": "https://www.youmedical.it/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "dati_particolari",
+        "observed_fact": "Odontoiatria, medicina e chirurgia estetica, anche pediatria: tratta dati sanitari.",
+        "evidence_quote": null,
+        "url": "https://www.youmedical.it/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "rete_sedi",
+        "observed_fact": "Centri a Seregno, Merate, Milano, Mondovì e Cavallermaggiore.",
+        "evidence_quote": null,
+        "url": "https://www.youmedical.it/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "assunzioni",
+        "observed_fact": "Annunci aperti per consulente commerciale, igienista dentale e direttore sanitario.",
+        "evidence_quote": "Assunzione a tempo indeterminato, full-time, con periodo di prova",
+        "url": "https://www.linkedin.com/jobs/view/you-medical-consulente-commerciale-medicina-estetica-m-f-%E2%80%93-merate-eseregno-at-you-medical-4472308353",
+        "date": "2026-09-30",
+        "date_basis": "fonte",
+        "date_as_in_source": "pubblicato il 30/09/2026 secondo Clay"
+      },
+      {
+        "map_row": "freelance_agenzie",
+        "observed_fact": "Cerca odontoiatri a partita IVA per collaborazioni continuative.",
+        "evidence_quote": "Partita IVA e assicurazione professionale",
+        "url": "https://www.linkedin.com/jobs/view/odontoiatra-implantogo-at-you-medical-4467882034",
+        "date": "2026-09-18",
+        "date_basis": "fonte",
+        "date_as_in_source": "pubblicato il 18/09/2026 secondo Clay"
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Registro dei trattamenti e consensi per dati sanitari in cinque centri",
+        "area": "Dati & privacy",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Contratti con medici e odontoiatri a partita IVA",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Assunzioni e contratti di lavoro su più sedi",
+        "area": "Lavoro & persone",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Giovanni Bona",
+      "title": "Titolare",
+      "source_url": "https://www.linkedin.com/company/you-medical",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "15-50 generale",
+      "role_match": "primario",
+      "reason": "La pagina aziendale lo indica come titolare e ideatore del progetto."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.youmedical.it/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/company/you-medical",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/you-medical-consulente-commerciale-medicina-estetica-m-f-%E2%80%93-merate-eseregno-at-you-medical-4472308353",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/view/odontoiatra-implantogo-at-you-medical-4467882034",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 25,
+      "buying_signals": 14,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 88
+    },
+    "score_reason": {
+      "company_fit": "Seregno (LinkedIn) +5; fascia 11-50 (LinkedIn, via Clay) +10; centri medici con prenotazione dal sito +15. Totale 30.",
+      "legal_complexity": "Dati sanitari → Dati & privacy, Tech AI & cyber; cinque centri e assunzioni → Contratti, Lavoro & persone; medici a partita IVA → Proprietà intellettuale (inferenza): 5 aree 20; forte +5. Totale 25.",
+      "buying_signals": "Assunzione a tempo indeterminato (LinkedIn, 30/09/2026) normale 7; odontoiatri a partita IVA (LinkedIn, 18/09/2026) normale 7. Totale 14.",
+      "buyer_availability": "Giovanni Bona, titolare (pagina LinkedIn aziendale); scenario 15-50 generale, primario. 10.",
+      "evidence_quality": "Fatturato non trovato −1; fonte primaria presente. 9."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": "You Medical ha cinque centri tra Lombardia e Piemonte e sta assumendo e cercando medici a partita IVA. Dati sanitari, contratti con i professionisti e assunzioni su più sedi sono temi continui: Iusful li segue con un avvocato dedicato.",
+    "notes": "Segmento sanità (gruppo 5, 4 ottobre 2026), trovato con Clay (ricerca per settore e annunci aperti). P.IVA 07610090966."
+  },
+  {
+    "id": "secretkey",
+    "company_name": "Secret Key Web Agency",
+    "domain": "secretkey.it",
+    "evaluation_date": "2026-10-04",
+    "status": "QUALIFIED",
+    "tier": "B",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.secretkey.it/"
+      },
+      "city": {
+        "value": "Roma",
+        "source_url": "https://www.linkedin.com/company/secret-key-web-agency"
+      },
+      "employees": {
+        "value": null,
+        "range_min": 11,
+        "range_max": 50,
+        "source_url": "https://www.linkedin.com/company/secret-key-web-agency",
+        "source_says_unverified": false,
+        "note": "Fascia LinkedIn 11-50; la pagina parla di 27 professionisti, Clay conta 22 persone."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": 2500000,
+        "range_max": null,
+        "year": 2021,
+        "source_url": "https://www.engage.it/agenzie/secret-key-web-agency-fatturato-2021-in-crescita-del-250-a-oltre-25-milioni-.aspx"
+      },
+      "business_model": {
+        "value": "Servizi digitali",
+        "description": "Agenzia di performance marketing, sviluppo siti ed e-commerce per clienti di molti settori.",
+        "source_url": "https://www.linkedin.com/company/secret-key-web-agency"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "servizio_continuativo",
+        "observed_fact": "Gestisce campagne e progetti digitali come partner continuativo dei clienti.",
+        "evidence_quote": null,
+        "url": "https://www.linkedin.com/company/secret-key-web-agency",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "assunzioni",
+        "observed_fact": "Pagina lavora con noi con posizioni aperte per UI/UX designer e graphic designer.",
+        "evidence_quote": "Cerchiamo un UI/UX Designer e Graphic Designer di livello middle/senior",
+        "url": "https://www.secretkey.it/job/",
+        "date": "2026-10-04",
+        "date_basis": "consultazione",
+        "date_as_in_source": null
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "Contratti di servizio e limiti di responsabilità con i clienti",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Nomine a responsabile del trattamento per i dati dei clienti nelle campagne",
+        "area": "Dati & privacy",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Contratti per i nuovi designer e specialisti",
+        "area": "Lavoro & persone",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Enrico Ferretti",
+      "title": "CEO e Founder",
+      "source_url": "https://www.secretkey.it/blog/author/enrico-ferretti/",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "15-50 generale",
+      "role_match": "primario",
+      "reason": "Fondatore e CEO, si presenta così sul blog dell'agenzia."
+    },
+    "evidence_deductions": [],
+    "sources": [
+      {
+        "url": "https://www.secretkey.it/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.secretkey.it/job/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/company/secret-key-web-agency",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.engage.it/agenzie/secret-key-web-agency-fatturato-2021-in-crescita-del-250-a-oltre-25-milioni-.aspx",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 13,
+      "buying_signals": 7,
+      "buyer_availability": 10,
+      "evidence_quality": 10,
+      "total": 70
+    },
+    "score_reason": {
+      "company_fit": "Roma (LinkedIn) +5; fascia 11-50 (LinkedIn, via Clay) +10; agenzia di servizi digitali (LinkedIn) +15. Totale 30.",
+      "legal_complexity": "Servizi continuativi → Contratti, Dati & privacy; assunzioni → Lavoro & persone (inferenza): 3 aree 13. Totale 13.",
+      "buying_signals": "Posizioni aperte senza data, datate alla consultazione (04/10/2026) normale 7. Totale 7.",
+      "buyer_availability": "Enrico Ferretti, CEO e founder (blog aziendale); scenario 15-50 generale, primario. 10.",
+      "evidence_quality": "Fatturato 2021 oltre 2,5 milioni (Engage); fonti primarie presenti. 10."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": "Secret Key gestisce campagne e siti per clienti di molti settori e sta assumendo. Contratti di servizio, dati dei clienti e nuove assunzioni sono temi continui: Iusful li segue con un avvocato dedicato.",
+    "notes": "Segmento servizi B2B (gruppo 5), trovato con Clay; annunci trovati sulla pagina lavora con noi (strada 2). P.IVA 12207031001."
+  },
+  {
+    "id": "bottega52",
+    "company_name": "Bottega52",
+    "domain": "bottega52.it",
+    "evaluation_date": "2026-10-04",
+    "status": "QUALIFIED",
+    "tier": "B",
+    "facts": {
+      "country": {
+        "value": "Italia",
+        "source_url": "https://www.bottega52.it/"
+      },
+      "city": {
+        "value": "Milano",
+        "source_url": "https://www.bottega52.it/"
+      },
+      "employees": {
+        "value": null,
+        "range_min": 11,
+        "range_max": 50,
+        "source_url": "https://www.linkedin.com/company/bottega52",
+        "source_says_unverified": false,
+        "note": "Fascia LinkedIn 11-50; Clay conta 18 persone collegate alla pagina."
+      },
+      "revenue_eur": {
+        "value": null,
+        "range_min": null,
+        "range_max": null,
+        "year": null,
+        "source_url": null
+      },
+      "business_model": {
+        "value": "Servizi digitali",
+        "description": "Servizi IT cloud native: modernizzazione delle applicazioni, piattaforme e gestione operativa per i clienti.",
+        "source_url": "https://www.bottega52.it/"
+      },
+      "innovative_registry": {
+        "section": null,
+        "source_url": null
+      }
+    },
+    "signals": [
+      {
+        "map_row": "servizio_continuativo",
+        "observed_fact": "Gestione operativa continuativa 24/7 delle piattaforme dei clienti (managed services).",
+        "evidence_quote": null,
+        "url": "https://www.bottega52.it/",
+        "date": null,
+        "date_basis": null,
+        "date_as_in_source": null
+      },
+      {
+        "map_row": "assunzioni",
+        "observed_fact": "Cerca sviluppatori junior e senior, un cloud architect e un technical account manager.",
+        "evidence_quote": "Cerchiamo Junior e Senior Developer, Cloud Architect, e Technical Account Manager",
+        "url": "https://bottega52.it/azienda/lavora-con-noi?hsLang=it",
+        "date": "2026-10-04",
+        "date_basis": "consultazione",
+        "date_as_in_source": null
+      }
+    ],
+    "legal_pains": [
+      {
+        "pain": "SLA e limiti di responsabilità per la gestione 24/7 dei sistemi dei clienti",
+        "area": "Contratti",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Nomine a responsabile del trattamento per i dati gestiti nel cloud",
+        "area": "Dati & privacy",
+        "basis": "inferenza"
+      },
+      {
+        "pain": "Contratti per sviluppatori e cloud architect",
+        "area": "Lavoro & persone",
+        "basis": "inferenza"
+      }
+    ],
+    "buyer": {
+      "name": "Riccardo Cattaneo",
+      "title": "CEO",
+      "source_url": "https://www.cbinsights.com/company/bottega52",
+      "linkedin_url": null,
+      "email": null,
+      "scenario": "15-50 generale",
+      "role_match": "primario",
+      "reason": "CB Insights lo indica come CEO."
+    },
+    "evidence_deductions": [
+      {
+        "code": "fatturato_mancante",
+        "detail": "Fatturato non trovato da una fonte leggibile"
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.bottega52.it/",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://bottega52.it/azienda/lavora-con-noi?hsLang=it",
+        "type": "primaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.linkedin.com/company/bottega52",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      },
+      {
+        "url": "https://www.cbinsights.com/company/bottega52",
+        "type": "secondaria",
+        "accessed": "2026-10-04"
+      }
+    ],
+    "score": {
+      "company_fit": 30,
+      "legal_complexity": 13,
+      "buying_signals": 7,
+      "buyer_availability": 10,
+      "evidence_quality": 9,
+      "total": 69
+    },
+    "score_reason": {
+      "company_fit": "Milano (sito) +5; fascia 11-50 (LinkedIn, via Clay) +10; servizi IT (sito) +15. Totale 30.",
+      "legal_complexity": "Servizi continuativi → Contratti, Dati & privacy; assunzioni → Lavoro & persone (inferenza): 3 aree 13. Totale 13.",
+      "buying_signals": "Posizioni aperte senza data, datate alla consultazione (04/10/2026) normale 7. Totale 7.",
+      "buyer_availability": "Riccardo Cattaneo, CEO (CB Insights); scenario 15-50 generale, primario. 10.",
+      "evidence_quality": "Fatturato non trovato −1; fonti primarie presenti. 9."
+    },
+    "flags": [],
+    "exclusion_reason": null,
+    "doubts": [],
+    "outreach_angle": "Bottega52 gestisce 24/7 le piattaforme cloud dei clienti e sta assumendo sviluppatori. SLA, dati dei clienti e contratti di lavoro sono temi continui: Iusful li segue con un avvocato dedicato.",
+    "notes": "Segmento servizi B2B (gruppo 5), trovato con Clay; annunci sulla pagina lavora con noi (strada 2). Sede legale a Lodi, operativa a Milano. CB Insights indica come unico investitore PoliHub (incubatore del Politecnico di Milano): non è un fondo VC, nessun round VC trovato."
+  }
+]
