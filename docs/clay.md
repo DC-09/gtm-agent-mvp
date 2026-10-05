@@ -41,4 +41,4 @@ Nei risultati vanno tolti a mano associazioni, società scientifiche, gruppi gra
 
 ## Dati personali
 
-Dai file di Clay entrano nel repository solo le persone scelte come buyer, in `data/leads.json` con la loro fonte. Nessuna email o telefono.
+Dai file di Clay entrano nel repository solo le persone scelte come buyer, in `data/leads.json` con la loro fonte.

@@ -10,4 +10,3 @@ Riempie `buyer`. Lo scenario e i ruoli sono nella tabella di `docs/icp.md` §6; 
    - `nome senza ruolo` o `solo ruolo`: manca uno dei due (es. "fondatore" senza dire che è il CEO);
    - `unclear`: nessuna persona credibile.
 4. `reason`: perché quella persona possiede il problema, massimo 30 parole.
-5. Nessuna email o telefono: non servono allo score e non si costruiscono.

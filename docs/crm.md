@@ -7,7 +7,7 @@ Nell'MVP il CRM è un workspace Notion privato, strutturato come un CRM (pagina 
 | Database | A cosa serve | Chiave | ID database | ID data source |
 | --- | --- | --- | --- | --- |
 | Aziende | Un record per azienda: stato del lead, tier, score, segnale principale con fonte, bisogni legali, angle | `Dominio` | `47bd791712bb4d30acce6f2af257a433` | `0e1f1ba4-a701-4af6-bd5e-58c9aa265a0b` |
-| Persone | Il buyer scelto, collegato all'azienda; nessuna email o telefono | nome + azienda | `9ed966106914451594f22af8d009d1e3` | `e7b25378-0c3e-42eb-8b7f-86b9fb2a5a6f` |
+| Persone | Il buyer scelto, collegato all'azienda | nome + azienda | `9ed966106914451594f22af8d009d1e3` | `e7b25378-0c3e-42eb-8b7f-86b9fb2a5a6f` |
 | Interazioni | Cosa è successo a ogni lead: qualificazione, verifiche manuali, bozze, passaggio al sales. Il campo "Chi" vale Agente, n8n o Revisore | — | `f95fe1d7744640c3aadeabc8aca2ce45` | `0f25f1d1-52a1-4a86-81b8-fa5cb2739758` |
 | Report funnel | Un report per ogni esecuzione: candidati, qualificati, scartati e motivi, novità della settimana | — | `c80f0cbb73a9400593fee933737cd5ca` | `c3a5ef2e-e706-498a-8f9f-7af1b390f871` |
 
