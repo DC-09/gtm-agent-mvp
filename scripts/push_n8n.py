@@ -11,6 +11,8 @@ richiesta, in POST JSON, all'indirizzo in N8N_WEBHOOK_URL (variabile d'ambiente 
 Ogni lead viene ritentato al massimo una volta; l'esito di ogni invio finisce in
 data/push_log.json. Alla fine invia anche data/run_summary.json al flusso GTM_RUN_SUMMARY
 (/webhook/iusful/run-summary sullo stesso n8n), che scrive il report del funnel su Notion.
+I contatti (data/contacts.json, fuori dal repository) si aggiungono a ogni lead solo al
+momento dell'invio: nessun file del repository li contiene.
 Esce con codice 1 se almeno un invio fallisce.
 """
 
@@ -22,6 +24,9 @@ import urllib.error
 import urllib.request
 from datetime import datetime
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from contacts import for_crm, load as load_contacts  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 IN_JSON = ROOT / "data" / "qualified_leads.json"
@@ -59,6 +64,9 @@ def main():
         print("Manca data/qualified_leads.json: esegui prima python scripts/export_payload.py")
         return 1
     leads = json.loads(IN_JSON.read_text(encoding="utf-8"))
+    contacts = load_contacts()
+    for lead in leads:
+        lead["contacts"] = for_crm(contacts, lead["id"])
     url = webhook_url()
     print(f"Webhook: {url}")
     print(f"Lead da inviare: {len(leads)}{' (prova, nessun invio)' if dry_run else ''}\n")
@@ -66,7 +74,9 @@ def main():
     log = []
     for lead in leads:
         if dry_run:
-            print(f"  [prova] {lead['tier']} {lead['score_total']:>3}  {lead['company_name']}")
+            c = lead["contacts"] or {}
+            have = [k for k in ("company_phone", "buyer_email", "buyer_mobile") if c.get(k)]
+            print(f"  [prova] {lead['tier']} {lead['score_total']:>3}  {lead['company_name']}  contatti: {', '.join(have) or 'nessuno'}")
             continue
         entry = send(url, lead, lead["id"])
         print(f"  {'✓' if entry['ok'] else '✗'} {lead['company_name']}: {entry['status']} {entry['response'][:120]}")

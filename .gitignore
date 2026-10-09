@@ -10,3 +10,4 @@ __pycache__/
 # export grezzi di Clay (contengono persone) e file di lavoro del controllo settimanale
 data/clay/
 data/weekly/
+data/contacts.json

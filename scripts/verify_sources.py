@@ -6,7 +6,8 @@ Uso:
 
 Per ogni lead QUALIFIED riapre le pagine citate e controlla, in modo tollerante:
 - che la frase copiata dalla fonte (`evidence_quote`) di ogni segnale che dà punti ci sia davvero;
-- che il nome del buyer compaia nella sua pagina di fonte.
+- che il nome del buyer compaia nella sua pagina di fonte;
+- che il telefono aziendale, se c'è in data/contacts.json, compaia nella pagina da cui è preso.
 
 Un lead va al revisore ("da rivedere") solo in due casi (docs/decisions.md):
 1. c'è un dubbio di esclusione non risolto (`doubts` con tipo `possibile_esclusione`);
@@ -27,6 +28,7 @@ from datetime import datetime
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from contacts import digits, load as load_contacts  # noqa: E402
 from validate_leads import DEFAULT_DATA, MAP, ROOT, compute  # noqa: E402
 
 OUT = ROOT / "data" / "verification.json"
@@ -35,6 +37,7 @@ TIMEOUT_S = 15
 MIN_COVERAGE = 0.75  # quota di parole della citazione che devono comparire nella pagina
 
 _cache = {}
+CONTACTS = load_contacts()
 
 
 def normalize(text):
@@ -137,6 +140,17 @@ def check_lead(lead):
         else:
             notes.append("fatti non confermati, ma il tier resta lo stesso anche senza: " +
                          ", ".join(c["what"] for c in checks if not c["ok"]))
+
+    # Telefono aziendale (data/contacts.json): il numero deve comparire nella pagina citata.
+    # Nell'esito si scrive solo se c'è, non il numero: data/verification.json è nel repository.
+    phone = (CONTACTS.get(lead["id"]) or {}).get("company_phone")
+    if phone:
+        text, err = page_text(phone["source_url"])
+        ok = text is not None and digits(phone["value"]) in re.sub(r"\D", "", text)
+        checks.append({"what": "telefono aziendale", "url": phone["source_url"], "ok": ok,
+                       "detail": "numero trovato" if ok else (err or "numero non trovato nella pagina")})
+        if not ok:
+            notes.append("telefono aziendale non confermato sulla pagina: da ricontrollare, non cambia il tier")
 
     for d in lead.get("doubts", []):
         if d["type"] == "possibile_esclusione":

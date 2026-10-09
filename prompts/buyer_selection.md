@@ -10,4 +10,4 @@ Riempie `buyer`. Lo scenario e i ruoli sono nella tabella di `docs/icp.md` §6; 
    - `nome senza ruolo` o `solo ruolo`: manca uno dei due (es. "fondatore" senza dire che è il CEO);
    - `unclear`: nessuna persona credibile.
 4. `reason`: perché quella persona possiede il problema, massimo 30 parole.
-5. Nessuna email o telefono: non servono allo score e non si costruiscono.
+5. Contatti, solo per i lead qualificati e mai in `data/leads.json`: email nominativa e cellulare del buyer da Clay (Work Email), telefono generico dell'azienda dalla pagina contatti del suo sito. Vanno in `data/contacts.json` con la fonte (`schemas/contacts.schema.json`). Se Clay restituisce un'email con il dominio di un'altra società, non si usa: spesso vuol dire che la persona ha cambiato azienda, e va segnalato.

@@ -4,7 +4,7 @@ Stato: **approvate il 4 ottobre 2026**. Non sono state inviate e il sistema non 
 
 **Regola di questa versione:** i segnali trovati nella ricerca (paesi, assunzioni, marketplace, articoli) servono a noi per scegliere chi contattare e quando. Nell'email non compaiono: citati così sembrano un'AI che ripete quello che ha appena letto. Niente esempi di casi legali, registro di mezzo: "Buongiorno" e "tu", senza formule troppo confidenziali.
 
-Firma: `[Nome], Iusful`. Chi invia è il team commerciale di Iusful.
+Firma: `[Nome], Iusful`. Chi invia è il team commerciale di Iusful. Nella prima email l'ultima riga dice da dove viene il contatto (`{fonte_contatto}`: "sul sito di {azienda}" o "in un database professionale") e come non riceverne altri.
 
 ---
 
@@ -22,6 +22,8 @@ Firma: `[Nome], Iusful`. Chi invia è il team commerciale di Iusful.
 >
 > Un saluto,
 > [Nome], Iusful
+>
+> _Ho trovato il tuo contatto {fonte_contatto}. Se preferisci non ricevere altri messaggi, basta rispondere a questa email._
 
 **Email 2**, dopo 4-5 giorni, stessa conversazione
 
@@ -54,6 +56,8 @@ Firma: `[Nome], Iusful`. Chi invia è il team commerciale di Iusful.
 >
 > Un saluto,
 > [Nome], Iusful
+>
+> _Ho trovato il tuo contatto {fonte_contatto}. Se preferisci non ricevere altri messaggi, basta rispondere a questa email._
 
 **Email 2**, dopo 4-5 giorni, stessa conversazione
 

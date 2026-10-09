@@ -83,7 +83,7 @@
     },
     {
       "parameters": {
-        "jsCode": "// Prepara le proprietà Notion a partire dal lead ricevuto.\n// update_properties non contiene \"Stato\": un aggiornamento non deve far tornare indietro\n// un lead che nel CRM è già passato a \"Pronto per sales\" o \"Contattato\".\nconst b = $json.body;\nconst txt = (s) => [{ text: { content: String(s ?? '').slice(0, 2000) } }];\nconst day = (s) => !s ? null : s.length === 4 ? `${s}-01-01` : s.length === 7 ? `${s}-01` : s;\nconst signalDate = day(b.primary_signal && b.primary_signal.date);\n\nconst common = {\n  'Azienda': { title: txt(b.company_name) },\n  'Dominio': { rich_text: txt(b.domain) },\n  'Sito': { url: b.website || null },\n  'Tier': { select: { name: b.tier } },\n  'Score': { number: b.score_total },\n  'Città': { rich_text: txt(b.city) },\n  'Dipendenti': { rich_text: txt(b.employees) },\n  'Segnale principale': { rich_text: txt(b.primary_signal && b.primary_signal.fact) },\n  'Data segnale': { date: signalDate ? { start: signalDate } : null },\n  'Fonte segnale': { url: b.evidence_url || null },\n  'Bisogni legali': { rich_text: txt((b.legal_pains || []).join('; ')) },\n  'Angle outreach': { rich_text: txt(b.outreach_angle) },\n  'Flag': { multi_select: (b.flags || []).map((name) => ({ name })) },\n  'Data valutazione': { date: { start: b.evaluation_date } },\n};\nif (b.business_model) common['Modello'] = { select: { name: b.business_model } };\n\n// Esito di scripts/verify_sources.py. In aggiornamento non sovrascrive \"Rivista a mano\".\nconst v = b.verification || {};\nconst verification = {\n  'Verifica': { select: { name: v.status === 'da_rivedere' ? 'Da rivedere' : 'Superata' } },\n  'Motivo verifica': { rich_text: txt(v.reason) },\n};\n\nreturn {\n  json: {\n    body: b,\n    create_properties: { ...common, ...verification, 'Stato': { select: { name: 'Qualificato' } } },\n    update_properties: common,\n    verification_properties: verification,\n  },\n};\n"
+        "jsCode": "// Prepara le proprietà Notion a partire dal lead ricevuto.\n// update_properties non contiene \"Stato\": un aggiornamento non deve far tornare indietro\n// un lead che nel CRM è già passato a \"Pronto per sales\" o \"Contattato\".\nconst b = $json.body;\nconst txt = (s) => [{ text: { content: String(s ?? '').slice(0, 2000) } }];\nconst day = (s) => !s ? null : s.length === 4 ? `${s}-01-01` : s.length === 7 ? `${s}-01` : s;\nconst signalDate = day(b.primary_signal && b.primary_signal.date);\n\nconst common = {\n  'Azienda': { title: txt(b.company_name) },\n  'Dominio': { rich_text: txt(b.domain) },\n  'Sito': { url: b.website || null },\n  'Tier': { select: { name: b.tier } },\n  'Score': { number: b.score_total },\n  'Città': { rich_text: txt(b.city) },\n  'Dipendenti': { rich_text: txt(b.employees) },\n  'Segnale principale': { rich_text: txt(b.primary_signal && b.primary_signal.fact) },\n  'Data segnale': { date: signalDate ? { start: signalDate } : null },\n  'Fonte segnale': { url: b.evidence_url || null },\n  'Bisogni legali': { rich_text: txt((b.legal_pains || []).join('; ')) },\n  'Angle outreach': { rich_text: txt(b.outreach_angle) },\n  'Flag': { multi_select: (b.flags || []).map((name) => ({ name })) },\n  'Data valutazione': { date: { start: b.evaluation_date } },\n};\nif (b.business_model) common['Modello'] = { select: { name: b.business_model } };\n\n// Contatti (solo se trovati: un aggiornamento senza contatti non cancella quelli già nel CRM)\nconst c = b.contacts || {};\nif (c.company_phone) common['Telefono'] = { phone_number: c.company_phone };\nconst person = {};\nif (c.buyer_email) person['Email'] = { email: c.buyer_email };\nif (c.buyer_mobile) person['Cellulare'] = { phone_number: c.buyer_mobile };\nif (c.source) person['Fonte contatto'] = { rich_text: txt(c.source) };\n\n// Esito di scripts/verify_sources.py. In aggiornamento non sovrascrive \"Rivista a mano\".\nconst v = b.verification || {};\nconst verification = {\n  'Verifica': { select: { name: v.status === 'da_rivedere' ? 'Da rivedere' : 'Superata' } },\n  'Motivo verifica': { rich_text: txt(v.reason) },\n};\n\nreturn {\n  json: {\n    body: b,\n    create_properties: { ...common, ...verification, 'Stato': { select: { name: 'Qualificato' } } },\n    update_properties: common,\n    verification_properties: verification,\n    person_properties: person,\n    has_person_contacts: Object.keys(person).length > 0,\n  },\n};\n"
       },
       "id": "a1f0c6d2-1b1e-4c55-9d0a-000000000005",
       "name": "Prepara proprietà CRM",
@@ -248,7 +248,7 @@
         },
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={{ JSON.stringify({ parent: { database_id: '9ed966106914451594f22af8d009d1e3' }, properties: { 'Nome': { title: [{ text: { content: $('Prepara proprietà CRM').item.json.body.buyer.name || 'Buyer non identificato' } }] }, 'Ruolo': { rich_text: [{ text: { content: $('Prepara proprietà CRM').item.json.body.buyer.title || '' } }] }, 'Azienda': { relation: [{ id: $json.id }] }, 'Ruolo nel buying': { select: { name: $('Prepara proprietà CRM').item.json.body.buyer.role_match } }, 'Fonte': { url: $('Prepara proprietà CRM').item.json.body.buyer.source_url || null } } }) }}",
+        "jsonBody": "={{ JSON.stringify({ parent: { database_id: '9ed966106914451594f22af8d009d1e3' }, properties: { 'Nome': { title: [{ text: { content: $('Prepara proprietà CRM').item.json.body.buyer.name || 'Buyer non identificato' } }] }, 'Ruolo': { rich_text: [{ text: { content: $('Prepara proprietà CRM').item.json.body.buyer.title || '' } }] }, 'Azienda': { relation: [{ id: $json.id }] }, 'Ruolo nel buying': { select: { name: $('Prepara proprietà CRM').item.json.body.buyer.role_match } }, 'Fonte': { url: $('Prepara proprietà CRM').item.json.body.buyer.source_url || null }, ...$('Prepara proprietà CRM').item.json.person_properties } }) }}",
         "options": {}
       },
       "id": "a1f0c6d2-1b1e-4c55-9d0a-000000000010",
@@ -293,6 +293,141 @@
       "position": [
         1680,
         -120
+      ],
+      "credentials": {
+        "notionApi": {
+          "id": "qKnWs8XNRRwGFV75",
+          "name": "Notion account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "p1",
+              "leftValue": "={{ $('Prepara proprietà CRM').item.json.has_person_contacts }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "a1f0c6d2-1b1e-4c55-9d0a-000000000012",
+      "name": "Contatti persona?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        1440,
+        -400
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.notion.com/v1/databases/9ed966106914451594f22af8d009d1e3/query",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "notionApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Notion-Version",
+              "value": "2022-06-28"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ filter: { property: 'Azienda', relation: { contains: $('Cerca azienda per dominio').item.json.results[0].id } }, page_size: 1 }) }}",
+        "options": {}
+      },
+      "id": "a1f0c6d2-1b1e-4c55-9d0a-000000000013",
+      "name": "Cerca persona",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1680,
+        -400
+      ],
+      "credentials": {
+        "notionApi": {
+          "id": "qKnWs8XNRRwGFV75",
+          "name": "Notion account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "p2",
+              "leftValue": "={{ $json.results.length }}",
+              "rightValue": 0,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "a1f0c6d2-1b1e-4c55-9d0a-000000000014",
+      "name": "Persona trovata?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        1920,
+        -400
+      ]
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "={{ 'https://api.notion.com/v1/pages/' + $json.results[0].id }}",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "notionApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Notion-Version",
+              "value": "2022-06-28"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ properties: $('Prepara proprietà CRM').item.json.person_properties }) }}",
+        "options": {}
+      },
+      "id": "a1f0c6d2-1b1e-4c55-9d0a-000000000015",
+      "name": "Aggiorna contatti persona",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2160,
+        -400
       ],
       "credentials": {
         "notionApi": {
@@ -411,6 +546,44 @@
         [
           {
             "node": "Registra interazione",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Contatti persona?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Contatti persona?": {
+      "main": [
+        [
+          {
+            "node": "Cerca persona",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Cerca persona": {
+      "main": [
+        [
+          {
+            "node": "Persona trovata?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Persona trovata?": {
+      "main": [
+        [
+          {
+            "node": "Aggiorna contatti persona",
             "type": "main",
             "index": 0
           }

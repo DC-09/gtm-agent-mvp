@@ -17,6 +17,7 @@ Read `docs/icp.md` and `docs/scoring.md` before scoring any lead.
 5. Prefer 20 excellent leads over 200 weak leads.
 6. Do not send outreach automatically in the MVP.
 7. Never commit secrets or tokens.
+8. Contact details: company phone only from the company's own site, buyer email and mobile only from Clay. Keep them in `data/contacts.json` (gitignored), never in committed files.
 
 ## Agent loop
 For each objective:

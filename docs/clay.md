@@ -8,6 +8,7 @@ Clay fa la parte di dati aziendali: trovare aziende, dipendenti, pagina LinkedIn
 | --- | --- | --- |
 | Trovare candidati | Find Companies (Italia, 2-50 dipendenti, settore) e, dal connettore, `search-companies` | Nome, dominio, LinkedIn, fascia di dipendenti, città |
 | Trovare il buyer | Find contacts at company (Founder, Owner, Partner, C-suite) | Nome e ruolo, poi confermati su sito o articolo quando possibile |
+| Trovare i contatti | Work Email sul buyer (`search-contacts-by-name`, poi `add-contact-data-points`) | Email nominativa in `data/contacts.json`, fuori dal repository |
 | Cercare segnali | Open Jobs e Recent News (`add-company-data-points`) | Solo dopo aver aperto la fonte e copiato la frase esatta |
 
 Clay è collegato a Claude Code con il connettore (workspace "Diego's Workspace"), quindi l'agente lancia ricerche e arricchimenti senza passare da file. Gli export CSV, quando servono, si importano con `scripts/import_clay.py`, che esclude in automatico gli studi legali e prepara la lista dei candidati.
@@ -41,4 +42,4 @@ Nei risultati vanno tolti a mano associazioni, società scientifiche, gruppi gra
 
 ## Dati personali
 
-Dai file di Clay entrano nel repository solo le persone scelte come buyer, in `data/leads.json` con la loro fonte. Nessuna email o telefono.
+Dai file di Clay entrano nel repository solo le persone scelte come buyer, in `data/leads.json` con la loro fonte. Email e cellulari restano in `data/contacts.json`, escluso dal repository. Il connettore offre l'email (Work Email) come dato standard; il cellulare si cerca dalla tabella di Clay (waterfall dei provider) e si importa nello stesso file.

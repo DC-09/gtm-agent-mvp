@@ -30,6 +30,11 @@ Una riga per scelta, con il motivo. Le scelte aperte stanno in fondo.
 - (4 ottobre 2026) I segnali della ricerca non compaiono nelle email: servono a scegliere chi contattare e quando. Citati nel testo ("ho letto che vendete in sei paesi…") fanno sembrare l'email un'AI che ripete quello che ha appena letto. Le email sono neutre e informali, senza esempi di casi legali, e cambiano solo in base al ruolo del destinatario. Principi in prompts/outreach.md.
 - Il report di funnel è parte del sistema, non un extra: a ogni esecuzione mostra qualificati, scartati e motivi.
 
+## Contatti
+- Per ogni lead qualificato si raccolgono il telefono generico dell'azienda, preso dal suo sito con la pagina come fonte, e l'email nominativa e il cellulare del buyer, solo da Clay. Non valgono gli indirizzi di ruolo (info@, commerciale@), i contatti costruiti a mano (un nome.cognome@ indovinato) né le email con il dominio di un'altra società.
+- I contatti sono dati personali: stanno in `data/contacts.json`, escluso dal repository, e arrivano al CRM solo con `push_n8n.py`. Il repository contiene le regole e i controlli, non i contatti. `validate_leads.py` controlla formato, fonte e dominio; `verify_sources.py` controlla che il telefono compaia nella pagina citata.
+- La prima email dice da dove viene il contatto e come non riceverne altri. L'invio resta fuori dall'MVP: chi invia applica le regole su email commerciali e telemarketing.
+
 ## Stack
 - n8n per i flussi verso il CRM; Clay per dati aziendali e persone, in versione leggera.
 - Claude Code gira in locale, perché n8n è su localhost.

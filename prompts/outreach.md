@@ -13,6 +13,7 @@ Uso: per ogni lead Tier A (e B, se richiesto) dopo la verifica delle fonti. Il s
 7. **Il follow-up aggiunge un elemento del servizio** (costo noto, disdetta, piani) e lascia una via d'uscita.
 8. **LinkedIn: nessuna vendita** nella richiesta di collegamento.
 9. **La personalizzazione sta nel destinatario, non nel testo**: la versione cambia solo in base al ruolo (titolare o finanza).
+10. **Trasparenza sul contatto.** La prima email chiude con una riga che dice da dove viene il contatto e come non riceverne altri (`docs/decisions.md`, Contatti).
 
 ## Vincoli del progetto
 

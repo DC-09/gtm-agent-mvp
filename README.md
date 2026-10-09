@@ -51,6 +51,7 @@ I 7 Tier A, già in "Pronto per sales": Esplodia, ProduceShop, You Medical, Emil
 - **Segnali recenti.** Punti pieni fino a 12 mesi, metà tra 12 e 18 mesi, zero oltre o senza data.
 - **Tre segmenti.** E-commerce e retail, servizi B2B e B2C, sanità e formazione private, ognuno con le sue righe nella mappa dei segnali (rete di sedi, dati sanitari o di minori, gare e convenzioni, nuovi servizi).
 - **Revisione umana solo dove serve.** Arriva in revisione solo un lead con un dubbio di esclusione o un tier che dipende da un fatto non confermato ([`docs/controllo_manuale.md`](docs/controllo_manuale.md)).
+- **Contatti con fonte, fuori dal repository.** Telefono aziendale dal sito, email e cellulare del buyer da Clay: stanno in un file escluso da git e arrivano al CRM solo con l'invio a n8n ([`docs/decisions.md`](docs/decisions.md)).
 - **Nessun invio automatico.** Il sistema produce bozze. I segnali servono a scegliere chi contattare e quando, non vengono citati nelle email ([`prompts/outreach.md`](prompts/outreach.md)).
 
 Le regole sono fissate alla versione 5 (4 ottobre 2026): da qui i lead cambiano solo per fatti nuovi. Ogni scelta, con data e motivo, è in [`docs/decisions.md`](docs/decisions.md).

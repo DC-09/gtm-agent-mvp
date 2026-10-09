@@ -18,6 +18,9 @@ from pathlib import Path
 
 from jsonschema import Draft202012Validator
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from contacts import check as check_contacts, load as load_contacts  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 SCHEMA_PATH = ROOT / "schemas" / "lead.schema.json"
 DEFAULT_DATA = ROOT / "data" / "leads.json"
@@ -403,6 +406,20 @@ def main():
     print(f"  Nessun segnale con fonte:  {missing_signal}")
     print(f"  Dipendenti non verificati: {unverified_emp}")
     print(f"  Con segnale datato ≤18 mesi: {recent}")
+
+    # Contatti (data/contacts.json, fuori dal repository): solo se il file c'è
+    contacts = load_contacts()
+    if contacts and path.resolve() == DEFAULT_DATA:
+        c_errors, _, st = check_contacts(leads, contacts)
+        print("\nContatti")
+        if st:
+            print(f"  Lead con contatti:         {st['leads']}")
+            print(f"  Telefono aziendale:        {st['company_phone']}")
+            print(f"  Email del buyer:           {st['buyer_email']}")
+            print(f"  Cellulare del buyer:       {st['buyer_mobile']}")
+        for e in c_errors:
+            print(f"    - ERRORE: {e}")
+        total_errors += len(c_errors)
     print(f"\n{'OK' if total_errors == 0 else f'{total_errors} errori'}")
     return 1 if total_errors else 0
 

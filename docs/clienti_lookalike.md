@@ -1,6 +1,6 @@
 # Clienti Iusful citati: profili per i lookalike
 
-Ricerca su fonti pubbliche. Nessun dato di contatto personale raccolto. Le righe "Pattern" e "Implicazioni" sono interpretazioni.
+Ricerca su fonti pubbliche. Le righe "Pattern" e "Implicazioni" sono interpretazioni.
 
 ## 1. Elodie Brides
 

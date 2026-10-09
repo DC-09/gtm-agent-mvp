@@ -1,7 +1,7 @@
 """Genera i tre flussi n8n del progetto in n8n/workflows/:
 
 - qualified_lead_ingest.json (QUALIFIED_LEAD_INGEST): riceve un lead, lo filtra e lo crea o
-  aggiorna nel CRM Notion, registrando l'interazione;
+  aggiorna nel CRM Notion, con i contatti se ci sono, registrando l'interazione;
 - gtm_run_summary.json (GTM_RUN_SUMMARY): riceve i numeri del funnel e scrive un report su Notion;
 - handoff_sales.json (HANDOFF_SALES): porta in "Pronto per sales" i Tier A con verifica
   superata (o rivista a mano) e registra il passaggio.
@@ -47,6 +47,14 @@ const common = {
 };
 if (b.business_model) common['Modello'] = { select: { name: b.business_model } };
 
+// Contatti (solo se trovati: un aggiornamento senza contatti non cancella quelli già nel CRM)
+const c = b.contacts || {};
+if (c.company_phone) common['Telefono'] = { phone_number: c.company_phone };
+const person = {};
+if (c.buyer_email) person['Email'] = { email: c.buyer_email };
+if (c.buyer_mobile) person['Cellulare'] = { phone_number: c.buyer_mobile };
+if (c.source) person['Fonte contatto'] = { rich_text: txt(c.source) };
+
 // Esito di scripts/verify_sources.py. In aggiornamento non sovrascrive "Rivista a mano".
 const v = b.verification || {};
 const verification = {
@@ -60,6 +68,8 @@ return {
     create_properties: { ...common, ...verification, 'Stato': { select: { name: 'Qualificato' } } },
     update_properties: common,
     verification_properties: verification,
+    person_properties: person,
+    has_person_contacts: Object.keys(person).length > 0,
   },
 };
 """
@@ -159,7 +169,8 @@ nodes = [
          " 'Ruolo': { rich_text: [{ text: { content: " + LEAD + ".buyer.title || '' } }] },"
          " 'Azienda': { relation: [{ id: $json.id }] },"
          " 'Ruolo nel buying': { select: { name: " + LEAD + ".buyer.role_match } },"
-         " 'Fonte': { url: " + LEAD + ".buyer.source_url || null } } }",
+         " 'Fonte': { url: " + LEAD + ".buyer.source_url || null },"
+         " ...$('Prepara proprietà CRM').item.json.person_properties } }",
          [1440, 120]),
     http("a1f0c6d2-1b1e-4c55-9d0a-000000000011", "Registra interazione", "POST", f"{NOTION}/pages",
          "{ parent: { database_id: '" + INTERAZIONI_DB + "' }, properties: {"
@@ -169,6 +180,20 @@ nodes = [
          " 'Chi': { select: { name: 'n8n' } },"
          " 'Data': { date: { start: $now.toISODate() } } } }",
          [1680, -120]),
+    # Azienda già nel CRM: i contatti nuovi vanno sulla persona collegata, se c'è
+    if_node("a1f0c6d2-1b1e-4c55-9d0a-000000000012", "Contatti persona?", [
+        cond("p1", "={{ $('Prepara proprietà CRM').item.json.has_person_contacts }}", "", "boolean", "true", True),
+    ], [1440, -400]),
+    http("a1f0c6d2-1b1e-4c55-9d0a-000000000013", "Cerca persona", "POST",
+         f"{NOTION}/databases/{PERSONE_DB}/query",
+         "{ filter: { property: 'Azienda', relation: { contains: $('Cerca azienda per dominio').item.json.results[0].id } }, page_size: 1 }",
+         [1680, -400]),
+    if_node("a1f0c6d2-1b1e-4c55-9d0a-000000000014", "Persona trovata?", [
+        cond("p2", "={{ $json.results.length }}", 0, "number", "gt"),
+    ], [1920, -400]),
+    http("a1f0c6d2-1b1e-4c55-9d0a-000000000015", "Aggiorna contatti persona", "PATCH",
+         "={{ 'https://api.notion.com/v1/pages/' + $json.results[0].id }}",
+         "{ properties: $('Prepara proprietà CRM').item.json.person_properties }", [2160, -400]),
     respond("a1f0c6d2-1b1e-4c55-9d0a-000000000003", "Accettato",
             "{ accepted: true, company: " + LEAD + ".company_name, tier: " + LEAD + ".tier, score: " + LEAD
             + ".score_total, crm: " + ACTION + " }", 200, [1920, -120]),
@@ -188,7 +213,10 @@ connections = {
     "Prepara proprietà CRM": {"main": link("Cerca azienda per dominio")},
     "Cerca azienda per dominio": {"main": link("Esiste già?")},
     "Esiste già?": {"main": link("Aggiorna azienda") + link("Crea azienda")},
-    "Aggiorna azienda": {"main": link("Registra interazione")},
+    "Aggiorna azienda": {"main": link("Registra interazione", "Contatti persona?")},
+    "Contatti persona?": {"main": link("Cerca persona")},
+    "Cerca persona": {"main": link("Persona trovata?")},
+    "Persona trovata?": {"main": link("Aggiorna contatti persona")},
     "Crea azienda": {"main": [[{"node": "Registra interazione", "type": "main", "index": 0},
                                {"node": "Crea persona", "type": "main", "index": 0}]]},
     "Registra interazione": {"main": link("Accettato")},
